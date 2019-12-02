@@ -1115,7 +1115,7 @@ GMGenie.MisionesTabla = {
 
 -- Necesito un texto por acá - "La primer misión es opcional y se toma en dalaran, pueden realizar desde la segunda misión."
 
-{"¡Se acerca el día del Juicio Final!",				13227,"Horda",								9,1,1,nil,"Hermano Keltan","Alto señor Tirion Vadín",31261,28179,nil}, 
+{"¡Se acerca el día del Juicio Final!",				13227,"Horda",								9,1,1,nil,31261,"Alto señor Tirion Vadín",31261,28179,nil}, 
 {"¡Se acerca el día del Juicio Final!", 			13226,"Alianza",							9,2,1,nil,"Absalan el Piadoso","Alto señor Tirion Vadín",31259,28179,nil},
 
 
