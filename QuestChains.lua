@@ -1115,22 +1115,21 @@ GMGenie.MisionesTabla = {
 
 -- Necesito un texto por acá - "La primer misión es opcional y se toma en dalaran, pueden realizar desde la segunda misión."
 
-{"¡Se acerca el día del Juicio Final!",				13227,"Horda",								9,1,1,nil,31261,"Alto señor Tirion Vadín",31261,28179,nil}, 
-{"¡Se acerca el día del Juicio Final!", 			13226,"Alianza",							9,2,1,nil,"Absalan el Piadoso","Alto señor Tirion Vadín",31259,28179,nil},
-
-
-{"Honor por encima de todo", 						13036,"Neutro",								9,3,1,nil,"Alto señor Tirion Vadín","Comandante de Cruzada Entari",28179,30223,nil},
-{"Tácticas de la plaga", 							13008,"Neutro",								9,4,1,nil,"Comandante de Cruzada Entari","Comandante de Cruzada Entari",13008,30223,nil},
-{"Defender la Vanguardia", 							13039,"Neutro",								9,5,1,nil,"Señor cruzado Dalfors","Señor cruzado Dalfors",30224,30224,nil},
-{"Curar lo incurable", 								13040,"Neutro",								9,6,1,nil,"Padre Gustav","Padre Gustav",30226,30226,nil},
-{"Si hay supervivientes...",						13044,"Neutro",								9,7,1,nil,"Comandante de Cruzada Entari","Penumbrius",30223,30227,nil},
-{"Dentro del gran verdor", 							13045,"Neutro",								9,8,1,nil,"Penumbrius","Alto señor Tirion Vadín",30227,28179,nil},
-{"Se aproxima un frente frío", 						13070,"Neutro",								9,9,1,nil,"Alto señor Tirion Vadín","Maestro de asedio Fezzik",28179,30657,nil},
-{"La última línea de defensa", 						13086,"Neutro",								9,10,1,nil,"Maestro de asedio Fezzik","Maestro de asedio Fezzik",30657,30657,nil},
-{"Una vez más en la brecha, héroe", 				13104,"Neutro",								9,11,1,nil,"Alto señor Tirion Vadín","El Vigía de Ébano",30677,30596,nil},
-{"La piedra de la plaga", 							13122,"Neutro",								9,12,1,nil,"El Vigía de Ébano","El Vigía de Ébano",30596,30596,nil},
-{"La purga de la ciudad de la plaga",				13118,"Neutro",								9,13,1,nil,"El Vigía de Ébano","El Vigía de Ébano",30596,30596,nil},
-{"Los muertos sin descanso", 						13110,"Neutro",								9,14,1,nil,"Padre Gustav","Padre Gustav",30683,30683,nil},
+{"¡Se acerca el día del Juicio Final!",				13227,"Horda",								9,1,1,nil,31261,28179,nil,nil,nil}, 
+{"¡Se acerca el día del Juicio Final!", 			13226,"Alianza",							9,2,1,nil,31259,28179,nil,nil,nil},
+ 
+{"Honor por encima de todo", 						13036,"Neutro",								9,3,1,nil,28179,30223,nil,nil,nil},
+{"Tácticas de la plaga", 							13008,"Neutro",								9,4,1,nil,13008,30223,nil,nil,nil},
+{"Defender la Vanguardia", 							13039,"Neutro",								9,5,1,nil,30224,30224,nil,nil,nil},
+{"Curar lo incurable", 								13040,"Neutro",								9,6,1,nil,30226,30226,nil,nil,nil},
+{"Si hay supervivientes...",						13044,"Neutro",								9,7,1,nil,30223,30227,nil,nil,nil},
+{"Dentro del gran verdor", 							13045,"Neutro",								9,8,1,nil,30227,28179,nil,nil,nil},
+{"Se aproxima un frente frío", 						13070,"Neutro",								9,9,1,nil,28179,30657,nil,nil,nil},
+{"La última línea de defensa", 						13086,"Neutro",								9,10,1,nil,30657,30657,nil,nil,nil},
+{"Una vez más en la brecha, héroe", 				13104,"Neutro",								9,11,1,nil,30677,30596,nil,nil,nil},
+{"La piedra de la plaga", 							13122,"Neutro",								9,12,1,nil,30596,30596,nil,nil,nil},
+{"La purga de la ciudad de la plaga",				13118,"Neutro",								9,13,1,nil,30596,30596,nil,nil,nil},
+{"Los muertos sin descanso", 						13110,"Neutro",								9,14,1,nil,30683,30683,nil,nil,nil},
 
 -- Necesito un texto por acá - "La misión de el aire permanece quieto, se tiene que matar al elite Sumo sacerdote Yath´amon, sin la ayuda del elite para que cuente de forma normal."
 
