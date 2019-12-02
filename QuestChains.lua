@@ -178,32 +178,32 @@ GMGenie.CategoriaTabla = {
 GMGenie.MisionesTabla = {    
 -- Oso polar blanco
 -- ===========================================================================================================================================================================
- {"¡Se llevaron a nuestros hombres!",				12843,"Neutro",								3,1,4,nil,29473,29473,98958,98958,nil},
- {"Ningún goblin se queda atrás",					12846,"Neutro",								3,2,4,nil,29473,29481,98958,99762,nil},
- {"El trato de la vieja bruja",						12841,"Neutro",								3,3,4,nil,"Lok'lira la vieja bruja","Lok'lira la vieja bruja",99762,99762,nil},
- {"Mildred la Cruel",								12905,"Neutro",								3,4,4,nil,"Lok'lira la vieja bruja","Mildred la Cruel",99762,113839,nil},
- {"Disciplina",										12906,"Neutro",								3,5,4,nil,"Mildred la Cruel","Mildred la Cruel",113839,113839,nil},
- {"Castigos ejemplares",							12907,"Neutro",								3,6,4,nil,"Mildred la Cruel","Mildred la Cruel",113839,113839,nil},
- {"Un prisionero concreto",							12908,"Neutro",								3,7,4,nil,"Mildred la Cruel","Lok'lira la vieja bruja",113839,99762,nil},
- {"Un cambio de escenario",							12921,"Neutro",								3,8,4,nil,"Lok'lira la vieja bruja","Lok'lira la vieja bruja",99762,2593,nil},
- {"¿Es ese tu goblin?",								12969,"Neutro",								3,9,4,nil,"Lok'lira la Vieja Bruja","Lok'lira la Vieja Bruja",2593,2593,nil},
- {"El Encuentro hyldnir",							12970,"Neutro",								3,10,4,nil,"Lok'lira la Vieja Bruja","Lok'lira la Vieja Bruja",2593,2593,nil},
- {"Enfrentarse a todos los retos",					12971,"Neutro",								3,11,4,nil,"Lok'lira la Vieja Bruja","Lok'lira la Vieja Bruja",2593,2593,nil},
- {"Necesitarás un oso",								12972,"Neutro",								3,12,4,nil,"Lok'lira la Vieja Bruja","Brijana",2593,110305,nil},
- {"A lomos de la osa",								12851,"Neutro",								3,13,4,nil,"Brijana","Brijana",110305,110305,nil},
- {"Corazón helado",									12856,"Neutro",								3,14,4,nil,"Brijana","Brijana",110305,110305,nil},
- {"Demostrar el valor",								13063,"Neutro",								3,15,4,nil,"Brijana","Astrid Bjornrittar",110305,109005,nil},
- {"Hacer un arnés",									12900,"Neutro",								3,16,4,nil,"Astrid Bjornrittar","Astrid Bjornrittar",109005,109005,nil},
- {"La última de su raza",							12983,"Neutro",								3,17,4,nil,"Astrid Bjornrittar","Astrid Bjornrittar",109005,109005,nil},
- {"El calentamiento",								12996,"Neutro",								3,18,4,nil,"Astrid Bjornrittar","Astrid Bjornrittar",109005,109005,nil},
- {"Al foso",										12997,"Neutro",								3,19,4,nil,"Astrid Bjornrittar","Astrid Bjornrittar",109005,109005,nil},
- {"Prepárate para la gloria",						13061,"Neutro",								3,20,4,nil,"Astrid Bjornrittar","Lok'lira la Vieja Bruja",109005,2593,nil},
- {"El regalo de despedida de Lok'lira",				13062,"Neutro",								3,21,4,nil,"Lok'lira la Vieja Bruja","Gretta la Mediadora",2593,104990,nil},
- {nil,												12886,"Neutro",								3,22,4,nil,29796,29445,104990,97128,nil},
- {nil,												13422,"Neutro",								3,23,4,"-1",29796,29796,104990,104990,"La Recompensa \"Botín Hyldnir\" tiene 3% de Lotear La montura"},
- {nil,												13425,"Neutro",								3,24,4,"-1",29796,29796,104990,104990,"La Recompensa \"Botín Hyldnir\" tiene 3% de Lotear La montura"},
- {nil,												13423,"Neutro",								3,25,4,"-1",29796,29796,104990,104990,"La Recompensa \"Botín Hyldnir\" tiene 3% de Lotear La montura"},
- {nil,												13424,"Neutro",								3,26,4,"-1",29796,29796,104990,104990,"La Recompensa \"Botín Hyldnir\" tiene 3% de Lotear La montura"},
+ {"¡Se llevaron a nuestros hombres!",				12843,"Neutro",								3,1,4,nil,29473,29473,nil,nil,nil},
+ {"Ningún goblin se queda atrás",					12846,"Neutro",								3,2,4,nil,29473,29481,nil,nil,nil},
+ {"El trato de la vieja bruja",						12841,"Neutro",								3,3,4,nil,29975,29975,nil,nil,nil},
+ {"Mildred la Cruel",								12905,"Neutro",								3,4,4,nil,29975,29885,nil,nil,nil},
+ {"Disciplina",										12906,"Neutro",								3,5,4,nil,29885,29885,nil,nil,nil},
+ {"Castigos ejemplares",							12907,"Neutro",								3,6,4,nil,29885,29885,nil,nil,nil},
+ {"Un prisionero concreto",							12908,"Neutro",								3,7,4,nil,29885,29975,nil,nil,nil},
+ {"Un cambio de escenario",							12921,"Neutro",								3,8,4,nil,29975,29975,nil,nil,nil},
+ {"¿Es ese tu goblin?",								12969,"Neutro",								3,9,4,nil,29975,29975,nil,nil,nil},
+ {"El Encuentro hyldnir",							12970,"Neutro",								3,10,4,nil,29975,29975,nil,nil,nil},
+ {"Enfrentarse a todos los retos",					12971,"Neutro",								3,11,4,nil,29975,29975,nil,nil,nil},
+ {"Necesitarás un oso",								12972,"Neutro",								3,12,4,nil,29975,29592,nil,nil,nil},
+ {"A lomos de la osa",								12851,"Neutro",								3,13,4,nil,29592,29592,nil,nil,nil},
+ {"Corazón helado",									12856,"Neutro",								3,14,4,nil,29592,29592,nil,nil,nil},
+ {"Demostrar el valor",								13063,"Neutro",								3,15,4,nil,29592,29839,nil,nil,nil},
+ {"Hacer un arnés",									12900,"Neutro",								3,16,4,nil,29839,29839,nil,nil,nil},
+ {"La última de su raza",							12983,"Neutro",								3,17,4,nil,29839,29839,nil,nil,nil},
+ {"El calentamiento",								12996,"Neutro",								3,18,4,nil,29839,29839,nil,nil,nil},
+ {"Al foso",										12997,"Neutro",								3,19,4,nil,29839,29839,nil,nil,nil},
+ {"Prepárate para la gloria",						13061,"Neutro",								3,20,4,nil,29839,29975,nil,nil,nil},
+ {"El regalo de despedida de Lok'lira",				13062,"Neutro",								3,21,4,nil,29975,29796,nil,nil,nil},
+ {nil,												12886,"Neutro",								3,22,4,nil,29796,29445,nil,nil,nil},
+ {nil,												13422,"Neutro",								3,23,4,"-1",29796,29796,nil,nil,"La Recompensa \"Botín Hyldnir\" tiene 3% de Lotear La montura"},
+ {nil,												13425,"Neutro",								3,24,4,"-1",29796,29796,nil,nil,"La Recompensa \"Botín Hyldnir\" tiene 3% de Lotear La montura"},
+ {nil,												13423,"Neutro",								3,25,4,"-1",29796,29796,nil,nil,"La Recompensa \"Botín Hyldnir\" tiene 3% de Lotear La montura"},
+ {nil,												13424,"Neutro",								3,26,4,"-1",29796,29796,nil,nil,"La Recompensa \"Botín Hyldnir\" tiene 3% de Lotear La montura"},
 
 -- CADENA DE MISIONES PARA ESPECIALIDADES EN PROFESIONES
 
@@ -213,15 +213,15 @@ GMGenie.MisionesTabla = {
 
 -- Sastrería con tela lunar
 
-{"Convertirse en un sastre de tela lunar",  10831,"Neutral",1,1,116,nil,22208,22208,77874,77874,"El npc esta en Shattrath"},
+{"Convertirse en un sastre de tela lunar",			10831,"Neutro",								1,1,116,nil,22208,22208,nil,nil,"El npc esta en Shattrath"},
 
 -- Sastrería con fuego de hechizo
 
-{"Convertirse en un sastre de fuego de hechizo",  10832,"Neutral",2,1,116,nil,22213,22213,77877,77877,"El npc esta en Shattrath"},
+{"Convertirse en un sastre de fuego de hechizo",	10832,"Neutro",								2,1,116,nil,22213,22213,nil,nil,"El npc esta en Shattrath"},
 
 -- Sastrería con tejido de sombra
 
-{"Convertirse en un sastre de tejido de sombra",  10833,"Neutral",3,1,116,nil,22212,22212,77876,77876,"El npc esta en Shattrath"},
+{"Convertirse en un sastre de tejido de sombra",	10833,"Neutro",								3,1,116,nil,22212,22212,nil,nil,"El npc esta en Shattrath"},
 
 -- ===========================================================================================================================================================================
 
@@ -229,21 +229,21 @@ GMGenie.MisionesTabla = {
 
 -- TRANSMUTACIÓN
 
-{"Maestro de transmutación",  10907,"Alianza",1,1,115,nil,18802,22427,nil,nil,"El alquimista Gribble esta en Bastión del honor en Península de fuego"},
-{"Maestro de transmutación",  10907,"Horda",1,2,115,nil,16588,22427,nil,nil,"El boticario Antonivich esta en Trallmar Península de Fuego"},
-{"Maestro de transmutación",  10899,"Neutral",1,3,115,nil,22427,22427,nil,nil,"Zarevhi esta en tormenta abisal"},
+{"Maestro de transmutación",						10907,"Alianza",							1,1,115,nil,18802,22427,nil,nil,"El alquimista Gribble esta en Bastión del honor en Península de fuego"},
+{"Maestro de transmutación",						10907,"Horda",								1,2,115,nil,16588,22427,nil,nil,"El boticario Antonivich esta en Trallmar Península de Fuego"},
+{"Maestro de transmutación",						10899,"Neutro",								1,3,115,nil,22427,22427,nil,nil,"Zarevhi esta en tormenta abisal"},
 
 -- POCIONES
 
-{"Maestro en pociones",  10905,"Alianza",2,1,115,nil,18802,17909,nil,nil,"El alquimista Gribble esta en Bastión del honor en Península de fuego"},
-{"Maestro en pociones",  10905,"Horda",2,2,115,nil,16588,17909,nil,nil,"El boticario Antonivich esta en Trallmar Península de Fuego"},
-{"Maestro en pociones",  10897,"Neutral",2,3,115,nil,17909,17909,nil,nil,"Lauranna esta en marisma de zangar"}, 
+{"Maestro en pociones",								10905,"Alianza",							2,1,115,nil,18802,17909,nil,nil,"El alquimista Gribble esta en Bastión del honor en Península de fuego"},
+{"Maestro en pociones",								10905,"Horda",								2,2,115,nil,16588,17909,nil,nil,"El boticario Antonivich esta en Trallmar Península de Fuego"},
+{"Maestro en pociones",								10897,"Neutro",								2,3,115,nil,17909,17909,nil,nil,"Lauranna esta en marisma de zangar"}, 
 
 -- ELIXIRES
 
-{"Maestro en elixires",    10906,"Alianza",3,1,115,nil,18802,19052,67159,68361,"El alquimista Gribble esta en Bastión del honor en Península de fuego"},
-{"Maestro en elixires",    10906,"Horda",3,2,115,nil,16588,19052,57561,68361,"El boticario Antonivich esta en Trallmar Península de Fuego"},
-{"Maestro en elixires",    10902,"Neutral",3,3,115,nil,19052,19052,68361,68361,"El npc esta en Shattrath"},
+{"Maestro en elixires",								10906,"Alianza",							3,1,115,nil,18802,19052,nil,nil,"El alquimista Gribble esta en Bastión del honor en Península de fuego"},
+{"Maestro en elixires",								10906,"Horda",								3,2,115,nil,16588,19052,nil,nil,"El boticario Antonivich esta en Trallmar Península de Fuego"},
+{"Maestro en elixires",								10902,"Neutro",								3,3,115,nil,19052,19052,nil,nil,"El npc esta en Shattrath"},
 
 -- =======================================================================================================================================================================
 
@@ -251,15 +251,15 @@ GMGenie.MisionesTabla = {
 
 -- INGENIERÍA GOBLIN
 
-{"Ingeniería goblin",   3633,"Neutral",1,1,100,nil,3494,8126,15149,23414,"Manitas de oro se encuentra en el Trinquete"},
-{"Muestra tu trabajo",  3639,"Neutral",1,2,100,nil,8126,8126,23414,23414,nil}, 
+{"Ingeniería goblin",								3633,"Neutro",								1,1,100,nil,3494,8126,nil,nil,"Manitas de oro se encuentra en el Trinquete"},
+{"Muestra tu trabajo",								3639,"Neutro",								1,2,100,nil,8126,8126,nil,nil,nil}, 
  
 -- INGENIERÍA GNÓMICA
 
-{"Ingeniería gnómica",  3632,"Alianza",2,1,100,nil,3494,7944,15149,36,"Manitas de oro se encuentra en el Trinquete"},
-{"Muestra tu trabajo",  3641,"Alianza",2,2,100,nil,7944,7944,36,36,"El esquema de mira de precisión se puede obtener en el npc Mazk Tirocertero 2685 que esta en bahia de botín"}, 
-{"Ingeniería gnómica",  3637,"Horda",2,3,100,nil,4586,7406,38096,387,"El npc que inicia la misión esta en Entrañas"},
-{"Muestra tu trabajo",  3643,"Horda",2,4,100,nil,7406,7406,387,387,"El esquema de mira de precisión se puede obtener en el npc Mazk Tirocertero 2685 que esta en bahia de botín"}, 
+{"Ingeniería gnómica",								3632,"Alianza",								2,1,100,nil,3494,7944,nil,nil,"Manitas de oro se encuentra en el Trinquete"},
+{"Muestra tu trabajo",								3641,"Alianza",								2,2,100,nil,7944,7944,nil,nil,"El esquema de mira de precisión se puede obtener en el npc Mazk Tirocertero 2685 que esta en bahia de botín"}, 
+{"Ingeniería gnómica",								3637,"Horda",								2,3,100,nil,4586,7406,nil,nil,"El npc que inicia la misión esta en Entrañas"},
+{"Muestra tu trabajo",								3643,"Horda",								2,4,100,nil,7406,7406,nil,nil,"El esquema de mira de precisión se puede obtener en el npc Mazk Tirocertero 2685 que esta en bahia de botín"}, 
  
 -- ======================================================================================================================================================
 
@@ -269,59 +269,59 @@ GMGenie.MisionesTabla = {
 
 -- CADENA PARA ENANOS
 
-{"El camino del cazador",							6074,"Alianza",1,1,114,nil,5117,1231,82,222,"Disponible a nivel 10"}, 
-{"Domesticar la bestia",							6064,"Alianza",1,2,114,nil,1231,1231,222,222,nil},
-{"Domesticar la bestia",							6084,"Alianza",1,3,114,nil,1231,1231,222,222,nil},
-{"Domesticar la bestia",							6085,"Alianza",1,4,114,nil,1231,1231,222,222,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Domesticar la bestia",							6086,"Alianza",1,5,114,nil,1231,10090,222,59,"Aprenderas a alimentar y revivir a tu mascota"},
+{"El camino del cazador",							6074,"Alianza",								1,1,114,nil,5117,1231,nil,nil,"Disponible a nivel 10"}, 
+{"Domesticar la bestia",							6064,"Alianza",								1,2,114,nil,1231,1231,nil,nil,nil},
+{"Domesticar la bestia",							6084,"Alianza",								1,3,114,nil,1231,1231,nil,nil,nil},
+{"Domesticar la bestia",							6085,"Alianza",								1,4,114,nil,1231,1231,nil,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Domesticar la bestia",							6086,"Alianza",								1,5,114,nil,1231,10090,nil,nil,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- CADENA PARA ELFO DE LA NOCHE
 
-{"El camino del cazador",							6071,"Alianza",2,1,114,nil,3596,3601,46182,46188,"Disponible a nivel 10"},
-{"Domesticar la bestia",							6063,"Alianza",2,2,114,nil,3601,3601,46188,46188,nil},
-{"Domesticar la bestia",							6101,"Alianza",2,3,114,nil,3601,3601,46188,46188,nil},
-{"Domesticar la bestia",							6102,"Alianza",2,4,114,nil,3601,3601,46188,46188,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Domesticar la bestia",							6103,"Alianza",2,5,114,nil,3601,4146,46188,46221,"Aprenderas a alimentar y revivir a tu mascota"},
+{"El camino del cazador",							6071,"Alianza",								2,1,114,nil,3596,3601,nil,nil,"Disponible a nivel 10"},
+{"Domesticar la bestia",							6063,"Alianza",								2,2,114,nil,3601,3601,nil,nil,nil},
+{"Domesticar la bestia",							6101,"Alianza",								2,3,114,nil,3601,3601,nil,nil,nil},
+{"Domesticar la bestia",							6102,"Alianza",								2,4,114,nil,3601,3601,nil,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Domesticar la bestia",							6103,"Alianza",								2,5,114,nil,3601,4146,nil,nil,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- CADENA PARA DRAENEI
 
-{"La cazadora quella Arconocturno",					9757,"Alianza",3,1,114,nil,17110,17614,59517,63358,"Disponible a nivel 10"},
-{"Domesticar la bestia",							9591,"Alianza",3,2,114,nil,17614,17614,59517,59517,nil},
-{"Domesticar la bestia",							9592,"Alianza",3,3,114,nil,17614,17614,59517,59517,nil},
-{"Domesticar la bestia",							9593,"Alianza",3,4,114,nil,17614,17614,59517,59517,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Doma de bestias",									9675,"Alianza",3,5,114,nil,17614,16712,59517,31750,"Aprenderas a alimentar y revivir a tu mascota"},
+{"La cazadora quella Arconocturno",					9757,"Alianza",								3,1,114,nil,17110,17614,nil,nil,"Disponible a nivel 10"},
+{"Domesticar la bestia",							9591,"Alianza",								3,2,114,nil,17614,17614,nil,nil,nil},
+{"Domesticar la bestia",							9592,"Alianza",								3,3,114,nil,17614,17614,nil,nil,nil},
+{"Domesticar la bestia",							9593,"Alianza",								3,4,114,nil,17614,17614,nil,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Doma de bestias",									9675,"Alianza",								3,5,114,nil,17614,16712,nil,nil,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- CADENA PARA ORCO
 
-{"El camino del cazador",							6070,"Horda",4,1,114,nil,3407,3171,6620,7293,"Disponible a nivel 10"},
-{"Domesticar la bestia",							6062,"Horda",4,2,114,nil,3171,3171,7293,7293,nil},
-{"Domesticar la bestia",							6083,"Horda",4,3,114,nil,3171,3171,7293,7293,nil},
-{"Domesticar la bestia",							6082,"Horda",4,4,114,nil,3171,3171,7293,7293,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Domesticar la bestia",							6081,"Horda",4,5,114,nil,3171,3352,7293,7449,"Aprenderas a alimentar y revivir a tu mascota"},
+{"El camino del cazador",							6070,"Horda",								4,1,114,nil,3407,3171,nil,nil,"Disponible a nivel 10"},
+{"Domesticar la bestia",							6062,"Horda",								4,2,114,nil,3171,3171,nil,nil,nil},
+{"Domesticar la bestia",							6083,"Horda",								4,3,114,nil,3171,3171,nil,nil,nil},
+{"Domesticar la bestia",							6082,"Horda",								4,4,114,nil,3171,3171,nil,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Domesticar la bestia",							6081,"Horda",								4,5,114,nil,3171,3352,nil,nil,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- CADENA PARA TROL
 
-{"El camino del cazador",							6069,"Horda",5,1,114,nil,3171,3171,7293,7293,"Disponible a nivel 10"},
-{"Domesticar la bestia",							6062,"Horda",5,2,114,nil,3171,3171,7293,7293,nil},
-{"Domesticar la bestia",							6083,"Horda",5,3,114,nil,3171,3171,7293,7293,nil},
-{"Domesticar la bestia",							6082,"Horda",5,4,114,nil,3171,3171,7293,7293,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Domesticar la bestia",							6081,"Horda",5,5,114,nil,3171,3352,7293,7449,"Aprenderas a alimentar y revivir a tu mascota"},
+{"El camino del cazador",							6069,"Horda",								5,1,114,nil,3171,3171,nil,nil,"Disponible a nivel 10"},
+{"Domesticar la bestia",							6062,"Horda",								5,2,114,nil,3171,3171,nil,nil,nil},
+{"Domesticar la bestia",							6083,"Horda",								5,3,114,nil,3171,3171,nil,nil,nil},
+{"Domesticar la bestia",							6082,"Horda",								5,4,114,nil,3171,3171,nil,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Domesticar la bestia",							6081,"Horda",								5,5,114,nil,3171,3352,nil,nil,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- CADENA PARA TAUREN
 
-{"El camino del cazador",							6066,"Horda",6,1,114,nil,3038,3065,26755,26905,"Disponible a nivel 10"},
-{"Domesticar la bestia",							6061,"Horda",6,2,114,nil,3065,3065,26905,26905,nil},
-{"Domesticar la bestia",							6087,"Horda",6,3,114,nil,3065,3065,26905,26905,nil},
-{"Domesticar la bestia",							6088,"Horda",6,4,114,nil,3065,3065,26905,26905,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Domesticar la bestia",							6089,"Horda",6,5,114,nil,3065,3039,26905,26756,"Aprenderas a alimentar y revivir a tu mascota"},
+{"El camino del cazador",							6066,"Horda",								6,1,114,nil,3038,3065,nil,nil,"Disponible a nivel 10"},
+{"Domesticar la bestia",							6061,"Horda",								6,2,114,nil,3065,3065,nil,nil,nil},
+{"Domesticar la bestia",							6087,"Horda",								6,3,114,nil,3065,3065,26905,26905,nil},
+{"Domesticar la bestia",							6088,"Horda",								6,4,114,nil,3065,3065,26905,26905,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Domesticar la bestia",							6089,"Horda",								6,5,114,nil,3065,3039,26905,26756,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- CADENA PARA ELFOS DE SANGRE
 
-{"Busca a los errantes",							9617,"Horda",7,1,114,nil,16271,15399,56980,55355,"Disponible a nivel 10"},
-{"Domesticar la bestia",							9484,"Horda",7,2,114,nil,15399,15399,55355,55355,nil},
-{"Domesticar la bestia",							9486,"Horda",7,3,114,nil,15399,15399,55355,55355,nil},
-{"Domesticar la bestia",							9485,"Horda",7,4,114,nil,15399,15399,55355,55355,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Doma de bestias",									9673,"Horda",7,5,114,nil,15399,16675,55355,57665,"Aprenderas a alimentar y revivir a tu mascota"},
+{"Busca a los errantes",							9617,"Horda",								7,1,114,nil,16271,15399,56980,55355,"Disponible a nivel 10"},
+{"Domesticar la bestia",							9484,"Horda",								7,2,114,nil,15399,15399,55355,55355,nil},
+{"Domesticar la bestia",							9486,"Horda",								7,3,114,nil,15399,15399,55355,55355,nil},
+{"Domesticar la bestia",							9485,"Horda",								7,4,114,nil,15399,15399,55355,55355,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Doma de bestias",									9673,"Horda",								7,5,114,nil,15399,16675,55355,57665,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- ============================================================================================================================================================================
  
@@ -331,48 +331,48 @@ GMGenie.MisionesTabla = {
 
 -- CADENA PARA HUMANOS 
 
-{"El isleño",										1718,"Alianza",1,1,112,nil,5479,6236,79779,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",1,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								1,1,112,nil,5479,6236,79779,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								1,2,112,nil,6236,6236,14137,14137,nil},
 
 -- CADENA PARA ENANOS
 
-{"El isleño",										1718,"Alianza",2,1,112,nil,5113,6236,2019,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",2,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								2,1,112,nil,5113,6236,2019,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								2,2,112,nil,6236,6236,14137,14137,nil},
 
 -- CADENA PARA GNOMOS
 
-{"El isleño",										1718,"Alianza",3,1,112,nil,5113,6236,2019,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",3,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								3,1,112,nil,5113,6236,2019,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								3,2,112,nil,6236,6236,14137,14137,nil},
 
 -- CADENA PARA ELFOS DE LA NOCHE
 
-{"El isleño",										1718,"Alianza",4,1,112,nil,7315,6236,46809,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",4,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								4,1,112,nil,7315,6236,46809,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								4,2,112,nil,6236,6236,14137,14137,nil},
 
 -- CADENA PARA DRAENEI
 
-{"El isleño",										1718,"Alianza",5,1,112,nil,5479,6236,79779,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",5,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								5,1,112,nil,5479,6236,79779,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								5,2,112,nil,6236,6236,14137,14137,nil},
 
 -- CADENA PARA NO MUERTOS
 
-{"El isleño",										1718,"Horda",6,1,112,nil,4595,6236,38128,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Horda",6,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Horda",								6,1,112,nil,4595,6236,38128,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Horda",								6,2,112,nil,6236,6236,14137,14137,nil},
 
 -- CADENA PARA ORCOS
 
-{"El isleño",										1718,"Horda",7,1,112,nil,3354,6236,7443,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Horda",7,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Horda",								7,1,112,nil,3354,6236,7443,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Horda",								7,2,112,nil,6236,6236,14137,14137,nil},
 
 -- CADENA PARA TAUREN
 
-{"El isleño",										1718,"Horda",8,1,112,nil,3041,6236,26759,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Horda",8,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Horda",								8,1,112,nil,3041,6236,26759,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Horda",								8,2,112,nil,6236,6236,14137,14137,nil},
 
 -- CADENA PARA TROL
 
-{"El isleño",										1718,"Horda",9,1,112,nil,3354,6236,7443,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Horda",9,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Horda",								9,1,112,nil,3354,6236,7443,14137,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Horda",								9,2,112,nil,6236,6236,14137,14137,nil},
 
 -- =============================================================================
 
@@ -695,62 +695,62 @@ GMGenie.MisionesTabla = {
 -- ===========================================================================================================================================
 
 -- CADENA DE MISIONES PARA LOS CABALLEROS DE LA MUERTE - DK
- {nil,												12593,"NEUTRO",								6,1,2,nil,25462,28357,nil,nil,nil}, 
- {nil,												12619,"NEUTRO",								6,2,2,nil,28357,28357,nil,nil,"Al completar esta misión el Caballero de la Muerte recibe el Hechizo \"Forja de Runas\" Que le permite al jugador forjar sus armas para siempre"}, 
- {nil,												12842,"NEUTRO",								6,3,2,nil,28357,28357,nil,nil,nil}, 
- {nil,												12848,"NEUTRO",								6,4,2,nil,28357,28357,nil,nil,nil}, 
- {nil,												12636,"NEUTRO",								6,5,2,nil,28357,25462,nil,nil,nil}, 
- {nil,												12641,"NEUTRO",								6,6,2,nil,25462,25462,nil,nil,nil}, 
- {nil,												12657,"NEUTRO",								6,7,2,nil,25462,28444,nil,nil,nil}, 
- {nil,												12850,"NEUTRO",								6,8,2,nil,28444,28510,nil,nil,nil}, 
- {nil,												12670,"NEUTRO",								6,9,2,nil,28510,28377,nil,nil,nil}, 
- {nil,												12678,"NEUTRO",								6,10,2,nil,28377,28377,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12680,"NEUTRO",								6,11,2,nil,28653,28653,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12687,"NEUTRO",								6,12,2,nil,28653,28653,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento y aprenderas la montura de clase \"Destrero de la Muerte\""}, 
- {nil,												12733,"NEUTRO",								6,13,2,nil,29047,29047,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12711,"NEUTRO",								6,14,2,nil,nil,nil,nil,nil,"La Misión se Reclama directamente, Solo debes encontrar el Buzón Cerca de los Cruzados|n( Aparece en todas las Fases )"}, 
- {nil,												12679,"NEUTRO",								6,15,2,nil,28647,28647,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12697,"NEUTRO",								6,16,2,nil,28377,28658,nil,nil,nil}, 
- {nil,												12700,"NEUTRO",								6,17,2,nil,28658,28377,nil,nil,nil}, 
- {nil,												12701,"NEUTRO",								6,18,2,nil,28377,28377,nil,nil,nil}, 
- {nil,												12706,"NEUTRO",								6,19,2,nil,28377,28444,nil,nil,"Al Completar esta misión recibirás como recompensa 3 punto de talento"}, 
- {nil,												12714,"NEUTRO",								6,20,2,nil,28444,28907,nil,nil,nil}, 
- {nil,												12849,"NEUTRO",								6,21,2,nil,28472,28472,nil,nil,nil}, 
- {nil,												12715,"NEUTRO",								6,22,2,nil,28907,28911,nil,nil,nil}, 
- {nil,												12716,"NEUTRO",								6,23,2,nil,28919,28919,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
- {nil,												12717,"NEUTRO",								6,24,2,nil,28919,28919,nil,nil,nil}, 
- {nil,												12718,"NEUTRO",								6,25,2,nil,nil,nil,nil,nil,"Esta misión repetible la puedes tomar en en el caldero"}, 
- {nil,												12719,"NEUTRO",								6,26,2,nil,28911,28911,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
- {nil,												12722,"NEUTRO",								6,27,2,nil,28910,28910,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
- {nil,												12720,"NEUTRO",								6,28,2,nil,28911,28911,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
- {nil,												12723,"NEUTRO",								6,29,2,nil,28911,28914,nil,nil,nil}, 
- {nil,												12724,"NEUTRO",								6,30,2,nil,28914,28914,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
- {nil,												12725,"NEUTRO",								6,31,2,nil,28913,28912,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12727,"NEUTRO",								6,32,2,nil,28912,28913,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
- {nil,												12738,"NEUTRO",								6,33,2,nil,28913,29053,nil,nil,nil}, 
- {nil,												12742,"NEUTRO",								6,34,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12743,"NEUTRO",								6,35,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12744,"NEUTRO",								6,36,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12745,"NEUTRO",								6,37,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12746,"NEUTRO",								6,38,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12747,"NEUTRO",								6,39,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12748,"NEUTRO",								6,40,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12749,"NEUTRO",								6,41,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12750,"NEUTRO",								6,42,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12739,"NEUTRO",								6,43,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12751,"NEUTRO",								6,44,2,nil,29053,28913,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
- {nil,												12754,"NEUTRO",								6,45,2,nil,28914,28914,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12755,"NEUTRO",								6,46,2,nil,28914,29077,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
- {nil,												12756,"NEUTRO",								6,47,2,nil,29077,28914,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12757,"NEUTRO",								6,48,2,nil,28914,28444,nil,nil,"Al Completar esta misión recibirás como recompensa 3 punto de talento"}, 
- {nil,												12778,"NEUTRO",								6,49,2,nil,28444,29110,nil,nil,nil}, 
- {nil,												12779,"NEUTRO",								6,50,2,nil,29110,29110,nil,nil,"Al Completar esta misión recibirás como recompensa 6 punto de talento"}, 
- {nil,												12800,"NEUTRO",								6,51,2,nil,29110,31082,nil,nil,nil}, 
- {nil,												12801,"NEUTRO",								6,52,2,nil,31082,29173,nil,nil,"Esta misión puede presentar problema por el eventual, tiene la opción de autocompletable, se tiene que abandonar la misión |n-ReTomarla |n-Hablar con el NPC Alto señor Darion Mograine y seleccionar la opción |n-No deseo iniciar el eventual para que la autocomplete"}, 
- {nil,												13165,"NEUTRO",								6,53,2,nil,29173,31084,nil,nil,nil}, 
- {nil,												13166,"NEUTRO",								6,54,2,nil,31084,31084,nil,nil,nil}, 
- {nil,												13188,"NEUTRO",								6,55,2,nil,31084,29611,nil,nil,nil}, 
- {nil,												13189,"NEUTRO",								6,56,2,nil,31084,4949,nil,nil,nil}, 
+ {nil,												12593,"Neutro",								6,1,2,nil,25462,28357,nil,nil,nil}, 
+ {nil,												12619,"Neutro",								6,2,2,nil,28357,28357,nil,nil,"Al completar esta misión el Caballero de la Muerte recibe el Hechizo \"Forja de Runas\" Que le permite al jugador forjar sus armas para siempre"}, 
+ {nil,												12842,"Neutro",								6,3,2,nil,28357,28357,nil,nil,nil}, 
+ {nil,												12848,"Neutro",								6,4,2,nil,28357,28357,nil,nil,nil}, 
+ {nil,												12636,"Neutro",								6,5,2,nil,28357,25462,nil,nil,nil}, 
+ {nil,												12641,"Neutro",								6,6,2,nil,25462,25462,nil,nil,nil}, 
+ {nil,												12657,"Neutro",								6,7,2,nil,25462,28444,nil,nil,nil}, 
+ {nil,												12850,"Neutro",								6,8,2,nil,28444,28510,nil,nil,nil}, 
+ {nil,												12670,"Neutro",								6,9,2,nil,28510,28377,nil,nil,nil}, 
+ {nil,												12678,"Neutro",								6,10,2,nil,28377,28377,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12680,"Neutro",								6,11,2,nil,28653,28653,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12687,"Neutro",								6,12,2,nil,28653,28653,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento y aprenderas la montura de clase \"Destrero de la Muerte\""}, 
+ {nil,												12733,"Neutro",								6,13,2,nil,29047,29047,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12711,"Neutro",								6,14,2,nil,nil,nil,nil,nil,"La Misión se Reclama directamente, Solo debes encontrar el Buzón Cerca de los Cruzados|n( Aparece en todas las Fases )"}, 
+ {nil,												12679,"Neutro",								6,15,2,nil,28647,28647,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12697,"Neutro",								6,16,2,nil,28377,28658,nil,nil,nil}, 
+ {nil,												12700,"Neutro",								6,17,2,nil,28658,28377,nil,nil,nil}, 
+ {nil,												12701,"Neutro",								6,18,2,nil,28377,28377,nil,nil,nil}, 
+ {nil,												12706,"Neutro",								6,19,2,nil,28377,28444,nil,nil,"Al Completar esta misión recibirás como recompensa 3 punto de talento"}, 
+ {nil,												12714,"Neutro",								6,20,2,nil,28444,28907,nil,nil,nil}, 
+ {nil,												12849,"Neutro",								6,21,2,nil,28472,28472,nil,nil,nil}, 
+ {nil,												12715,"Neutro",								6,22,2,nil,28907,28911,nil,nil,nil}, 
+ {nil,												12716,"Neutro",								6,23,2,nil,28919,28919,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
+ {nil,												12717,"Neutro",								6,24,2,nil,28919,28919,nil,nil,nil}, 
+ {nil,												12718,"Neutro",								6,25,2,nil,nil,nil,nil,nil,"Esta misión repetible la puedes tomar en en el caldero"}, 
+ {nil,												12719,"Neutro",								6,26,2,nil,28911,28911,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
+ {nil,												12722,"Neutro",								6,27,2,nil,28910,28910,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
+ {nil,												12720,"Neutro",								6,28,2,nil,28911,28911,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
+ {nil,												12723,"Neutro",								6,29,2,nil,28911,28914,nil,nil,nil}, 
+ {nil,												12724,"Neutro",								6,30,2,nil,28914,28914,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
+ {nil,												12725,"Neutro",								6,31,2,nil,28913,28912,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12727,"Neutro",								6,32,2,nil,28912,28913,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
+ {nil,												12738,"Neutro",								6,33,2,nil,28913,29053,nil,nil,nil}, 
+ {nil,												12742,"Neutro",								6,34,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12743,"Neutro",								6,35,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12744,"Neutro",								6,36,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12745,"Neutro",								6,37,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12746,"Neutro",								6,38,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12747,"Neutro",								6,39,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12748,"Neutro",								6,40,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12749,"Neutro",								6,41,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12750,"Neutro",								6,42,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12739,"Neutro",								6,43,2,nil,29053,29053,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12751,"Neutro",								6,44,2,nil,29053,28913,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
+ {nil,												12754,"Neutro",								6,45,2,nil,28914,28914,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12755,"Neutro",								6,46,2,nil,28914,29077,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
+ {nil,												12756,"Neutro",								6,47,2,nil,29077,28914,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
+ {nil,												12757,"Neutro",								6,48,2,nil,28914,28444,nil,nil,"Al Completar esta misión recibirás como recompensa 3 punto de talento"}, 
+ {nil,												12778,"Neutro",								6,49,2,nil,28444,29110,nil,nil,nil}, 
+ {nil,												12779,"Neutro",								6,50,2,nil,29110,29110,nil,nil,"Al Completar esta misión recibirás como recompensa 6 punto de talento"}, 
+ {nil,												12800,"Neutro",								6,51,2,nil,29110,31082,nil,nil,nil}, 
+ {nil,												12801,"Neutro",								6,52,2,nil,31082,29173,nil,nil,"Esta misión puede presentar problema por el eventual, tiene la opción de autocompletable, se tiene que abandonar la misión |n-ReTomarla |n-Hablar con el NPC Alto señor Darion Mograine y seleccionar la opción |n-No deseo iniciar el eventual para que la autocomplete"}, 
+ {nil,												13165,"Neutro",								6,53,2,nil,29173,31084,nil,nil,nil}, 
+ {nil,												13166,"Neutro",								6,54,2,nil,31084,31084,nil,nil,nil}, 
+ {nil,												13188,"Neutro",								6,55,2,nil,31084,29611,nil,nil,nil}, 
+ {nil,												13189,"Neutro",								6,56,2,nil,31084,4949,nil,nil,nil}, 
 
 
 -- CADENA DE MISIONES PARA ESPADA DE ÉBANO 
@@ -772,27 +772,27 @@ GMGenie.MisionesTabla = {
 -- CADENA DE MISIONES PARA ESPADA DE ÉBANO 
 
  {"¡Se llevaron a nuestros hombres!",				12843,"Neutro",								2,1,1,nil,29473,29473,29473,98958,nil},
- {"Ningún goblin se queda atrás",					12846,"Neutro",								2,2,1,nil,29473,"Lok'lira la vieja bruja",98958,99762,nil},
- {"El trato de la vieja bruja",						12841,"Neutro",								2,3,1,nil,"Lok'lira la vieja bruja","Lok'lira la vieja bruja",99762,99762,nil},
- {"Mildred la Cruel",								12905,"Neutro",								2,4,1,nil,"Lok'lira la vieja bruja","Mildred la Cruel",99762,113839,nil},
- {"Disciplina",										12906,"Neutro",								2,5,1,nil,"Mildred la Cruel","Mildred la Cruel",113839,113839,nil},
- {"Castigos ejemplares",							12907,"Neutro",								2,6,1,nil,"Mildred la Cruel","Mildred la Cruel",113839,113839,nil},
- {"Un prisionero concreto",							12908,"Neutro",								2,7,1,nil,"Mildred la Cruel","Lok'lira la vieja bruja",113839,99762,nil},
- {"Un cambio de escenario",							12921,"Neutro",								2,8,1,nil,"Lok'lira la vieja bruja","Lok'lira la vieja bruja",99762,2593,nil},
- {"¿Es ese tu goblin?",								12969,"Neutro",								2,9,1,nil,"Lok'lira la Vieja Bruja","Lok'lira la Vieja Bruja",2593,2593,nil},
- {"El Encuentro hyldnir",							12970,"Neutro",								2,10,1,nil,"Lok'lira la Vieja Bruja","Lok'lira la Vieja Bruja",2593,2593,nil},
- {"Enfrentarse a todos los retos",					12971,"Neutro",								2,11,1,nil,"Lok'lira la Vieja Bruja","Lok'lira la Vieja Bruja",2593,2593,nil},
- {"Necesitarás un oso",								12972,"Neutro",								2,12,1,nil,"Lok'lira la Vieja Bruja","Brijana",2593,110305,nil},
- {"A lomos de la osa",								12851,"Neutro",								2,13,1,nil,"Brijana","Brijana",110305,110305,nil},
- {"Corazón helado",									12856,"Neutro",								2,14,1,nil,"Brijana","Brijana",110305,110305,nil},
- {"Demostrar el valor",								13063,"Neutro",								2,15,1,nil,"Brijana","Astrid Bjornrittar",110305,109005,nil},
- {"Hacer un arnés",									12900,"Neutro",								2,16,1,nil,"Astrid Bjornrittar","Astrid Bjornrittar",109005,109005,nil},
- {"La última de su raza",							12983,"Neutro",								2,17,1,nil,"Astrid Bjornrittar","Astrid Bjornrittar",109005,109005,nil},
- {"El calentamiento",								12996,"Neutro",								2,18,1,nil,"Astrid Bjornrittar","Astrid Bjornrittar",109005,109005,nil},
- {"Al foso",										12997,"Neutro",								2,19,1,nil,"Astrid Bjornrittar","Astrid Bjornrittar",109005,109005,nil},
- {"Prepárate para la gloria",						13061,"Neutro",								2,20,1,nil,"Astrid Bjornrittar","Lok'lira la Vieja Bruja",109005,2593,nil},
- {"El regalo de despedida de Lok'lira",				13062,"Neutro",								2,21,1,nil,"Lok'lira la Vieja Bruja","Gretta la Mediadora",2593,104990,nil},
- {"El drakkensryd",									12886,"Neutro",								2,22,1,nil,"Gretta la Mediadora","Thorim",104990,97128,nil},
+ {"Ningún goblin se queda atrás",					12846,"Neutro",								2,2,1,nil,29473,29975,98958,99762,nil},
+ {"El trato de la vieja bruja",						12841,"Neutro",								2,3,1,nil,29975,29975,99762,99762,nil},
+ {29885,								12905,"Neutro",								2,4,1,nil,29975,29885,99762,113839,nil},
+ {"Disciplina",										12906,"Neutro",								2,5,1,nil,29885,29885,113839,113839,nil},
+ {"Castigos ejemplares",							12907,"Neutro",								2,6,1,nil,29885,29885,113839,113839,nil},
+ {"Un prisionero concreto",							12908,"Neutro",								2,7,1,nil,29885,29975,113839,99762,nil},
+ {"Un cambio de escenario",							12921,"Neutro",								2,8,1,nil,29975,29975,99762,2593,nil},
+ {"¿Es ese tu goblin?",								12969,"Neutro",								2,9,1,nil,29975,29975,2593,2593,nil},
+ {"El Encuentro hyldnir",							12970,"Neutro",								2,10,1,nil,29975,29975,2593,2593,nil},
+ {"Enfrentarse a todos los retos",					12971,"Neutro",								2,11,1,nil,29975,29975,2593,2593,nil},
+ {"Necesitarás un oso",								12972,"Neutro",								2,12,1,nil,29975,29592,2593,110305,nil},
+ {"A lomos de la osa",								12851,"Neutro",								2,13,1,nil,29592,29592,110305,110305,nil},
+ {"Corazón helado",									12856,"Neutro",								2,14,1,nil,29592,29592,110305,110305,nil},
+ {"Demostrar el valor",								13063,"Neutro",								2,15,1,nil,29592,29839,110305,109005,nil},
+ {"Hacer un arnés",									12900,"Neutro",								2,16,1,nil,29839,29839,109005,109005,nil},
+ {"La última de su raza",							12983,"Neutro",								2,17,1,nil,29839,29839,109005,109005,nil},
+ {"El calentamiento",								12996,"Neutro",								2,18,1,nil,29839,29839,109005,109005,nil},
+ {"Al foso",										12997,"Neutro",								2,19,1,nil,29839,29839,109005,109005,nil},
+ {"Prepárate para la gloria",						13061,"Neutro",								2,20,1,nil,29839,29975,109005,2593,nil},
+ {"El regalo de despedida de Lok'lira",				13062,"Neutro",								2,21,1,nil,29975,29796,2593,104990,nil},
+ {"El drakkensryd",									12886,"Neutro",								2,22,1,nil,29796,"Thorim",104990,97128,nil},
  {"Rivalidad fraternal",							13064,"Neutro",								2,23,1,nil,"Thorim","Thorim",97128,97128,nil},
  {"Enmiendas",										12915,"Neutro",								2,24,1,nil,"Thorim","Thorim",97128,97128,nil},
 
@@ -825,30 +825,30 @@ GMGenie.MisionesTabla = {
  
 -- Necesito un texto por aca - "Inicia la cadena con la facción de Corazón frenetico."
 
- {"El cazador a tiempo parcial",					12654,"Neutro",								3,1,1,nil,"Tamara Piñonflojo","Tamara Piñonflojo",28568,28568,6}, 
- {"Seguir la corriente",							12528,"Neutro",								3,2,1,nil,"Rastreador Gekgek","Alto chamán Rakjak",28095,28082,nil}, 
- {"El esclavo del cazador de monos",				12529,"Neutro",								3,3,1,38619,"Alto chamán Rakjak","Alto chamán Rakjak",28082,28082,nil}, 
+ {"El cazador a tiempo parcial",					12654,"Neutro",								3,1,1,nil,28568,28568,nil,nil,6}, 
+ {"Seguir la corriente",							12528,"Neutro",								3,2,1,nil,28095,28082,nil,nil,nil}, 
+ {"El esclavo del cazador de monos",				12529,"Neutro",								3,3,1,38619,28082,28082,nil,nil,nil}, 
 
 -- Necesito un texto por aca - "A partir  de esta misión, se necesita el ítem (Grilletes de Goregek) para continuar la cadena, de no tener el item el NPC  Anciano harkek en Corazón frenético repone el item."
 
- {"Atormentar a los badanudillos",					12530,"Neutro",								3,4,38619,"Goregek el Cazador de gorilas","Alto chamán Rakjak",28214,28082,nil}, 
- {"El aprendiz de cazador de avispas",				12533,"Neutro",								3,5,1,nil,"Alto chamán Rakjak","Alto chamán Rakjak",28082,28082,nil}, 
- {"La reina Zafiro",								12534,"Neutro",								3,6,1,nil,"Anciano Harkek","Alto chamán Rakjak",28138,28082,nil}, 
- {"¡Se dieron a la fuga!",							12532,"Neutro",								3,7,1,nil,"Anciano Harkek","Anciano Harkek",28138,28138,nil}, 
- {"La amenaza subterránea",							12531,"Neutro",								3,8,1,nil,"Anciano Harkek","Alto chamán Rakjak",28138,28082,nil}, 
- {"Malicia en la creación",							12535,"Neutro",								3,9,1,nil,"Alto chamán Rakjak","Alto chamán Rakjak",28082,28082,nil},
+ {"Atormentar a los badanudillos",					12530,"Neutro",								3,4,38619,28214,28082,nil,nil,nil}, 
+ {"El aprendiz de cazador de avispas",				12533,"Neutro",								3,5,1,nil,28082,28082,nil,nil,nil}, 
+ {"La reina Zafiro",								12534,"Neutro",								3,6,1,nil,28138,28082,nil,nil,nil}, 
+ {"¡Se dieron a la fuga!",							12532,"Neutro",								3,7,1,nil,28138,28138,nil,nil,nil}, 
+ {"La amenaza subterránea",							12531,"Neutro",								3,8,1,nil,28138,28082,nil,nil,nil}, 
+ {"Malicia en la creación",							12535,"Neutro",								3,9,1,nil,28082,28082,nil,nil,nil},
 
 
 -- Necesito un texto por aca - "La siguiente misión se entrega al npc Zepik el Cazador de górlocs que se invoca con el silbato entregado en la anterior misión"
  
- {"Un viaje complicado",							12536,"Neutro",								3,10,1,38512,"Alto chamán Rakjak","Zepik el Cazador de górlocs",112691,nil,2}, 
+ {"Un viaje complicado",							12536,"Neutro",								3,10,1,38512,28082,"Zepik el Cazador de górlocs",nil,nil,2}, 
  {"El rayo golpea dos veces sin duda",				12537,"Neutro",								3,11,1,38512,"Zepik el Cazador de górlocs","Zepik el Cazador de górlocs",nil,nil,2}, 
  {"La bruma no está escuchando",					12538,"Neutro",								3,12,1,38512,"Zepik el Cazador de górlocs","Zepik el Cazador de górlocs",nil,nil,2},
- {"A pata",											12539,"Neutro",								3,13,1,38512,"Zepik el Cazador de górlocs","Alto chamán Rakjak",nil,112691,1}, 
+ {"A pata",											12539,"Neutro",								3,13,1,38512,"Zepik el Cazador de górlocs",28082,nil,112691,1}, 
 
 -- Necesito un texto por acá - "Tienes que matar a un crocolisto cercano y tendrás que encontrar a un Oráculo Hablalluvia herido, estará en la orilla del río justo al norte de la colina." 
 
- {"Siguiendo órdenes",								12540,"Neutro",								3,14,1,nil,"Alto chamán Rakjak","Oráculo Hablalluvia herido",112691,101031,nil},
+ {"Siguiendo órdenes",								12540,"Neutro",								3,14,1,nil,28082,"Oráculo Hablalluvia herido",112691,101031,nil},
 
 -- Necesito un texto por aca - "A partir de acá, se realiza la parte de misiones en óraculos."
 
@@ -894,7 +894,7 @@ GMGenie.MisionesTabla = {
 {"Zuluhed el Demente",								10866,"Neutro",								6,8,1,nil,22112,22112,nil,nil,nil},
 {"Aliado del Ala Abisal",							10870,"Neutro",								6,9,1,nil,22112,22113,nil,nil,nil},
 
--- Necesito un texto por acá - "A partir de este lugar la reputación pasa a Neutral, para poder continuar es necesario la Equitación en 300"
+-- Necesito un texto por acá - "A partir de este lugar la reputación pasa a Neutro, para poder continuar es necesario la Equitación en 300"
 
 {"Juramento de sangre de los Ala Abisal",			11012,"Neutro",								6,10,1,nil,22113,22113,nil,nil,nil},
 {"Al servicio de los Illidari",						11013,"Neutro",								6,11,1,nil,2213,23139,nil,nil,nil},
@@ -1087,26 +1087,29 @@ GMGenie.MisionesTabla = {
 
 -- Esta cadena de misiones mas la busqueda de facciones toca revisar NO SE COMPLETO YA QUE SE TIENE QUE REALIZAR LA CADENA CON LOS ID CORRECTOS Y LOS DATOS DE LA GUIA ESTAN MAL
 
-{"El torneo argenta",								0,"Neutro",								4,1,1,nil,nil,"nil",nil,nil,nil},
-{"Dominio del combate cuerpo a cuerpo",				0,"Neutro",								4,2,1,nil,nil,"nil",nil,nil,nil},
-{"Dominio de romper escudo",						0,"Neutro",								4,3,1,nil,nil,"nil",nil,nil,nil},
-{"Dominio de cargar",								0,"Neutro",								4,4,1,nil,nil,"nil",nil,nil,nil},
-{"A la altura del desafío",							0,"Neutro",								4,5,1,nil,nil,"nil",nil,nil,nil},
-{"El desafío del aspirante",						0,"Neutro",								4,6,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de Lunargenta",							0,"Neutro",								4,7,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de Entrañas",							0,"Neutro",								4,8,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de Sen'jin",								0,"Neutro",								4,9,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de Orgrimmar",							0,"Neutro",								4,10,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de El Exodar",							0,"Neutro",								4,11,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de Darnassus",							0,"Neutro",								4,12,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de Gnomeregan",							0,"Neutro",								4,13,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de Forjaz",								0,"Neutro",								4,14,1,nil,nil,"nil",nil,nil,nil},
-{"Valeroso de Ventormenta",							0,"Neutro",								4,15,1,nil,nil,"nil",nil,nil,nil},
-{"La carga del valeroso",							0,"Neutro",								4,16,1,nil,nil,"nil",nil,nil,nil},			
-{"El desafío del valeroso",							0,"Neutro",								4,17,1,nil,nil,"nil",nil,nil,nil},
-{"Se alza un campeón",								0,"Neutro",								4,18,1,nil,nil,"nil",nil,nil,nil},
-{"Eadric el Puro",									0,"Neutro",								4,19,1,nil,nil,"nil",nil,nil,nil},
-{"El finiquiplaga",									0,"Neutro",								4,20,1,nil,nil,"nil",nil,nil,nil},
+{"El torneo argenta",								13667,"Alianza",						4,1,1,nil,33817,33625,nil,nil,nil},
+{"El torneo argenta",								13668,"Horda",							4,2,1,nil,33817,33542,nil,nil,nil},
+{"Dominio del combate cuerpo a cuerpo",				13828,"Alianza",						4,3,1,nil,33625,33625,nil,nil,nil},
+{"Dominio del combate cuerpo a cuerpo",				13829,"Horda",							4,4,1,nil,33542,33542,nil,nil,nil},
+--{"Dominio del combate cuerpo a cuerpo",				0,"Neutro",								4,2,1,nil,nil,nil,nil,nil,nil},
+--{"Dominio de romper escudo",						0,"Neutro",								4,3,1,nil,nil,nil,nil,nil,nil},
+--{"Dominio de cargar",								0,"Neutro",								4,4,1,nil,nil,nil,nil,nil,nil},
+--{"A la altura del desafío",							0,"Neutro",								4,5,1,nil,nil,nil,nil,nil,nil},
+--{"El desafío del aspirante",						0,"Neutro",								4,6,1,nil,nil,nil,nil,nil,nil},
+--{"Valeroso de Lunargenta",							0,"Neutro",								4,7,1,nil,nil,"nil",nil,nil,nil},
+--{"Valeroso de Entrañas",							0,"Neutro",								4,8,1,nil,nil,"nil",nil,nil,nil},
+--{"Valeroso de Sen'jin",								0,"Neutro",								4,9,1,nil,nil,"nil",nil,nil,nil},
+--{"Valeroso de Orgrimmar",							0,"Neutro",								4,10,1,nil,nil,"nil",nil,nil,nil},
+--{"Valeroso de El Exodar",							0,"Neutro",								4,11,1,nil,nil,"nil",nil,nil,nil},
+--{"Valeroso de Darnassus",							0,"Neutro",								4,12,1,nil,nil,"nil",nil,nil,nil},
+--{"Valeroso de Gnomeregan",							0,"Neutro",								4,13,1,nil,nil,"nil",nil,nil,nil},
+--{"Valeroso de Forjaz",								0,"Neutro",								4,14,1,nil,nil,"nil",nil,nil,nil},
+--{"Valeroso de Ventormenta",							0,"Neutro",								4,15,1,nil,nil,"nil",nil,nil,nil},
+--{"La carga del valeroso",							0,"Neutro",								4,16,1,nil,nil,"nil",nil,nil,nil},			
+--{"El desafío del valeroso",							0,"Neutro",								4,17,1,nil,nil,"nil",nil,nil,nil},
+--{"Se alza un campeón",								0,"Neutro",								4,18,1,nil,nil,"nil",nil,nil,nil},
+--{"Eadric el Puro",									0,"Neutro",								4,19,1,nil,nil,"nil",nil,nil,nil},
+--{"El finiquiplaga",									0,"Neutro",								4,20,1,nil,nil,nil,nil,nil,nil},
 
 -- =============================================================================================================================================================================
  
@@ -1133,44 +1136,44 @@ GMGenie.MisionesTabla = {
 
 -- Necesito un texto por acá - "La misión de el aire permanece quieto, se tiene que matar al elite Sumo sacerdote Yath´amon, sin la ayuda del elite para que cuente de forma normal."
 
-{"El aire permanece quieto",						13125,"Neutro",								9,15,1,nil,"El Vigía de Ébano","El Vigía de Ébano",30596,30596,nil},
-{"La piedra que comenzó una revolución",			13130,"Neutro",								9,16,1,nil,"Arquitecto de Cruzada Silas","Arquitecto de Cruzada Silas",30686,30686,nil},
-{"Podría matarnos a todos", 						13135,"Neutro",								9,17,1,nil,"Ingeniero de Cruzada Spitzpatrick","Ingeniero de Cruzada Spitzpatrick",30714,30714,nil},
-{"Dentro del helado corazón de rasganorte", 		13139,"Neutro",								9,18,1,nil,"Padre Gustav","Alto señor Tirion Vadín",30683,30677,nil},
-{"La batalla por el pináculo de los cruzados",		13141,"Neutro",								9,19,1,nil,"Alto señor Tirion Vadín","Padre Gustav",30677,30683,nil},
-{"El pináculo de los cruzados",						13157,"Neutro",								9,20,1,nil,"Padre Gustav","Alto señor Tirion Vadín",30683,31044,nil},
-{"Un relato de valor", 								13068,"Neutro",								9,21,1,nil,"Alto señor Tirion Vadín","Cruzado Bridenbrad",31044,30562,nil},
+{"El aire permanece quieto",						13125,"Neutro",								9,15,1,nil,30596,30596,nil,nil,nil},
+{"La piedra que comenzó una revolución",			13130,"Neutro",								9,16,1,nil,30686,30686,nil,nil,nil},
+{"Podría matarnos a todos", 						13135,"Neutro",								9,17,1,nil,30714,30714,nil,nil,nil},
+{"Dentro del helado corazón de rasganorte", 		13139,"Neutro",								9,18,1,nil,30683,30677,nil,nil,nil},
+{"La batalla por el pináculo de los cruzados",		13141,"Neutro",								9,19,1,nil,30677,30683,nil,nil,nil},
+{"El pináculo de los cruzados",						13157,"Neutro",								9,20,1,nil,30683,30677,nil,nil,nil},
+{"Un relato de valor", 								13068,"Neutro",								9,21,1,nil,30677,30562,nil,nil,nil},
 
 -- Necesito un texto por acá - "Misiones para la Horda y alianza a continuación en cada barco o en su caso en los npc que se encuentran en la parte de abajo del mapa de corona de hielo."
 
-{"El rompecielos", 									13225,"Alianza",							9,22,1,nil,"Alguacil Ivalius","Gran capitán Justin Bartlett",31241,30344,nil},
-{"El Martillo de Orgrim",							13224,"Horda",								9,23,1,nil,"Señor de la guerra Cejafuerte","Atracador del cielo Korm",31240,30824,nil},
-{"Aún queda un héroe", 								13072,"Neutro",								9,24,1,nil,"Cruzado Bridenbrad","Alto señor Tirion Vadín",30562,31044,nil},
-{"El favor del guardián", 							13073,"Neutro",								9,25,1,nil,"Alto señor Tirion Vadín","Guardián Remulos",31044,11832,nil},
-{"Esperanza dentro de la pesadilla esmeralda", 		13074,"Neutro",								9,26,1,nil,"Guardián Remulos","Guardián Remulos",11832,11832,nil},
-{"El favor de Remulos",								13075,"Neutro",								9,27,1,nil,"Guardián Remulos","Cruzado Bridenbrad",11832,30562,nil},
-{"Aún queda tiempo", 								13076,"Neutro",								9,28,1,nil,"Cruzado Bridenbrad","Alto señor Tirion Vadín",30562,31044,nil},
-{"El toque de un aspecto", 							13077,"Neutro",								9,29,1,nil,"Alto señor Tirion Vadín","Alexstrasza la Protectora",31044,26917,nil},
-{"Las lágrimas de Dahlia", 							13078,"Neutro",								9,30,1,nil,"Alexstrasza la Protectora","nAlexstrasza la Protectora",26917,26917,nil},
-{"El favor de Alexstrasza",							13079,"Neutro",								9,31,1,nil,"Alexstrasza la Protectora","Cruzado Bridenbrad",26917,30562,nil},
-{"Aún queda esperanza", 							13080,"Neutro",								9,32,1,nil,"Cruzado Bridenbrad","Alto señor Tirion Vadín",30562,31044,nil},
-{"La voluntad de los naaru", 						13081,"Neutro",								9,33,1,nil,"Alto señor Tirion Vadín","A'dal",31044,18481,nil},
-{"El favor de A'dal", 								13082,"Neutro",								9,34,1,nil,"A'dal","Cruzado Bridenbrad",18481,30562,nil},
-{"Luz en las tinieblas", 							13083,"Neutro",								9,35,1,nil,"Posesiones de Bridenbrad","Alto señor Tirion Vadín",192833,31044,nil},
+{"El rompecielos", 									13225,"Alianza",							9,22,1,nil,31241,30344,nil,nil,nil},
+{"El Martillo de Orgrim",							13224,"Horda",								9,23,1,nil,31240,30824,nil,nil,nil},
+{"Aún queda un héroe", 								13072,"Neutro",								9,24,1,nil,30562,30677,nil,nil,nil},
+{"El favor del guardián", 							13073,"Neutro",								9,25,1,nil,30677,11832,nil,nil,nil},
+{"Esperanza dentro de la pesadilla esmeralda", 		13074,"Neutro",								9,26,1,nil,11832,11832,nil,nil,nil},
+{"El favor de Remulos",								13075,"Neutro",								9,27,1,nil,11832,30562,nil,nil,nil},
+{"Aún queda tiempo", 								13076,"Neutro",								9,28,1,nil,30562,30677,nil,nil,nil},
+{"El toque de un aspecto", 							13077,"Neutro",								9,29,1,nil,30677,26917,nil,nil,nil},
+{"Las lágrimas de Dahlia", 							13078,"Neutro",								9,30,1,nil,26917,26917,nil,nil,nil},
+{"El favor de Alexstrasza",							13079,"Neutro",								9,31,1,nil,26917,30562,nil,nil,nil},
+{"Aún queda esperanza", 							13080,"Neutro",								9,32,1,nil,30562,30677,nil,nil,nil},
+{"La voluntad de los naaru", 						13081,"Neutro",								9,33,1,nil,30677,18481,nil,nil,nil},
+{"El favor de A'dal", 								13082,"Neutro",								9,34,1,nil,18481,30562,nil,nil,nil},
+{"Luz en las tinieblas", 							13083,"Neutro",								9,35,1,nil,30677,"Posesiones de Bridenbrad",nil,192833,nil},
 
 
 -- Necesito un texto por acá - "Al terminar la cadena se queda en la fase 1 correcta para no tener problemas."
 
 -- =====================================================================================================================================================================================
 
-{"Habla con el ogro",								10984,"Neutro",		10,1,1,nil,"V'eru","Grok",22497,22940,"Al completar la cadena recibiremos las diarias para Ogrila y los logros respectivos de tralala ogrila."},
-{"Mog'dorg el Marchito",							10983,"Neutro",		10,2,1,nil,"Grok","Mog'dorg el Marchito",22940,22941,nil},
-{"Grulloc tiene dos calaveras",						10995,"Neutro",		10,3,1,nil,"Mog'dorg el Marchito","Mog'dorg el Marchito",22941,22941,nil},
-{"La arqueta de maggoc",							10996,"Neutro",		10,4,1,nil,"Mog'dorg el Marchito","Mog'dorg el Marchito",22941,22941,nil},
-{"Incluso los gronn tienen confalones",				10997,"Neutro",		10,5,1,nil,"Mog'dorg el Marchito","Mog'dorg el Marchito",22941,22941,nil},
-{"Un asunto grimoso",								10998,"Neutro",		10,6,1,nil,"Mog'dorg el Marchito","Mog'dorg el Marchito",22941,22941,nil},
-{"Dentro del moledor de almas",						11000,"Neutro",		10,7,1,nil,"Mog'dorg el Marchito","Mog'dorg el Marchito",22941,22941,nil},
-{"El cielo de los ogros",							11009,"Neutro",		10,8,1,nil,"Mog'dorg el Marchito","Chu'a'lor",22941,23233,nil},
+{"Habla con el ogro",								10984,"Neutro",		10,1,1,nil,22497,22940,nil,nil,"Al completar la cadena recibiremos las diarias para Ogrila y los logros respectivos de tralala ogrila."},
+{"Mog'dorg el Marchito",							10983,"Neutro",		10,2,1,nil,22940,22941,nil,nil,nil},
+{"Grulloc tiene dos calaveras",						10995,"Neutro",		10,3,1,nil,22941,22941,22941,22941,nil},
+{"La arqueta de maggoc",							10996,"Neutro",		10,4,1,nil,22941,22941,22941,22941,nil},
+{"Incluso los gronn tienen confalones",				10997,"Neutro",		10,5,1,nil,22941,22941,22941,22941,nil},
+{"Un asunto grimoso",								10998,"Neutro",		10,6,1,nil,22941,22941,22941,22941,nil},
+{"Dentro del moledor de almas",						11000,"Neutro",		10,7,1,nil,22941,22941,22941,22941,nil},
+{"El cielo de los ogros",							11009,"Neutro",		10,8,1,nil,22941,"Chu'a'lor",22941,23233,nil},
 {"Una reliquia de ápices",							11058,"Neutro",		10,9,1,nil,"Chu'a'lor","Chu'a'lor",23233,23233,"La misión una reliquia de ápices, presenta falla en los portales, es necesario que se use un buff de sacer como levitar, para que tenga la altura necesaria y activar los portales para completarla."},
 {"Guardián del monumento",							11059,"Neutro",		10,10,1,nil,"Chu'a'lor","Chu'a'lor",23233,23233,nil},
 {"La emanación de la reliquia",						11080,"Neutro",		10,11,1,nil,"Chu'a'lor","Chu'a'lor",23233,23233,nil},
