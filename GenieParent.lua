@@ -64,7 +64,7 @@ local num;
 	end 
 	
 	for k, v in pairs(TestTable) do
-		if(v == " " or v == ".")then 
+		if(v == " " or v == "." or v == ";")then 
 			table.insert(TestTable2, #TestTable2+1, k);
 		end
 	end
@@ -96,6 +96,10 @@ local Maximo = self:len();
 		local PNota4 = "";
 		local PNota5 = "";
 		local PNota6 = "";
+		local PNota7 = "";
+		local PNota8 = "";
+		local PNota9 = "";
+		local PNota10 = "";
 		local Char1 = MineraUpdateTextNoFun(self.sub(self, 1, 52));
 
 		if(Char1 == nil)then 
@@ -121,20 +125,44 @@ local Maximo = self:len();
 		if(Char6 == nil)then 
 		Char6 = MineraUpdateTextNoFun(self.sub(self, Char5+1, self:len()));
 		end 
+		local Char7 = MineraUpdateTextNoFun(self.sub(self, Char6+1, Char6+1+52));
+		if(Char7 == nil)then 
+		Char7 = MineraUpdateTextNoFun(self.sub(self, Char6+1, self:len()));
+		end 
+		local Char8 = MineraUpdateTextNoFun(self.sub(self, Char7+1, Char7+1+52));
+		if(Char8 == nil)then 
+		Char8 = MineraUpdateTextNoFun(self.sub(self, Char7+1, self:len()));
+		end 
+		local Char9 = MineraUpdateTextNoFun(self.sub(self, Char8+1, Char8+1+52));
+		if(Char9 == nil)then 
+		Char9 = MineraUpdateTextNoFun(self.sub(self, Char8+1, self:len()));
+		end 
+		local Char10 = MineraUpdateTextNoFun(self.sub(self, Char9+1, Char9+1+52));
+		if(Char10 == nil)then 
+		Char10 = MineraUpdateTextNoFun(self.sub(self, Char9+1, self:len()));
+		end 
 			PNota1 = self.sub(self, 1, Char1);
 			PNota2 = self.sub(self, Char1+1, Char1+Char2);  
 			PNota3 = self.sub(self, Char1+Char2+1, Char1+Char2+Char3); 
 			PNota4 = self.sub(self, Char1+Char2+Char3+1, Char1+Char2+Char3+Char4); 
 			PNota5 = self.sub(self, Char1+Char2+Char3+Char4+1, Char1+Char2+Char3+Char4+Char5);   
 			PNota6 = self.sub(self, Char1+Char2+Char3+Char4+Char5+1, Char1+Char2+Char3+Char4+Char5+Char6);   
+			PNota7 = self.sub(self, Char1+Char2+Char3+Char4+Char5+Char6+1, Char1+Char2+Char3+Char4+Char5+Char6+Char7);   
+			PNota8 = self.sub(self, Char1+Char2+Char3+Char4+Char5+Char6+Char7+1, Char1+Char2+Char3+Char4+Char5+Char6+Char7+Char8);   
+			PNota9 = self.sub(self, Char1+Char2+Char3+Char4+Char5+Char6+Char7+Char8+1, Char1+Char2+Char3+Char4+Char5+Char6+Char7+Char8+Char9);   
+			PNota10 = self.sub(self, Char1+Char2+Char3+Char4+Char5+Char6+Char7+Char8+Char9+1, Char1+Char2+Char3+Char4+Char5+Char6+Char7+Char8+Char9+Char10);   
 			if(PNota1 ~= "")then PNota1 = "|n"..PNota1; end
 			if(PNota2 ~= "")then PNota2 = "|n"..PNota2; end
 			if(PNota3 ~= "")then PNota3 = "|n"..PNota3; end
 			if(PNota4 ~= "")then PNota4 = "|n"..PNota4; end
 			if(PNota5 ~= "")then PNota5 = "|n"..PNota5; end
 			if(PNota6 ~= "")then PNota6 = "|n"..PNota6; end
+			if(PNota7 ~= "")then PNota7 = "|n"..PNota7; end
+			if(PNota8 ~= "")then PNota8 = "|n"..PNota8; end
+			if(PNota9 ~= "")then PNota9 = "|n"..PNota9; end
+			if(PNota10 ~= "")then PNota10 = "|n"..PNota10; end
 			
-			nota = "|n|n|cFFFFC900Nota Importante:|n|cFFFFFFFF"..PNota1..PNota2..PNota3..PNota4..PNota5..PNota6.."|n|r";
+			nota = "|n|n|cFFFFC900Nota Importante:|n|cFFFFFFFF"..PNota1..PNota2..PNota3..PNota4..PNota5..PNota6..PNota7..PNota8..PNota9..PNota10.."|n|r";
 	else 
 			nota = "|n|n|cFFFFC900Nota Importante:|n|n|cFFFFFFFF"..self.."|n|r";
 	end 
