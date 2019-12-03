@@ -451,24 +451,24 @@ GMGenie.MisionesTabla = {
 {"Escrito sobre divinidad",							1647,"Alianza",								2,4,110,nil,6179,6179,nil,nil,nil},
 {"Escrito sobre divinidad",							1648,"Alianza",								2,5,110,nil,6175,6175,nil,nil,nil},
 {"Escrito sobre divinidad",							1778,"Alianza",								2,5,110,nil,6175,6179,nil,nil,nil},
-{"Escrito sobre divinidad",							1779,"Alianza",								2,7,110,nil,6179,6178,1775,1776,nil,"En esta misión te entrega el Símbolo de la vida ID 6866"},
-{"Escrito sobre divinidad",							1783,"Alianza",								2,8,110,nil,6178,6177,1776,6129,nil,"En esta misión se tiene que utiliza el Símbolo de vida en el npc"},
-{"Escrito sobre divinidad",							1784,"Alianza",								2,9,110,nil,6177,6178,6129,1776,nil},
-{"Escrito sobre divinidad",							1785,"Alianza",								2,10,110,nil,6178,6179,1776,1775,"Al completar la misión aprenderás Redención."},
+{"Escrito sobre divinidad",							1779,"Alianza",								2,7,110,nil,6179,6178,nil,nil,nil,"En esta misión te entrega el Símbolo de la vida ID 6866"},
+{"Escrito sobre divinidad",							1783,"Alianza",								2,8,110,nil,6178,6177,nil,nil,nil,"En esta misión se tiene que utiliza el Símbolo de vida en el npc"},
+{"Escrito sobre divinidad",							1784,"Alianza",								2,9,110,nil,6177,6178,nil,nil,nil},
+{"Escrito sobre divinidad",							1785,"Alianza",								2,10,110,nil,6178,6179,nil,nil,"Al completar la misión aprenderás Redención."},
 
 -- REDENCIÓN DRAENEI
 
-{"Jol",												10366,"Alianza",							3,1,110,nil,17483,17509,84577,63007,nil},
-{"Redención",										9598,"Alianza",								3,2,110,nil,17509,17509,63007,63007,nil},
-{"Redención",										9600,"Alianza",								3,3,110,nil,17509,17509,63007,63007,"Al completar la misión aprenderás Redención."},
+{"Jol",												10366,"Alianza",							3,1,110,nil,17483,17509,nil,nil,nil},
+{"Redención",										9598,"Alianza",								3,2,110,nil,17509,17509,nil,nil,nil},
+{"Redención",										9600,"Alianza",								3,3,110,nil,17509,17509,nil,nil,"Al completar la misión aprenderás Redención."},
 
 -- REDENCIÓN ELFO DE SANGRE
 
-{"El llamamiento del Lord caballero Sangrevalor",	9677,"Horda",								4,1,110,nil,16275,17717,56983,63503,nil},
-{"La primera prueba",								9678,"Horda",								4,2,110,nil,17717,17717,63503,63503,nil},
-{"Un estudio sobre el poder",						9681,"Horda",								4,3,110,nil,17717,17718,63503,96976,nil},
-{"Buscando la Luz",									9684,"Horda",								4,4,110,nil,17718,17717,96976,63503,nil},
-{"Redimir a los muertos",							9685,"Horda",								4,5,110,nil,17717,17717,63503,63503,nil},
+{"El llamamiento del Lord caballero Sangrevalor",	9677,"Horda",								4,1,110,nil,16275,17717,nil,nil,nil},
+{"La primera prueba",								9678,"Horda",								4,2,110,nil,17717,17717,nil,nil,nil},
+{"Un estudio sobre el poder",						9681,"Horda",								4,3,110,nil,17717,17718,nil,nil,nil},
+{"Buscando la Luz",									9684,"Horda",								4,4,110,nil,17718,17717,nil,nil,nil},
+{"Redimir a los muertos",							9685,"Horda",								4,5,110,nil,17717,17717,nil,nil,nil},
 
 -- ===========================================================================================================================================================================================================================================================
 
@@ -478,48 +478,48 @@ GMGenie.MisionesTabla = {
 
 -- DRAENEI
 
-{"La llamada de la tierra", 						9449,"Alianza",								1,1,106,nil,17089,17087,59513,59483,nil},
-{"La llamada de la tierra", 						9450,"Alianza",								1,2,106,nil,17087,17087,59483,59483,nil},
-{"La llamada de la tierra", 						9451,"Alianza",								1,3,106,nil,17087,17089,59483,59513,nil},
+{"La llamada de la tierra", 						9449,"Alianza",								1,1,106,nil,17089,17087,nil,nil,nil},
+{"La llamada de la tierra", 						9450,"Alianza",								1,2,106,nil,17087,17087,nil,nil,nil},
+{"La llamada de la tierra", 						9451,"Alianza",								1,3,106,"-1",17087,17089,nil,nil,nil},
 
 -- CADENA PARA LOS ORCOS
 
-{"La llamada de la tierra",							1516,"Horda",								2,1,106,nil,5887,5887,3417,3417,nil},
-{"La llamada de la tierra",							1517,"Horda",								2,2,106,nil,5887,5891,3417,3423,nil},
-{"La llamada de la tierra",							1518,"Horda",								2,3,106,nil,5891,5887,3423,3417,nil},
+{"La llamada de la tierra",							1516,"Horda",								2,1,106,nil,5887,5887,nil,nil,nil},
+{"La llamada de la tierra",							1517,"Horda",								2,2,106,nil,5887,5891,nil,nil,nil},
+{"La llamada de la tierra",							1518,"Horda",								2,3,106,"-1",5891,5887,nil,nil,nil},
 
 -- CADENA PARA LOS TROL
 
-{"La llamada de la tierra",							1516,"Horda",								3,1,106,nil,5887,5887,3417,3417,nil},
-{"La llamada de la tierra",							1517,"Horda",								3,2,106,nil,5887,5891,3417,3423,nil},
-{"La llamada de la tierra",							1518,"Horda",								3,3,106,nil,5891,5887,3423,3417,nil},
+{"La llamada de la tierra",							1516,"Horda",								3,1,106,nil,5887,5887,nil,nil,nil},
+{"La llamada de la tierra",							1517,"Horda",								3,2,106,nil,5887,5891,nil,nil,nil},
+{"La llamada de la tierra",							1518,"Horda",								3,3,106,"-1",5891,5887,nil,nil,nil},
 
 -- CADENA PARA LOS TAUREN
 
-{"La llamada de la tierra",							1519,"Horda",								4,1,106,nil,5888,5888,24666,24666,nil},
-{"La llamada de la tierra",							1520,"Horda",								4,2,106,nil,5888,5891,24666,3423,nil},
-{"La llamada de la tierra",							1521,"Horda",								4,3,106,nil,5891,5888,3423,24666,nil},
+{"La llamada de la tierra",							1519,"Horda",								4,1,106,nil,5888,5888,nil,nil,nil},
+{"La llamada de la tierra",							1520,"Horda",								4,2,106,nil,5888,5891,nil,nil,nil},
+{"La llamada de la tierra",							1521,"Horda",								4,3,106,"-1",5891,5888,nil,nil,nil},
  
 -- =========== TOTEM DE AIRE
 
 -- CADENA PARA LOS DRAENEI
 
-{"La llamada del aire",								9551,"Alianza",								1,1,107,nil,17219,17204,61958,61719,nil},
-{"La llamada del aire",								9552,"Alianza",								1,2,107,nil,17204,17431,61719,85977,nil},
-{"La llamada del aire",								9553,"Alianza",								1,3,107,nil,17431,17435,85977,31749,nil},
-{"La llamada del aire",								9554,"Alianza",								1,4,107,nil,17435,17204,31749,61719,nil},
+{"La llamada del aire",								9551,"Alianza",								1,1,107,nil,17219,17204,nil,nil,nil},
+{"La llamada del aire",								9552,"Alianza",								1,2,107,nil,17204,17431,nil,nil,nil},
+{"La llamada del aire",								9553,"Alianza",								1,3,107,nil,17431,17435,nil,nil,nil},
+{"La llamada del aire",								9554,"Alianza",								1,4,107,"-1",17435,17204,nil,nil,nil},
 
 -- CADENA DE MISIÓN PARA LOS ORCOS
 
-{"La llamada del aire",								1531,"Horda",								2,1,107,nil,5892,5905,3418,21167,nil},
+{"La llamada del aire",								1531,"Horda",								2,1,107,"-1",5892,5905,nil,nil,nil},
 
 -- CADENA DE MISIÓN PARA LOS TROL
 
-{"La llamada del aire",								1531,"Horda",								3,1,107,nil,5892,5905,3418,21167,nil},
+{"La llamada del aire",								1531,"Horda",								3,1,107,"-1",5892,5905,nil,nil,nil},
 
 -- CADENA DE MISIÓN PARA LOS TAUREN
 
-{"La llamada del aire",								1532,"Horda",								4,1,107,nil,5906,5905,24707,21167,nil},
+{"La llamada del aire",								1532,"Horda",								4,1,107,"-1",5906,5905,nil,nil,nil},
  
 -- =========== TOTEM DE AGUA
 
@@ -530,7 +530,7 @@ GMGenie.MisionesTabla = {
 {"La llamada del agua",								9503,"Alianza",								1,3,108,nil,17275,17275,62043,62043,nil},
 {"La llamada del Agua",								9504,"Alianza",								1,4,108,nil,17275,17275,62043,62043,nil},
 {"La llamada del agua",								9508,"Alianza",								1,5,108,nil,17275,17275,62043,62043,nil},
-{"La llamada del agua",								9509,"Alianza",								1,6,108,nil,17275,17204,62043,61719,nil},
+{"La llamada del agua",								9509,"Alianza",								1,6,108,"-1",17275,17204,62043,61719,nil},
 
 -- CADENA PARA LOS ORCOS
 
@@ -540,19 +540,19 @@ GMGenie.MisionesTabla = {
 {"La llamada del agua",								1536,"Horda",								2,4,108,nil,5899,5899,5899,5899,nil},
 {"La llamada del agua",								1534,"Horda",								2,5,108,nil,5899,5899,5899,5899,nil},
 {"La llamada del agua",								220,"Horda",								2,6,108,nil,5899,5901,5899,5901,nil},
-{"La llamada del agua",								63,"Horda",									2,7,108,nil,5901,"Blandón de Siemprefuente",5901,113791,nil},
+{"La llamada del agua",								63,"Horda",									2,7,108,nil,5901,"Blandón de Siemprefuente",nil,113791,nil},
 {"La llamada del agua",								100,"Horda",								2,8,108,nil,"Blandón de Siemprefuente",5895,113791,5895,nil},
 {"La llamada del agua",								96,"Horda",									2,9,108,nil,5895,5901,5895,5901,nil},
 
 -- CADENA PARA LOS TROL
 
-{"La llamada del agua",								2985,"Horda",								3,1,108,nil,3173,5901,3173,5901,nil},
-{"La llamada del agua",								1530,"Horda",								3,2,108,nil,5901,5899,5901,5899,nil},
-{"La llamada del agua",								1535,"Horda",								3,3,108,nil,5899,5899,5899,5899,nil},
-{"La llamada del agua",								1536,"Horda",								3,4,108,nil,5899,5899,5899,5899,nil},
-{"La llamada del agua",								1534,"Horda",								3,5,108,nil,5899,5899,5899,5899,nil},
-{"La llamada del agua",								220,"Horda",								3,6,108,nil,5899,5901,5899,5901,nil},
-{"La llamada del agua",								63,"Horda",									3,7,108,nil,5901,"Blandón de Siemprefuente",5901,113791,nil},
+{"La llamada del agua",								2985,"Horda",								3,1,108,nil,3173,5901,nil,nil,nil},
+{"La llamada del agua",								1530,"Horda",								3,2,108,nil,5901,5899,nil,nil,nil},
+{"La llamada del agua",								1535,"Horda",								3,3,108,nil,5899,5899,nil,nil,nil},
+{"La llamada del agua",								1536,"Horda",								3,4,108,nil,5899,5899,nil,nil,nil},
+{"La llamada del agua",								1534,"Horda",								3,5,108,nil,5899,5899,nil,nil,nil},
+{"La llamada del agua",								220,"Horda",								3,6,108,nil,5899,5901,nil,nil,nil},
+{"La llamada del agua",								63,"Horda",									3,7,108,nil,5901,"Blandón de Siemprefuente",nil,113791,nil},
 {"La llamada del agua",								100,"Horda",								3,8,108,nil,"Blandón de Siemprefuente",5895,113791,5895,nil},
 {"La llamada del agua",								96,"Horda",									3,9,108,nil,5895,5901,5895,5901,nil},
 
@@ -572,21 +572,21 @@ GMGenie.MisionesTabla = {
 
 -- CADENA PARA LOS DRAENEI
 
-{"La llamada del fuego",							9462,"Alianza",1,1,109,nil,17219,17212,nil,nil,nil},
-{"La llamada del fuego",							9464,"Alianza",1,2,109,nil,17212,17205,nil,nil,nil},
-{"La llamada del fuego",							9465,"Alianza",1,3,109,nil,17205,17205,nil,nil,nil},
-{"La llamada del fuego",							9467,"Alianza",1,4,109,nil,17205,17205,nil,nil,nil},
-{"La llamada del fuego",							9468,"Alianza",1,5,109,nil,17205,17212,nil,nil,nil},
-{"La llamada del fuego",							9461,"Alianza",1,6,109,nil,17212,17468,nil,nil,nil},
-{"La llamada del fuego",							9555,"Alianza",1,7,109,nil,17468,17204,nil,nil,nil},
+{"La llamada del fuego",							9462,"Alianza",								1,1,109,nil,17219,17212,nil,nil,nil},
+{"La llamada del fuego",							9464,"Alianza",								1,2,109,nil,17212,17205,nil,nil,nil},
+{"La llamada del fuego",							9465,"Alianza",								1,3,109,nil,17205,17205,nil,nil,nil},
+{"La llamada del fuego",							9467,"Alianza",								1,4,109,nil,17205,17205,nil,nil,nil},
+{"La llamada del fuego",							9468,"Alianza",								1,5,109,nil,17205,17212,nil,nil,nil},
+{"La llamada del fuego",							9461,"Alianza",								1,6,109,nil,17212,17468,nil,nil,nil},
+{"La llamada del fuego",							9555,"Alianza",								1,7,109,nil,17468,17204,nil,nil,nil},
 
 -- CADENA PARA LOS ORCOS
 
-{"La llamada del fuego",							1522,"Horda",2,1,109,nil,3173,5907,nil,nil,nil},
-{"La llamada del fuego",							1524,"Horda",2,2,109,nil,5907,5900,nil,nil,nil},
-{"La llamada del fuego",							1525,"Horda",2,3,109,nil,5900,5900,nil,nil,nil},
-{"La llamada del fuego",							1526,"Horda",2,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
-{"La llamada del fuego",							1527,"Horda",2,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
+{"La llamada del fuego",							1522,"Horda",								2,1,109,nil,3173,5907,nil,nil,nil},
+{"La llamada del fuego",							1524,"Horda",								2,2,109,nil,5907,5900,nil,nil,nil},
+{"La llamada del fuego",							1525,"Horda",								2,3,109,nil,5900,5900,nil,nil,nil},
+{"La llamada del fuego",							1526,"Horda",								2,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
+{"La llamada del fuego",							1527,"Horda",								2,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
 
 -- CADENA PARA LOS TROL
 

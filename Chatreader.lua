@@ -348,7 +348,7 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 		end 
         
 		if string.match(arg1, "Boss Muerto") then 
-		-- [Boss Muerto]: Nombre y su grupo han matado al boss [The Lich King] !!!
+		-- [Boss Muerto]: |cffff0000Nombre y su grupo han matado al boss |CFF18BE00[The Lich King] !!!
 		-- testo = string.gsub(testo, " y su grupo han matado al boss ", " "); 
 			local Boss = "Desconocido";
 			local nameb;
@@ -381,21 +381,27 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 					nameb = ve; 
 				end 
 			end  
-		--	nameb = splits(nameb, " "); 
+		--	nameb = splits(nameb, " ");    cffff0000 
 			nameb = string.gsub(nameb, "Blood-Queen Lana'thel", "");
+			nameb = string.gsub(nameb, "Blood", "");
+			nameb = string.gsub(nameb, "-", "");
 			nameb = string.gsub(nameb, "Sindragosa", "");
 			nameb = string.gsub(nameb, "The Lich King", "");
 			nameb = string.gsub(nameb, "Queen Lana'thel", "");
 			nameb = string.gsub(nameb, "Professor Putricide", "");
 			nameb = string.gsub(nameb, "Halion", "");
 			nameb = string.gsub(nameb, " !!!", "");
-		--	nameb = string.gsub(nameb, "[", " ");
-			--nameb = string.gsub(nameb, "]", " ");
-			nameb = string.gsub(nameb, " y su grupo han matado al boss ", " ");
+		--	nameb = string.gsub(nameb, "|r", "");
+		 --wv	nameb = string.gsub(nameb, textodeproba, "");
+		 	nameb = string.gsub(nameb, " |CFF18BE00 ", "");
+		 	nameb = string.gsub(nameb, "cffff0000", "");
+			--nameb = string.gsub(nameb, "]", " ")  
+			-- CFF18BE00
+			nameb = string.gsub(nameb, " y su grupo han matado al boss ", "");
 			
 			local namex;
 			
-		 	namex = splits(nameb, " "); 
+		 	namex = splits(nameb, "|"); 
 			
 			-- nameb = splits(nameb, " y "); 
 			
