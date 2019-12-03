@@ -311,17 +311,17 @@ GMGenie.MisionesTabla = {
 
 {"El camino del cazador",							6066,"Horda",								6,1,114,nil,3038,3065,nil,nil,"Disponible a nivel 10"},
 {"Domesticar la bestia",							6061,"Horda",								6,2,114,nil,3065,3065,nil,nil,nil},
-{"Domesticar la bestia",							6087,"Horda",								6,3,114,nil,3065,3065,26905,26905,nil},
-{"Domesticar la bestia",							6088,"Horda",								6,4,114,nil,3065,3065,26905,26905,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Domesticar la bestia",							6089,"Horda",								6,5,114,nil,3065,3039,26905,26756,"Aprenderas a alimentar y revivir a tu mascota"},
+{"Domesticar la bestia",							6087,"Horda",								6,3,114,nil,3065,3065,nil,nil,nil},
+{"Domesticar la bestia",							6088,"Horda",								6,4,114,nil,3065,3065,nil,nil,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Domesticar la bestia",							6089,"Horda",								6,5,114,nil,3065,3039,nil,nil,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- CADENA PARA ELFOS DE SANGRE
 
-{"Busca a los errantes",							9617,"Horda",								7,1,114,nil,16271,15399,56980,55355,"Disponible a nivel 10"},
-{"Domesticar la bestia",							9484,"Horda",								7,2,114,nil,15399,15399,55355,55355,nil},
-{"Domesticar la bestia",							9486,"Horda",								7,3,114,nil,15399,15399,55355,55355,nil},
-{"Domesticar la bestia",							9485,"Horda",								7,4,114,nil,15399,15399,55355,55355,"Aprenderas a llamar, domesticar y retirar tu mascota"},
-{"Doma de bestias",									9673,"Horda",								7,5,114,nil,15399,16675,55355,57665,"Aprenderas a alimentar y revivir a tu mascota"},
+{"Busca a los errantes",							9617,"Horda",								7,1,114,nil,16271,15399,nil,nil,"Disponible a nivel 10"},
+{"Domesticar la bestia",							9484,"Horda",								7,2,114,nil,15399,15399,nil,nil,nil},
+{"Domesticar la bestia",							9486,"Horda",								7,3,114,nil,15399,15399,nil,nil,nil},
+{"Domesticar la bestia",							9485,"Horda",								7,4,114,nil,15399,15399,nil,nil,"Aprenderas a llamar, domesticar y retirar tu mascota"},
+{"Doma de bestias",									9673,"Horda",								7,5,114,nil,15399,16675,nil,nil,"Aprenderas a alimentar y revivir a tu mascota"},
 
 -- ============================================================================================================================================================================
  
@@ -331,48 +331,48 @@ GMGenie.MisionesTabla = {
 
 -- CADENA PARA HUMANOS 
 
-{"El isleño",										1718,"Alianza",								1,1,112,nil,5479,6236,79779,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",								1,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								1,1,112,nil,5479,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								1,2,112,nil,6236,6236,nil,nil,nil},
 
 -- CADENA PARA ENANOS
 
-{"El isleño",										1718,"Alianza",								2,1,112,nil,5113,6236,2019,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",								2,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								2,1,112,nil,5113,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								2,2,112,nil,6236,6236,nil,nil,nil},
 
 -- CADENA PARA GNOMOS
 
-{"El isleño",										1718,"Alianza",								3,1,112,nil,5113,6236,2019,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",								3,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								3,1,112,nil,5113,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								3,2,112,nil,6236,6236,nil,nil,nil},
 
 -- CADENA PARA ELFOS DE LA NOCHE
 
-{"El isleño",										1718,"Alianza",								4,1,112,nil,7315,6236,46809,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",								4,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								4,1,112,nil,7315,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								4,2,112,nil,6236,6236,nil,nil,nil},
 
 -- CADENA PARA DRAENEI
 
-{"El isleño",										1718,"Alianza",								5,1,112,nil,5479,6236,79779,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Alianza",								5,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Alianza",								5,1,112,nil,5479,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Alianza",								5,2,112,nil,6236,6236,nil,nil,nil},
 
 -- CADENA PARA NO MUERTOS
 
-{"El isleño",										1718,"Horda",								6,1,112,nil,4595,6236,38128,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Horda",								6,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Horda",								6,1,112,nil,4595,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Horda",								6,2,112,nil,6236,6236,nil,nil,nil},
 
 -- CADENA PARA ORCOS
 
-{"El isleño",										1718,"Horda",								7,1,112,nil,3354,6236,7443,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Horda",								7,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Horda",								7,1,112,nil,3354,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Horda",								7,2,112,nil,6236,6236,nil,nil,nil},
 
 -- CADENA PARA TAUREN
 
-{"El isleño",										1718,"Horda",								8,1,112,nil,3041,6236,26759,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Horda",								8,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Horda",								8,1,112,nil,3041,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Horda",								8,2,112,nil,6236,6236,nil,nil,nil},
 
 -- CADENA PARA TROL
 
-{"El isleño",										1718,"Horda",								9,1,112,nil,3354,6236,7443,14137,"Disponible a nivel 30"},
-{"La Reyerta",										1719,"Horda",								9,2,112,nil,6236,6236,14137,14137,nil},
+{"El isleño",										1718,"Horda",								9,1,112,nil,3354,6236,nil,nil,"Disponible a nivel 30"},
+{"La Reyerta",										1719,"Horda",								9,2,112,nil,6236,6236,nil,nil,nil},
 
 -- =============================================================================
 
@@ -382,49 +382,49 @@ GMGenie.MisionesTabla = {
 
 -- CADENA PARA HUMANOS
 
-{"Instrucción de Guerrero",							1638,"Alianza",1,1,113,nil,913,5480,80333,79778,"Disponible a nivel 10"},
-{"Bartleby, el Borracho",							1639,"Alianza",1,2,113,nil,6089,6090,79773,79750,nil},
-{"Vence a Bartleby",								1640,"Alianza",1,3,113,nil,6090,6090,79750,79750,nil},
-{"La Jarra de Bartleby",							1665,"Alianza",1,4,113,nil,6090,6089,79750,79773,nil},
+{"Instrucción de Guerrero",							1638,"Alianza",								1,1,113,nil,913,5480,nil,nil,"Disponible a nivel 10"},
+{"Bartleby, el Borracho",							1639,"Alianza",								1,2,113,nil,6089,6090,nil,nil,nil},
+{"Vence a Bartleby",								1640,"Alianza",								1,3,113,nil,6090,6090,nil,nil,nil},
+{"La Jarra de Bartleby",							1665,"Alianza",								1,4,113,nil,6090,6089,nil,nil,nil},
 
 -- CADENA PARA ENANOS
 
-{"Muren Pico Tormenta",								1679,"Alianza",2,1,113,nil,1229,6114,196,2018,"Disponible a nivel 10"},
-{"Vejrek",											1678,"Alianza",2,2,113,nil,6114,6114,2018,2018,nil},
+{"Muren Pico Tormenta",								1679,"Alianza",								2,1,113,nil,1229,6114,nil,nil,"Disponible a nivel 10"},
+{"Vejrek",											1678,"Alianza",								2,2,113,nil,6114,6114,nil,nil,nil},
 
 -- CADENA DE GNOMOS
 
-{"Muren Pico Tormenta",								1679,"Alianza",3,1,113,nil,1229,6114,196,2018,"Disponible a nivel 10"},
-{"Vejrek",											1678,"Alianza",3,2,113,nil,6114,6114,2018,2018,nil},
+{"Muren Pico Tormenta",								1679,"Alianza",								3,1,113,nil,1229,6114,nil,nil,"Disponible a nivel 10"},
+{"Vejrek",											1678,"Alianza",								3,2,113,nil,6114,6114,nil,nil,nil},
 
 -- CADENA PARA DRAENEI
 
-{"La fuerza de uno solo",							9582,"Alianza",4,1,113,nil,17480,17480,62994,62994,"Disponible a nivel 10"},
+{"La fuerza de uno solo",							9582,"Alianza",								4,1,113,nil,17480,17480,nil,nil,"Disponible a nivel 10"},
 
 -- CADENA PARA ELFOS DE LA NOCHE
 
-{"Elanaria",										1684,"Alianza",5,1,113,nil,3598,2151,46184,46394,"Disponible a nivel 10"},
-{"Vorlus Pezuñavil",								1683,"Alianza",5,2,113,nil,4088,4088,49854,49854,nil},
+{"Elanaria",										1684,"Alianza",								5,1,113,nil,3598,2151,nil,nil,"Disponible a nivel 10"},
+{"Vorlus Pezuñavil",								1683,"Alianza",								5,2,113,nil,4088,4088,nil,nil,nil},
 
 -- CADENA PARA NO MUERTO
 
-{"Habla con Dillinger",								1818,"Horda",6,1,113,nil,2131,1496,33720,29796,"Disponible a nivel 10"},
-{"Ulag el cuchilla",								1819,"Horda",6,2,113,nil,1496,1496,29796,29796,nil},
+{"Habla con Dillinger",								1818,"Horda",								6,1,113,nil,2131,1496,nil,nil,"Disponible a nivel 10"},
+{"Ulag el cuchilla",								1819,"Horda",								6,2,113,nil,1496,1496,nil,nil,nil},
 
 -- CADENA PARA ORCOS
 
-{"Uzzek, el veterano",								1505,"Horda",7,1,113,nil,3169,3063,7291,26902,"Disponible a nivel 10"},
-{"Camino de defensa",								1498,"Horda",7,2,113,nil,5810,5810,19732,19732,nil},
+{"Uzzek, el veterano",								1505,"Horda",								7,1,113,nil,3169,3063,nil,nil,"Disponible a nivel 10"},
+{"Camino de defensa",								1498,"Horda",								7,2,113,nil,5810,5810,nil,nil,nil},
 
 -- CADENA PARA TROL
 
-{"Uzzek, el veterano",								1505,"Horda",8,1,113,nil,3169,3063,7291,26902,"Disponible a nivel 10"},
-{"Camino de defensa",								1498,"Horda",8,2,113,nil,5810,5810,19732,19732,nil},
+{"Uzzek, el veterano",								1505,"Horda",								8,1,113,nil,3169,3063,nil,nil,"Disponible a nivel 10"},
+{"Camino de defensa",								1498,"Horda",								8,2,113,nil,5810,5810,nil,nil,nil},
 
 -- CADENA PARA TAUREN
 
-{"Uzzek, el veterano",  							1505,"Horda",9,1,113,nil,3169,3063,7291,26902,"Disponible a nivel 10"},
-{"Camino de defensa",   							1498,"Horda",9,2,113,nil,5810,5810,19732,19732,nil},
+{"Uzzek, el veterano",  							1505,"Horda",9,								1,113,nil,3169,3063,nil,nil,"Disponible a nivel 10"},
+{"Camino de defensa",   							1498,"Horda",9,								2,113,nil,5810,5810,nil,nil,nil},
 
 -- ===========================================================================================================================================================================================================================================================
 
@@ -432,25 +432,25 @@ GMGenie.MisionesTabla = {
 
 -- REDENCIÓN HUMANOS
  
-{"Escrito sobre divinidad",							2998,"Alianza",								1,1,110,nil,927,6171,80325,39536,nil},
-{"Escrito sobre divinidad",							1641,"Alianza",								1,2,110,nil,6171,6171,39536,39536,nil},
+{"Escrito sobre divinidad",							2998,"Alianza",								1,1,110,nil,927,6171,nil,nil,nil},
+{"Escrito sobre divinidad",							1641,"Alianza",								1,2,110,nil,6171,6171,nil,nil,nil},
 --{"Escrito sobre divinidad",							1642,"Alianza",								1,3,110,6775,"Escrito sobre divinidad","Duthorian Rall",nil,6171,"El item se consigue como recompensa de la misión anterior"},
-{"Escrito sobre divinidad",							1643,"Alianza",								1,4,110,nil,6171,6174,39536,79680,nil},
-{"Escrito sobre divinidad",							1644,"Alianza",								1,5,110,nil,6174,6174,79680,79680,nil},
-{"Escrito sobre divinidad",							1780,"Alianza",								1,6,110,nil,6174,6171,79680,39536,nil},
-{"Escrito sobre divinidad",							1781,"Alianza",								1,7,110,nil,6171,6173,39536,39538,"En esta misión te entrega el Símbolo de la vida ID 6866"},
-{"Escrito sobre divinidad",							1786,"Alianza",								1,8,110,nil,6173,6172,39538,81163,"En esta misión se tiene que utiliza el Símbolo de vida en el npc"},
-{"Escrito sobre divinidad",							1787,"Alianza",								1,9,110,nil,6172,6173,81163,39538,nil},
-{"Escrito sobre divinidad",							1788,"Alianza",								1,10,110,nil,6173,6171,39538,39536,"Al completar la misión aprenderás Redención."},
+{"Escrito sobre divinidad",							1643,"Alianza",								1,4,110,nil,6171,6174,nil,nil,nil},
+{"Escrito sobre divinidad",							1644,"Alianza",								1,5,110,nil,6174,6174,nil,nil,nil},
+{"Escrito sobre divinidad",							1780,"Alianza",								1,6,110,nil,6174,6171,nil,nil,nil},
+{"Escrito sobre divinidad",							1781,"Alianza",								1,7,110,nil,6171,6173,nil,nil,"En esta misión te entrega el Símbolo de la vida ID 6866"},
+{"Escrito sobre divinidad",							1786,"Alianza",								1,8,110,nil,6173,6172,nil,nil,"En esta misión se tiene que utiliza el Símbolo de vida en el npc"},
+{"Escrito sobre divinidad",							1787,"Alianza",								1,9,110,nil,6172,6173,nil,nil,nil},
+{"Escrito sobre divinidad",							1788,"Alianza",								1,10,110,nil,6173,6171,nil,nil,"Al completar la misión aprenderás Redención."},
 
 -- REDENCIÓN ENANOS
 
-{"Escrito sobre divinidad",							2997,"Alianza",								2,1,110,nil,1232,6179,194,1775,nil},
-{"Escrito sobre divinidad",							1645,"Alianza",								2,2,110,nil,6179,6179,1775,1775,nil},
+{"Escrito sobre divinidad",							2997,"Alianza",								2,1,110,nil,1232,6179,nil,nil,nil},
+{"Escrito sobre divinidad",							1645,"Alianza",								2,2,110,nil,6179,6179,nil,nil,nil},
 --{"Escrito sobre divinidad",							1646,"Alianza",								2,3,110,6916,"Escrito sobre divinidad","Tiza ForjaBatalla",nil,6179,"El item se consigue como recompensa de la misión anterior"},
-{"Escrito sobre divinidad",							1647,"Alianza",								2,4,110,nil,6179,6179,1775,1775,nil},
-{"Escrito sobre divinidad",							1648,"Alianza",								2,5,110,nil,6175,6175,108,108,nil},
-{"Escrito sobre divinidad",							1778,"Alianza",								2,5,110,nil,6175,6179,108,1775,nil},
+{"Escrito sobre divinidad",							1647,"Alianza",								2,4,110,nil,6179,6179,nil,nil,nil},
+{"Escrito sobre divinidad",							1648,"Alianza",								2,5,110,nil,6175,6175,nil,nil,nil},
+{"Escrito sobre divinidad",							1778,"Alianza",								2,5,110,nil,6175,6179,nil,nil,nil},
 {"Escrito sobre divinidad",							1779,"Alianza",								2,7,110,nil,6179,6178,1775,1776,nil,"En esta misión te entrega el Símbolo de la vida ID 6866"},
 {"Escrito sobre divinidad",							1783,"Alianza",								2,8,110,nil,6178,6177,1776,6129,nil,"En esta misión se tiene que utiliza el Símbolo de vida en el npc"},
 {"Escrito sobre divinidad",							1784,"Alianza",								2,9,110,nil,6177,6178,6129,1776,nil},
