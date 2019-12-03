@@ -346,7 +346,10 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 				 Chronos.scheduleByName('ticketreupdate', 0.5, GMGenie.Tickets.update);
 			end
 		end 
-        if string.match(arg1, "Boss Muerto") then 
+        
+		if string.match(arg1, "Boss Muerto") then 
+		-- [Boss Muerto]: Nombre y su grupo han matado al boss [The Lich King] !!!
+		-- testo = string.gsub(testo, " y su grupo han matado al boss ", " "); 
 			local Boss = "Desconocido";
 			local nameb;
 			local Mensaje = "";
@@ -378,14 +381,33 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 					nameb = ve; 
 				end 
 			end  
-			nameb = splits(nameb, " y "); 
+		--	nameb = splits(nameb, " "); 
+			nameb = string.gsub(nameb, "Blood-Queen Lana'thel", "");
+			nameb = string.gsub(nameb, "Sindragosa", "");
+			nameb = string.gsub(nameb, "The Lich King", "");
+			nameb = string.gsub(nameb, "Queen Lana'thel", "");
+			nameb = string.gsub(nameb, "Professor Putricide", "");
+			nameb = string.gsub(nameb, "Halion", "");
+			nameb = string.gsub(nameb, " !!!", "");
+		--	nameb = string.gsub(nameb, "[", " ");
+			--nameb = string.gsub(nameb, "]", " ");
+			nameb = string.gsub(nameb, " y su grupo han matado al boss ", " ");
 			
-			for k, v in pairs(nameb) do  
+			local namex;
+			
+		 	namex = splits(nameb, " "); 
+			
+			-- nameb = splits(nameb, " y "); 
+			
+			for k, v in pairs(namex) do  
 				if(k == 1)then  
 					Mensaje = "     Vencid"..Genero.." por el grupo de "..v; 
 					break
 				end  
 			end  
+			
+			Mensaje = "     Vencid"..Genero.." por el grupo de "..nameb; 
+			 
 			if(Boss ~= "Desconocido")then 
 				print(" "); 
 				print(sup.."|CFF0AEA00"..Boss.."|r"); 
