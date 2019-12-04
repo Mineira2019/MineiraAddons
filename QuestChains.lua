@@ -1,23 +1,7 @@
 -- CADENA DE REPUTACIÓN PARA HIJOS DE HODIR.
 -- LaunchURL(AUTH_NO_TIME_URL);
 --  GlueDialog_Show("RESET_SERVER_SETTINGS");
-
-
-
-GMGenie.hackURL = "www.wowaura.com"; 
-StaticPopupDialogs["GOPAGINAWOWAURA"] = {
-  text = "test de POPUP",
-  button1 = "Si",
-  button2 = "No",
-  OnAccept = function()
-	--	LaunchURL("www.wowaura.com") 
-  end,
-  timeout = 0,
-  whileDead = true,
-  hideOnEscape = true,
-  preferredIndex = 3,
-};
---			StaticPopup_Show ("GOPAGINAWOWAURA")
+ 
 GMGenie.QuestOpciones = {
  {"|TInterface/GossipFrame/AvailableQuestIcon:10:10|t Appear donde ",1,1},
  {"|TInterface/GossipFrame/ActiveQuestIcon:10:10|t Appear donde ",1,1},
@@ -434,7 +418,7 @@ GMGenie.MisionesTabla = {
  
 {"Escrito sobre divinidad",							2998,"Alianza",								1,1,110,nil,927,6171,nil,nil,nil},
 {"Escrito sobre divinidad",							1641,"Alianza",								1,2,110,nil,6171,6171,nil,nil,nil},
---{"Escrito sobre divinidad",							1642,"Alianza",								1,3,110,6775,"Escrito sobre divinidad","Duthorian Rall",nil,6171,"El item se consigue como recompensa de la misión anterior"},
+{"Escrito sobre divinidad",							1642,"Alianza",								1,3,110,6775,"Escrito sobre divinidad",6171,nil,nil,"El item se consigue como recompensa de la misión anterior"},
 {"Escrito sobre divinidad",							1643,"Alianza",								1,4,110,nil,6171,6174,nil,nil,nil},
 {"Escrito sobre divinidad",							1644,"Alianza",								1,5,110,nil,6174,6174,nil,nil,nil},
 {"Escrito sobre divinidad",							1780,"Alianza",								1,6,110,nil,6174,6171,nil,nil,nil},
@@ -447,7 +431,7 @@ GMGenie.MisionesTabla = {
 
 {"Escrito sobre divinidad",							2997,"Alianza",								2,1,110,nil,1232,6179,nil,nil,nil},
 {"Escrito sobre divinidad",							1645,"Alianza",								2,2,110,nil,6179,6179,nil,nil,nil},
---{"Escrito sobre divinidad",							1646,"Alianza",								2,3,110,6916,"Escrito sobre divinidad","Tiza ForjaBatalla",nil,6179,"El item se consigue como recompensa de la misión anterior"},
+{"Escrito sobre divinidad",							1646,"Alianza",								2,3,110,6916,"Escrito sobre divinidad",6179,nil,nil,"El item se consigue como recompensa de la misión anterior"},
 {"Escrito sobre divinidad",							1647,"Alianza",								2,4,110,nil,6179,6179,nil,nil,nil},
 {"Escrito sobre divinidad",							1648,"Alianza",								2,5,110,nil,6175,6175,nil,nil,nil},
 {"Escrito sobre divinidad",							1778,"Alianza",								2,5,110,nil,6175,6179,nil,nil,nil},
@@ -525,24 +509,24 @@ GMGenie.MisionesTabla = {
 
 -- CADENA PARA LOS DRAENEI
 
-{"La llamada del agua",								9500,"Alianza",								1,1,108,nil,17219,17204,61958,61719,nil},
-{"La llamada del agua",								9501,"Alianza",								1,2,108,nil,17204,17275,61719,62043,nil},
-{"La llamada del agua",								9503,"Alianza",								1,3,108,nil,17275,17275,62043,62043,nil},
-{"La llamada del Agua",								9504,"Alianza",								1,4,108,nil,17275,17275,62043,62043,nil},
-{"La llamada del agua",								9508,"Alianza",								1,5,108,nil,17275,17275,62043,62043,nil},
-{"La llamada del agua",								9509,"Alianza",								1,6,108,"-1",17275,17204,62043,61719,nil},
+{"La llamada del agua",								9500,"Alianza",								1,1,108,nil,17219,17204,nil,nil,nil},
+{"La llamada del agua",								9501,"Alianza",								1,2,108,nil,17204,17275,nil,nil,nil},
+{"La llamada del agua",								9503,"Alianza",								1,3,108,nil,17275,17275,nil,nil,nil},
+{"La llamada del Agua",								9504,"Alianza",								1,4,108,nil,17275,17275,nil,nil,nil},
+{"La llamada del agua",								9508,"Alianza",								1,5,108,nil,17275,17275,nil,nil,nil},
+{"La llamada del agua",								9509,"Alianza",								1,6,108,"-1",17275,17204,nil,nil,nil},
 
 -- CADENA PARA LOS ORCOS
 
-{"La llamada del agua",								2985,"Horda",								2,1,108,nil,3173,5901,8419,13172,nil},
-{"La llamada del agua",								1530,"Horda",								2,2,108,nil,5901,5899,5901,5899,nil},
-{"La llamada del agua",								1535,"Horda",								2,3,108,nil,5899,5899,5899,5899,nil},
-{"La llamada del agua",								1536,"Horda",								2,4,108,nil,5899,5899,5899,5899,nil},
-{"La llamada del agua",								1534,"Horda",								2,5,108,nil,5899,5899,5899,5899,nil},
-{"La llamada del agua",								220,"Horda",								2,6,108,nil,5899,5901,5899,5901,nil},
-{"La llamada del agua",								63,"Horda",									2,7,108,nil,5901,"Blandón de Siemprefuente",nil,113791,nil},
-{"La llamada del agua",								100,"Horda",								2,8,108,nil,"Blandón de Siemprefuente",5895,113791,5895,nil},
-{"La llamada del agua",								96,"Horda",									2,9,108,nil,5895,5901,5895,5901,nil},
+{"La llamada del agua",								2985,"Horda",								2,1,108,nil,3173,5901,nil,nil,nil},
+{"La llamada del agua",								1530,"Horda",								2,2,108,nil,5901,5899,nil,nil,nil},
+{"La llamada del agua",								1535,"Horda",								2,3,108,nil,5899,5899,nil,nil,nil},
+{"La llamada del agua",								1536,"Horda",								2,4,108,nil,5899,5899,nil,nil,nil},
+{"La llamada del agua",								1534,"Horda",								2,5,108,nil,5899,5899,nil,nil,nil},
+{"La llamada del agua",								220,"Horda",								2,6,108,nil,5899,5901,nil,nil,nil},
+{"La llamada del agua",								63,"Horda",									2,7,108,nil,5901,"Blandón de Siemprefuente",nil,nil,nil}, -- 113791
+{"La llamada del agua",								100,"Horda",								2,8,108,nil,"Blandón de Siemprefuente",5895,nil,nil,nil},--113791
+{"La llamada del agua",								96,"Horda",									2,9,108,nil,5895,5901,nil,nil,nil},
 
 -- CADENA PARA LOS TROL
 
@@ -564,7 +548,7 @@ GMGenie.MisionesTabla = {
 {"La llamada del agua",								1536,"Horda",								4,4,108,nil,5899,5899,nil,nil,nil},
 {"La llamada del agua",								1534,"Horda",								4,5,108,nil,5899,5899,nil,nil,nil},
 {"La llamada del agua",								220,"Horda",								4,6,108,nil,5899,5901,nil,nil,nil},
-{"La llamada del agua",								63,"Horda",									4,7,108,nil,5901,nil,5901,"Blandón de Siemprefuente",nil},
+{"La llamada del agua",								63,"Horda",									4,7,108,nil,5901,"Blandón de Siemprefuente",nil,nil,nil},
 {"La llamada del agua",								100,"Horda",								4,8,108,nil,nil,5895,"Manifestación de agua menor",nil,nil},
 {"La llamada del agua",								96,"Horda",									4,9,108,nil,5895,5901,nil,nil,nil},
 
@@ -586,24 +570,24 @@ GMGenie.MisionesTabla = {
 {"La llamada del fuego",							1524,"Horda",								2,2,109,nil,5907,5900,nil,nil,nil},
 {"La llamada del fuego",							1525,"Horda",								2,3,109,nil,5900,5900,nil,nil,nil},
 {"La llamada del fuego",							1526,"Horda",								2,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
-{"La llamada del fuego",							1527,"Horda",								2,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
+{"La llamada del fuego",							1527,"Horda",								2,5,109,nil,"Blandón de la Llama Latente",nil,nil,nil,nil},
 
 -- CADENA PARA LOS TROL
 
-{"La llamada del fuego",							1522,"Horda",3,1,109,nil,3173,5907,nil,nil,nil},
-{"La llamada del fuego",							1524,"Horda",3,2,109,nil,5907,5900,nil,nil,nil},
-{"La llamada del fuego",							1525,"Horda",3,3,109,nil,5900,5900,nil,nil,nil},
-{"La llamada del fuego",							1526,"Horda",3,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
-{"La llamada del fuego",							1527,"Horda",3,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
+{"La llamada del fuego",							1522,"Horda",								3,1,109,nil,3173,5907,nil,nil,nil},
+{"La llamada del fuego",							1524,"Horda",								3,2,109,nil,5907,5900,nil,nil,nil},
+{"La llamada del fuego",							1525,"Horda",								3,3,109,nil,5900,5900,nil,nil,nil},
+{"La llamada del fuego",							1526,"Horda",								3,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
+{"La llamada del fuego",							1527,"Horda",								3,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
 
 
 -- CADENA PARA LOS TAUREN
 
-{"La llamada del fuego",							1523,"Horda",4,1,109,nil,3066,5907,nil,nil,nil},
-{"La llamada del fuego",							1524,"Horda",4,2,109,nil,5907,5900,nil,nil,nil},
-{"La llamada del fuego",							1525,"Horda",4,3,109,nil,5900,5900,nil,nil,nil},
-{"La llamada del fuego",							1526,"Horda",4,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
-{"La llamada del fuego",							1527,"Horda",4,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
+{"La llamada del fuego",							1523,"Horda",								4,1,109,nil,3066,5907,nil,nil,nil},
+{"La llamada del fuego",							1524,"Horda",								4,2,109,nil,5907,5900,nil,nil,nil},
+{"La llamada del fuego",							1525,"Horda",								4,3,109,nil,5900,5900,nil,nil,nil},
+{"La llamada del fuego",							1526,"Horda",								4,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
+{"La llamada del fuego",							1527,"Horda",								4,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
 
 -- ==================================================================================================================================================
 
@@ -771,27 +755,27 @@ GMGenie.MisionesTabla = {
  
 -- CADENA DE MISIONES PARA ESPADA DE ÉBANO 
 
- {"¡Se llevaron a nuestros hombres!",				12843,"Neutro",								2,1,1,nil,29473,29473,29473,98958,nil},
- {"Ningún goblin se queda atrás",					12846,"Neutro",								2,2,1,nil,29473,29975,98958,99762,nil},
- {"El trato de la vieja bruja",						12841,"Neutro",								2,3,1,nil,29975,29975,99762,99762,nil},
- {29885,								12905,"Neutro",								2,4,1,nil,29975,29885,99762,113839,nil},
- {"Disciplina",										12906,"Neutro",								2,5,1,nil,29885,29885,113839,113839,nil},
- {"Castigos ejemplares",							12907,"Neutro",								2,6,1,nil,29885,29885,113839,113839,nil},
- {"Un prisionero concreto",							12908,"Neutro",								2,7,1,nil,29885,29975,113839,99762,nil},
- {"Un cambio de escenario",							12921,"Neutro",								2,8,1,nil,29975,29975,99762,2593,nil},
- {"¿Es ese tu goblin?",								12969,"Neutro",								2,9,1,nil,29975,29975,2593,2593,nil},
- {"El Encuentro hyldnir",							12970,"Neutro",								2,10,1,nil,29975,29975,2593,2593,nil},
- {"Enfrentarse a todos los retos",					12971,"Neutro",								2,11,1,nil,29975,29975,2593,2593,nil},
- {"Necesitarás un oso",								12972,"Neutro",								2,12,1,nil,29975,29592,2593,110305,nil},
- {"A lomos de la osa",								12851,"Neutro",								2,13,1,nil,29592,29592,110305,110305,nil},
- {"Corazón helado",									12856,"Neutro",								2,14,1,nil,29592,29592,110305,110305,nil},
- {"Demostrar el valor",								13063,"Neutro",								2,15,1,nil,29592,29839,110305,109005,nil},
- {"Hacer un arnés",									12900,"Neutro",								2,16,1,nil,29839,29839,109005,109005,nil},
- {"La última de su raza",							12983,"Neutro",								2,17,1,nil,29839,29839,109005,109005,nil},
- {"El calentamiento",								12996,"Neutro",								2,18,1,nil,29839,29839,109005,109005,nil},
- {"Al foso",										12997,"Neutro",								2,19,1,nil,29839,29839,109005,109005,nil},
- {"Prepárate para la gloria",						13061,"Neutro",								2,20,1,nil,29839,29975,109005,2593,nil},
- {"El regalo de despedida de Lok'lira",				13062,"Neutro",								2,21,1,nil,29975,29796,2593,104990,nil},
+ {"¡Se llevaron a nuestros hombres!",				12843,"Neutro",								2,1,1,nil,29473,29473,nil,nil,nil},
+ {"Ningún goblin se queda atrás",					12846,"Neutro",								2,2,1,nil,29473,29975,nil,nil,nil},
+ {"El trato de la vieja bruja",						12841,"Neutro",								2,3,1,nil,29975,29975,nil,nil,nil},
+ {nil,												12905,"Neutro",								2,4,1,nil,29975,29885,nil,nil,nil},
+ {"Disciplina",										12906,"Neutro",								2,5,1,nil,29885,29885,nil,nil,nil},
+ {"Castigos ejemplares",							12907,"Neutro",								2,6,1,nil,29885,29885,nil,nil,nil},
+ {"Un prisionero concreto",							12908,"Neutro",								2,7,1,nil,29885,29975,nil,nil,nil},
+ {"Un cambio de escenario",							12921,"Neutro",								2,8,1,nil,29975,29975,nil,nil,nil},
+ {"¿Es ese tu goblin?",								12969,"Neutro",								2,9,1,nil,29975,29975,nil,nil,nil},
+ {"El Encuentro hyldnir",							12970,"Neutro",								2,10,1,nil,29975,29975,nil,nil,nil},
+ {"Enfrentarse a todos los retos",					12971,"Neutro",								2,11,1,nil,29975,29975,nil,nil,nil},
+ {"Necesitarás un oso",								12972,"Neutro",								2,12,1,nil,29975,29592,nil,nil,nil},
+ {"A lomos de la osa",								12851,"Neutro",								2,13,1,nil,29592,29592,nil,nil,nil},
+ {"Corazón helado",									12856,"Neutro",								2,14,1,nil,29592,29592,nil,nil,nil},
+ {"Demostrar el valor",								13063,"Neutro",								2,15,1,nil,29592,29839,nil,nil,nil},
+ {"Hacer un arnés",									12900,"Neutro",								2,16,1,nil,29839,29839,nil,nil,nil},
+ {"La última de su raza",							12983,"Neutro",								2,17,1,nil,29839,29839,nil,nil,nil},
+ {"El calentamiento",								12996,"Neutro",								2,18,1,nil,29839,29839,nil,nil,nil},
+ {"Al foso",										12997,"Neutro",								2,19,1,nil,29839,29839,nil,nil,nil},
+ {"Prepárate para la gloria",						13061,"Neutro",								2,20,1,nil,29839,29975,nil,nil,nil},
+ {"El regalo de despedida de Lok'lira",				13062,"Neutro",								2,21,1,nil,29975,29796,nil,nil,nil},
  {"El drakkensryd",									12886,"Neutro",								2,22,1,nil,29796,"Thorim",104990,97128,nil},
  {"Rivalidad fraternal",							13064,"Neutro",								2,23,1,nil,"Thorim","Thorim",97128,97128,nil},
  {"Enmiendas",										12915,"Neutro",								2,24,1,nil,"Thorim","Thorim",97128,97128,nil},
@@ -973,10 +957,10 @@ GMGenie.MisionesTabla = {
 {"Recuperar la cantera",							11612,"Neutro",								5,1,1,nil,25292,25292,nil,nil,nil},
 {"Impedir que escapen", 							11617,"Neutro",								5,2,1,nil,25292,25292,nil,nil,nil},
 {"Una visita al comisario",  						11623,"Neutro",								5,3,1,nil,25292,25292,nil,nil,nil},
-{"Homenaje a los ancestros",  						11605,"Neutro",								5,4,1,nil,"Ancestro Atkanok","Ancestro Atkanok",187565,187565,nil},
-{"los espíritus perdidos",  						11607,"Neutro",								5,5,1,nil,"Ancestro Atkanok","Ancestro Atkanok",187565,187565,nil},
-{"Recoger los pedazos",  							11609,"Neutro",								5,6,1,nil,"Ancestro Atkanok","Ancestro Atkanok",187565,187565,nil},
-{"Llevar a los ancestros a casa",  					11610,"Neutro",								5,7,1,nil,"Ancestro Atkanok","Ancestro Atkanok",187565,187565,nil},
+{"Homenaje a los ancestros",  						11605,"Neutro",								5,4,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3519.76:5421.07:40.9974:571","3519.76:5421.07:40.9974:571",nil},
+{"los espíritus perdidos",  						11607,"Neutro",								5,5,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3519.76:5421.07:40.9974:571","3519.76:5421.07:40.9974:571",nil},
+{"Recoger los pedazos",  							11609,"Neutro",								5,6,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3519.76:5421.07:40.9974:571","3519.76:5421.07:40.9974:571",nil},
+{"Llevar a los ancestros a casa",  					11610,"Neutro",								5,7,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3519.76:5421.07:40.9974:571","3519.76:5421.07:40.9974:571",nil},
 {"Las palabras de un padre",  						11620,"Neutro",								5,8,1,nil,25435,25450,nil,nil,nil},
 {"El tridente de Naz'jan",  						11625,"Neutro",								5,9,1,nil,25450,25450,nil,nil,nil},
 {"El emisario",  									11626,"Neutro",								5,10,1,nil,25450,25435,nil,nil,nil},
@@ -998,7 +982,7 @@ GMGenie.MisionesTabla = {
 
 {"No dejes que nada se eche a perder", 				11958,"Neutro",								5,24,1,nil,26194,26194,nil,nil,nil},
 {"Visión espiritual",  								12028,"Neutro",								5,25,1,nil,26595,26595,nil,nil,nil},
-{"El ancestro mana'loa", 							12030,"Neutro",								5,26,1,nil,26595,"Ancestro Mana'loa",nil,188419,nil},
+{"El ancestro mana'loa", 							12030,"Neutro",								5,26,1,nil,26595,"Ancestro Mana'loa",nil,"3145.73:1572.03:164.361:571",nil},
 {"Libertad para los que padecen",  					12031,"Neutro",								5,27,1,nil,"Ancestro Mana'loa","Ancestro Mana'loa",198419,188419,nil},
 {"Conversando con las profundidades", 				12032,"Neutro",								5,28,1,nil,"Ancestro Mana'loa","Toalu'u el Místico",188419,26595,nil},
 {"Signos de importantes disturbios acuáticos", 		12011,"Neutro",								5,29,1,nil,"Trampa para cangrejos destrozada",26245,188364,nil,nil},
@@ -1168,18 +1152,18 @@ GMGenie.MisionesTabla = {
 
 {"Habla con el ogro",								10984,"Neutro",		10,1,1,nil,22497,22940,nil,nil,"Al completar la cadena recibiremos las diarias para Ogrila y los logros respectivos de tralala ogrila."},
 {"Mog'dorg el Marchito",							10983,"Neutro",		10,2,1,nil,22940,22941,nil,nil,nil},
-{"Grulloc tiene dos calaveras",						10995,"Neutro",		10,3,1,nil,22941,22941,22941,22941,nil},
-{"La arqueta de maggoc",							10996,"Neutro",		10,4,1,nil,22941,22941,22941,22941,nil},
-{"Incluso los gronn tienen confalones",				10997,"Neutro",		10,5,1,nil,22941,22941,22941,22941,nil},
-{"Un asunto grimoso",								10998,"Neutro",		10,6,1,nil,22941,22941,22941,22941,nil},
-{"Dentro del moledor de almas",						11000,"Neutro",		10,7,1,nil,22941,22941,22941,22941,nil},
-{"El cielo de los ogros",							11009,"Neutro",		10,8,1,nil,22941,"Chu'a'lor",22941,23233,nil},
-{"Una reliquia de ápices",							11058,"Neutro",		10,9,1,nil,"Chu'a'lor","Chu'a'lor",23233,23233,"La misión una reliquia de ápices, presenta falla en los portales, es necesario que se use un buff de sacer como levitar, para que tenga la altura necesaria y activar los portales para completarla."},
-{"Guardián del monumento",							11059,"Neutro",		10,10,1,nil,"Chu'a'lor","Chu'a'lor",23233,23233,nil},
-{"La emanación de la reliquia",						11080,"Neutro",		10,11,1,nil,"Chu'a'lor","Chu'a'lor",23233,23233,nil},
-{"La avanzada de la guardia del cielo",				11062,"Neutro",		10,12,1,nil,"Chu'a'lor","Comandante del cielo Keller",23233,23334,nil},
-{"¡bomba va!",										11010,"Neutro",		10,13,1,nil,"Sargento del cielo Vanderlip","Sargento del cielo Vanderlip",23120,23120,nil},
-{"¡bombardéalos de nuevo!",							11023,"Neutro",		10,14,1,nil,"Sargento del cielo Vanderlip","Sargento del cielo Vanderlip",23120,23120,"Aca ya se activa la diaria final para el logro y reputación."},
+{"Grulloc tiene dos calaveras",						10995,"Neutro",		10,3,1,nil,22941,22941,nil,nil,nil},
+{"La arqueta de maggoc",							10996,"Neutro",		10,4,1,nil,22941,22941,nil,nil,nil},
+{"Incluso los gronn tienen confalones",				10997,"Neutro",		10,5,1,nil,22941,22941,nil,nil,nil},
+{"Un asunto grimoso",								10998,"Neutro",		10,6,1,nil,22941,22941,nil,nil,nil},
+{"Dentro del moledor de almas",						11000,"Neutro",		10,7,1,nil,22941,22941,nil,nil,nil},
+{"El cielo de los ogros",							11009,"Neutro",		10,8,1,nil,22941,23233,nil,nil,nil},
+{"Una reliquia de ápices",							11058,"Neutro",		10,9,1,nil,23233,23233,nil,nil,"La misión una reliquia de ápices, presenta falla en los portales, es necesario que se use un buff de sacer como levitar, para que tenga la altura necesaria y activar los portales para completarla."},
+{"Guardián del monumento",							11059,"Neutro",		10,10,1,nil,23233,23233,nil,nil,nil},
+{"La emanación de la reliquia",						11080,"Neutro",		10,11,1,nil,23233,23233,nil,nil,nil},
+{"La avanzada de la guardia del cielo",				11062,"Neutro",		10,12,1,nil,23233,23334,nil,nil,nil},
+{"¡bomba va!",										11010,"Neutro",		10,13,1,nil,23120,23120,nil,nil,nil},
+{"¡bombardéalos de nuevo!",							11023,"Neutro",		10,14,1,nil,23120,23120,nil,nil,"Aca ya se activa la diaria final para el logro y reputación."},
 {"La obligación de un padre",						11061,"Neutro",		10,15,1,nil,"Torkus","Torkus",23316,23316,"Al terminar las dos misiones siguientes, se puede realizar las diarias de ogrila para subir a exaltado."},
 {"Un látigo vil para Gahk",							11079,"Neutro",		10,16,1,nil,"Gahk","Gahk",23300,23300,nil},
 
@@ -1187,22 +1171,22 @@ GMGenie.MisionesTabla = {
 
 -- CADENA DE MISIONES PARA LORD CUERVO
 
-{"Morthis Alasusurro", 								10955,"Neutro",		8,1,1,nil,"Loganaar","Morthis Alasusurro",12042,22832,"Es necesario tener la equitación en 300 y reputación con el bajo arrabal en honorable"},
-{"El resguardo de despertar",						10961,"Neutro",		8,2,1,nil,"Morthis Alasusurro","Morthis Alasusurro",22832,22832,"Después de conseguir estos objetos, ve a hablar con Morthis Alasusurro, e iniciarás la misión 3."},
-{"Despertar al Durmiente",							10964,"Neutro",		8,3,1,nil,"Morthis Alasusurro","Clintar Caminasueños",22832,22834,"En esta misión debes dar a Clinter Caminasueños la poción que te dio Morthis Alasusurro tras entregarle las plantas que recogiste. Tras darle esta poción, despertará del Sueño Esmeralda, y podrás hablar con él, dándote la misión 4."},
-{"Se acabó el sueño",								10965,"Neutro",		8,4,1,nil,"Clintar Caminasueños","Celador de Sueños Lurosa",22834,22837,"En esta misión debes hablar con Celador de Sueños Lurosa, él te mandará a escoltarle mientras recoge unos objetos. Cuando termine de recogerlos, se completará la misión, habla con él e iniciarás la misión 5."},
-{"Regresa junto a Morthis Alasusurro",				10978,"Neutro",		8,5,1,nil,"Celador de Sueños Lurosa","Morthis Alasusurro",22837,22832,"En esta misión debes entregar a Clinter Caminasueños el objeto que te entregó Lurosa al terminar la misión 4, \"Reliquias de Aviana\". Tras entregárselo, te dará la misión 6."},
-{"A Soto Eterno",									10979,"Neutro",		8,6,1,nil,"Morthis Alasusurro","Arthorn Son del Viento",22832,22924,"En esta misión debes hablar con Arthorn. Después de hablar con él, te dará la misión 7."},
-{"El Libro del Cuervo",								10980,"Neutro",		8,7,1,nil,"Arthorn Son del Viento","Sai'Kkal el Anciano",22924,22932,"Usa la \"Piedra de Vidente\", que te proporcionó Arthorn, para ver a los fantasmas del culto del cuervo, y encontrar a Sai'Kkal el Anciano"},
-{"Ojos en el Cielo",								10986,"Neutro",		8,8,1,nil,"Arthorn Son del Viento","Vigía Elaira",22924,22981,"En esta misión debes hablar con Vigía Elaira, que te dará la misión 9"},
-{"Atrapar un Gavilán",								10987,"Neutro",		8,9,1,nil,"Vigía Elaira","Vigía Elaira",22981,22981,"En esta misión debes atrapar un gavilán, cual puedes encontrarlo por Nagrand. Tras atraparlo, habla de nuevo con Elaira y te dará la misión 10."},
-{"Las Piedras del Cuervo",							10988,"Neutro",		8,10,1,nil,"Vigía Elaira","Arthorn Son del Viento",22981,22924,"En esta misión debes usar el silbato que te proporciona Elaira, y coger 8 \"Piedras del Cuervo\". Cuando cojas las 8 piedras, completarás la misión, habla con Arthorn, y te dará la misión 11."},
-{"La Esencia del Águila",							10990,"Neutro",		8,11,1,nil,"Arthorn Son del Viento","Gavilán de Arthorn",22924,23338,"En esta misión debes matar al Guardián del Águila, que te dará una esencia, que completa la misión. Tras completar la misión, usa el silbato que te proporcionaron para entregarla, y este mismo NPC te dará la misión 12."},
-{"La Esencia del Halcón",							10992,"Neutro",		8,12,1,nil,"Gavilán de Arthorn","Gavilán de Arthorn",23338,23338,"En esta misión debes matar al Guardián del Halcon, que te dará una esencia, que completa la misión. Tras completar la misión, usa el silbato que te proporcionaron para entregarla, y este mismo NPC te dará la misión 13."},
-{"La esencia del Falcón",							10991,"Neutro",		8,13,1,nil,"Gavilán de Arthorn","Arthorn Son del Viento",23338,22924,"En esta misión debes matar al Guardián del Gavilán, que te dará una esencia, que completa la misión. Tras completar la misión, entrega esta esencia a Arthorn Son del Viento, que te dará la misión 14."},
-{"Regresa al Refugio Cenarion",						10993,"Neutro",		8,14,1,nil,"Arthon Son del Viento","Morthis Alasusurro",22924,22832,"En esta misión debes entregar el \"Paquete de Arthorn\" a Morthis, que te dará la misión 15."},
-{"Tras la Piedra Lunar", 							10994,"Neutro",		8,15,1,nil,"Morthis Alasusurro","Morthis Alasusurro",22832,22832,"En esta misión debes encontrar la \"Piedra de Furia del Sur\", y recogerla, que completará la misión. Entrégale la piedra a Morthis, y te dara la última misión."},
-{"Derrota al Dios Cuervo",							11001,"Neutro",		8,16,1,nil,"Morthis Alasusurro","nil",22832,nil,"En esta misión, por fin, podrás matar a Anzu"},
+{nil, 												10955,"Neutro",		8,1,1,nil,12042,22832,nil,nil,"Es necesario tener la equitación en 300 y reputación con el bajo arrabal en honorable"},
+{"El resguardo de despertar",						10961,"Neutro",		8,2,1,nil,22832,22832,nil,nil,"Después de conseguir estos objetos, ve a hablar con Morthis Alasusurro, e iniciarás la misión 3."},
+{"Despertar al Durmiente",							10964,"Neutro",		8,3,1,nil,22832,22834,nil,nil,"En esta misión debes dar a Clinter Caminasueños la poción que te dio Morthis Alasusurro tras entregarle las plantas que recogiste. Tras darle esta poción, despertará del Sueño Esmeralda, y podrás hablar con él, dándote la misión 4."},
+{"Se acabó el sueño",								10965,"Neutro",		8,4,1,nil,22834,22837,nil,nil,"En esta misión debes hablar con Celador de Sueños Lurosa, él te mandará a escoltarle mientras recoge unos objetos. Cuando termine de recogerlos, se completará la misión, habla con él e iniciarás la misión 5."},
+{"Regresa junto a Morthis Alasusurro",				10978,"Neutro",		8,5,1,nil,22837,22832,nil,nil,"En esta misión debes entregar a Clinter Caminasueños el objeto que te entregó Lurosa al terminar la misión 4, \"Reliquias de Aviana\". Tras entregárselo, te dará la misión 6."},
+{"A Soto Eterno",									10979,"Neutro",		8,6,1,nil,22832,22924,nil,nil,"En esta misión debes hablar con Arthorn. Después de hablar con él, te dará la misión 7."},
+{"El Libro del Cuervo",								10980,"Neutro",		8,7,1,nil,22924,22932,nil,nil,"Usa la \"Piedra de Vidente\", que te proporcionó Arthorn, para ver a los fantasmas del culto del cuervo, y encontrar a Sai'Kkal el Anciano"},
+{"Ojos en el Cielo",								10986,"Neutro",		8,8,1,nil,22924,22981,nil,nil,"En esta misión debes hablar con Vigía Elaira, que te dará la misión 9"},
+{"Atrapar un Gavilán",								10987,"Neutro",		8,9,1,nil,22981,22981,nil,nil,"En esta misión debes atrapar un gavilán, cual puedes encontrarlo por Nagrand. Tras atraparlo, habla de nuevo con Elaira y te dará la misión 10."},
+{"Las Piedras del Cuervo",							10988,"Neutro",		8,10,1,nil,22981,22924,nil,nil,"En esta misión debes usar el silbato que te proporciona Elaira, y coger 8 \"Piedras del Cuervo\". Cuando cojas las 8 piedras, completarás la misión, habla con Arthorn, y te dará la misión 11."},
+{"La Esencia del Águila",							10990,"Neutro",		8,11,1,nil,22924,23338,nil,nil,"En esta misión debes matar al Guardián del Águila, que te dará una esencia, que completa la misión. Tras completar la misión, usa el silbato que te proporcionaron para entregarla, y este mismo NPC te dará la misión 12."},
+{"La Esencia del Halcón",							10992,"Neutro",		8,12,1,nil,23338,23338,nil,nil,"En esta misión debes matar al Guardián del Halcon, que te dará una esencia, que completa la misión. Tras completar la misión, usa el silbato que te proporcionaron para entregarla, y este mismo NPC te dará la misión 13."},
+{"La esencia del Falcón",							10991,"Neutro",		8,13,1,nil,23338,22924,nil,nil,"En esta misión debes matar al Guardián del Gavilán, que te dará una esencia, que completa la misión. Tras completar la misión, entrega esta esencia a Arthorn Son del Viento, que te dará la misión 14."},
+{"Regresa al Refugio Cenarion",						10993,"Neutro",		8,14,1,nil,22924,22832,nil,nil,"En esta misión debes entregar el \"Paquete de Arthorn\" a Morthis, que te dará la misión 15."},
+{"Tras la Piedra Lunar", 							10994,"Neutro",		8,15,1,nil,22832,22832,nil,nil,"En esta misión debes encontrar la \"Piedra de Furia del Sur\", y recogerla, que completará la misión. Entrégale la piedra a Morthis, y te dara la última misión."},
+{"Derrota al Dios Cuervo",							11001,"Neutro",		8,16,1,nil,22832,nil,nil,nil,"En esta misión, por fin, podrás matar a Anzu"},
 
 -- ==================================================================================================================================================================
 

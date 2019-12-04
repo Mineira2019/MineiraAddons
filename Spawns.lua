@@ -7,6 +7,8 @@
 
 GMGenie.RespuestaRapidaOne = {};
 
+GMGenie.DELAY = 120;  
+
 GMGenie.Tp_Slot = 1;  
 GMGenie.ColorBas = "|CFF00F6B9";   
 GMGenie.Quest_Slot = 1;  
@@ -124,11 +126,20 @@ function SubCatProfFilterDropDown_Initialize(self, level)
 									Quest_Slot_Search(value[4], 2);
 									local show = 0;
 									for k, v in pairs(GMGenie.MisionesTabla) do  
-										if(v[4] == GMGenie.CategoriaQuestValores and v[6] == GMGenie.CategoriaQuestGlobal)then   
-											_G["Quest_Boton"..k]:Show(); 
-											show = show+1; 
+										if(v[4] == GMGenie.CategoriaQuestValores and v[6] == GMGenie.CategoriaQuestGlobal)then  
+
+											if(_G["Quest_Boton"..k])then 
+												_G["Quest_Boton"..k]:Show();
+												show = show+1; 
+											else
+												QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+												_G["Quest_Boton"..k]:Show();
+												show = show+1; 
+											end 
 										else
-											_G["Quest_Boton"..k]:Hide();
+											if(_G["Quest_Boton"..k])then 
+												_G["Quest_Boton"..k]:Hide();
+											end
 										end 
 										OrdenQuestBoton(k);
 									end  
@@ -409,7 +420,97 @@ GMGenie.TeleportB = {
 {"Wrath of The Link King",nil,											4,3,0,0},  
 };
 
+function QuestCreateBotons(num,valo1,valo2,valo3,valo4,valo5,valo6,valo7,valo8,valo9,valo10,valo11,valo12) 
+	local key = num; 
+--	for key, value in pairs(GMGenie.MisionesTabla) do 
+
+	local buteon = _G["Quest_Boton"..key] or CreateFrame("CheckButton", "Quest_Boton"..key, FrameDeMisiones, "GMGenie_Quest_Statusbutton") 
+		buteon:SetSize(233, 15);     
+		buteon:SetText(QuestSubLocation(valo5,valo4,nil,valo6));  
+		buteon:SetID(key);   	
+		
+		buteon:SetScript("OnEnter", function(self)   
+			GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
+			local LogTitle = ""; local NameInt = "";
+			local NameFin = "";
+			local Diaria; local QuestInfoID;
+			local Item1; local ItemC1;
+			local Item2;
+			local ItemC2;
+			local Item3;
+			local ItemC3;
+			local Item4;
+			local ItemC4;
+			LogTitle,_,QuestInfoID,_,_,_,_,Item1,ItemC1,Item2,ItemC2,Item3,ItemC3,Item4,ItemC4,_,_,_,_,_,_,_,_,_,_,_,_,faction,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,Diaria = GetQuestInfoDbc2(valo2);
+			_, NameInt = GetNpcTempDbc(valo8);
+			_, NameFin = GetNpcTempDbc(valo9);
+			if(NameInt == "No existe")then NameInt = valo8; end
+			if(NameFin == "No existe" )then NameFin = valo9; end
+			local Empieza = "";
+			local Termina = "";
+			local objeto = "";
+			local Lado = "";
+			local Nota = "";
+			local NormODiar = "";
+			local NormODiar2 = "";
+			local Recomp = "Objeto Necesario";
+			local OBJ_J = valo7;
+			
+			if(Diaria == 0)then 
+				NormODiar = "|TInterface/GossipFrame/AvailableQuestIcon:14:14|t";
+				NormODiar2 = "|TInterface/GossipFrame/ActiveQuestIcon:14:14|t";
+			else 
+				NormODiar = "|TInterface/GossipFrame/DailyQuestIcon:14:14|t";
+				NormODiar2 = "|TInterface/GossipFrame/DailyActiveQuestIcon:14:14|t"; 
+			end
+			if(valo12 ~= nil)then  
+				Nota = MineraUpdateText(valo12) 
+			end
+			if(valo8 ~= nil and valo8 ~= "nil")then  
+				Empieza = "  |n"..NormODiar.." |cFFFFFFFFEmpieza:|r |cFFFFC900"..NameInt.."|r";
+			end
+			if(valo9 ~= nil and valo9 ~= "nil")then 
+				Termina = "  |n"..NormODiar2.." |cFFFFFFFFTermina:|r |cFFFFC900"..NameFin.."|r";
+			end
+			if(valo7 ~= nil)then 
+				if(OBJ_J == "-1")then 
+					OBJ_J = Item1;
+					Recomp = "Recompensa";
+				end	
+			local name, class, subclass, displayid, Quality, InventoryType, AllowableClass, Icon, Clase, Subclase;
+			name, class, subclass, displayid, Quality, InventoryType, AllowableClass, Icon, Clase, Subclase = GetItemInfoDbc2(OBJ_J)
+			name = "["..name.."]";
+			name = SetTextColorCalidad(name, Quality);
+
+				objeto = "|n|n"..Recomp..":|n|n|TInterface/Icons/"..Icon..":12:12|t "..name.."|n|n  |cFFFFFFFF#Objeto: "..OBJ_J.."|r";
+				
+			end
+			if(faction == "Alianza")then 
+				Lado = "|n|cFFFFFFFFLado: |r|TInterface/FriendsFrame/PlusManz-Alliance:14:14|t"..faction; 
+			elseif(faction == "Horda")then
+				Lado = "|n|cFFFFFFFFLado: |r|TInterface/FriendsFrame/PlusManz-Horde:14:14|t"..faction; 
+			elseif(faction == "Neutro")then
+				Lado = "|n|cFFFFFFFFLado: Ambos|r";
+			else
+				Lado = " "..faction; 
+			end
+			GameTooltip:SetText(LogTitle.."|n"..Lado.."|n"..Empieza..""..Termina..""..objeto..""..Nota.."|n|n|cFFFF0000 #Misión: "..valo2.."|r");
+			GameTooltip:Show();
+			buteon.Hilig:Show();   
+		end);
+		buteon:SetScript("OnLeave", function(self)   
+			GameTooltip:Hide();  
+			buteon.Hilig:Hide();  
+		end);
+		buteon:SetScript("OnClick", function(self)    
+			GMGenie.KeyQuestValores = self:GetID(); 
+			ToggleDropDownMenu(1, nil, QuestGoFilterDropDown, self, 0, 0);
+		end); 
+ 
+end
+
 function QuestLoadTotalBotons()  
+ReAcomodadorFrames();
 local frame = GMGenie_Spy_Misiones_Main.Frames;
 local bgtext = Frameron:CreateTexture(nil, "BACKGROUND") 
 bgtext:SetPoint("TOPLEFT", Frameron, 1, -1) 
@@ -436,17 +537,21 @@ local scrollbg = scrollbar:CreateTexture(nil, "BACKGROUND")
 scrollbg:SetAllPoints(scrollbar); 
 scrollbg:SetTexture(0, 0, 0, 0.7); 
 frame.scrollbar = scrollbar;  
-local content = CreateFrame("Frame", nil, scrollframe) 
-local total = 0;
+local content = CreateFrame("Frame", "FrameDeMisiones", scrollframe) 
+local total = 1;
 local faction;
 		content:SetPoint("TOPLEFT",0,0); 
 		content:SetSize(128, 50);  
 		scrollframe:SetScrollChild(content); 
 		
-	for key, value in pairs(GMGenie.MisionesTabla) do 
+	--for key, value in pairs(GMGenie.MisionesTabla) do 
+	for key = 1, GMGenie.DELAY do  
+		
+	local valo1,valo2,valo3,valo4,valo5,valo6,valo7,valo8,valo9,valo10,valo11,valo12 = unpack (GMGenie.MisionesTabla[key]);
+					
 	local buteon = _G["Quest_Boton"..key] or CreateFrame("CheckButton", "Quest_Boton"..key, content, "GMGenie_Quest_Statusbutton") 
 		buteon:SetSize(233, 15);     
-		buteon:SetText(QuestSubLocation(value[5],value[4],nil, value[6]));  
+		buteon:SetText(QuestSubLocation(valo5,valo4,nil,valo6));  
 		buteon:SetID(key);   	
 		
 		buteon:SetScript("OnEnter", function(self)   
@@ -464,11 +569,11 @@ local faction;
 			local ItemC3;
 			local Item4;
 			local ItemC4;
-			LogTitle,_,QuestInfoID,_,_,_,_,Item1,ItemC1,Item2,ItemC2,Item3,ItemC3,Item4,ItemC4,_,_,_,_,_,_,_,_,_,_,_,_,faction,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,Diaria = GetQuestInfoDbc2(value[2]);
-			_, NameInt = GetNpcTempDbc(value[8]);
-			_, NameFin = GetNpcTempDbc(value[9]);
-			if(NameInt == "No existe")then NameInt = value[8]; end
-			if(NameFin == "No existe" )then NameFin = value[9]; end
+			LogTitle,_,QuestInfoID,_,_,_,_,Item1,ItemC1,Item2,ItemC2,Item3,ItemC3,Item4,ItemC4,_,_,_,_,_,_,_,_,_,_,_,_,faction,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,Diaria = GetQuestInfoDbc2(valo2);
+			_, NameInt = GetNpcTempDbc(valo8);
+			_, NameFin = GetNpcTempDbc(valo9);
+			if(NameInt == "No existe")then NameInt = valo8; end
+			if(NameFin == "No existe" )then NameFin = valo9; end
 			local Empieza = "";
 			local Termina = "";
 			local objeto = "";
@@ -477,7 +582,7 @@ local faction;
 			local NormODiar = "";
 			local NormODiar2 = "";
 			local Recomp = "Objeto Necesario";
-			local OBJ_J = value[7];
+			local OBJ_J = valo7;
 			
 			if(Diaria == 0)then 
 				NormODiar = "|TInterface/GossipFrame/AvailableQuestIcon:14:14|t";
@@ -486,16 +591,16 @@ local faction;
 				NormODiar = "|TInterface/GossipFrame/DailyQuestIcon:14:14|t";
 				NormODiar2 = "|TInterface/GossipFrame/DailyActiveQuestIcon:14:14|t"; 
 			end
-			if(value[12] ~= nil)then  
-				Nota = MineraUpdateText(value[12]) 
+			if(valo12 ~= nil)then  
+				Nota = MineraUpdateText(valo12) 
 			end
-			if(value[8] ~= nil and value[8] ~= "nil")then  
+			if(valo8 ~= nil and valo8 ~= "nil")then  
 				Empieza = "  |n"..NormODiar.." |cFFFFFFFFEmpieza:|r |cFFFFC900"..NameInt.."|r";
 			end
-			if(value[9] ~= nil and value[9] ~= "nil")then 
+			if(valo9 ~= nil and valo9 ~= "nil")then 
 				Termina = "  |n"..NormODiar2.." |cFFFFFFFFTermina:|r |cFFFFC900"..NameFin.."|r";
 			end
-			if(value[7] ~= nil)then 
+			if(valo7 ~= nil)then 
 				if(OBJ_J == "-1")then 
 					OBJ_J = Item1;
 					Recomp = "Recompensa";
@@ -517,7 +622,7 @@ local faction;
 			else
 				Lado = " "..faction; 
 			end
-			GameTooltip:SetText(LogTitle.."|n"..Lado.."|n"..Empieza..""..Termina..""..objeto..""..Nota.."|n|n|cFFFF0000 #Misión: "..value[2].."|r");
+			GameTooltip:SetText(LogTitle.."|n"..Lado.."|n"..Empieza..""..Termina..""..objeto..""..Nota.."|n|n|cFFFF0000 #Misión: "..valo2.."|r");
 			GameTooltip:Show();
 			buteon.Hilig:Show();   
 		end);
@@ -534,8 +639,9 @@ local faction;
 			buteon:SetPoint("TOPLEFT",0,-2); 
 		else  
 			buteon:SetPoint("TOPLEFT",_G["Quest_Boton"..key-1],0,-10); 
-		end   
+		end    
 	end
+	
 	frame.content = content;  
 	scrollbar:SetMinMaxValues(1, total)  
 end
@@ -657,17 +763,45 @@ local total = 0;
 					for k, v in pairs(GMGenie.MisionesTabla) do 
 						if(value[6] == nil and value[7] == nil)then   
 							if(v[4] == GMGenie.CategoriaQuestValores and v[6] == GMGenie.CategoriaQuestGlobal)then   
-								_G["Quest_Boton"..k]:Show(); 
-								show = show+1; 
+								
+								if(_G["Quest_Boton"..k])then 
+									_G["Quest_Boton"..k]:Show();
+									show = show+1; 
+								else
+									QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+									_G["Quest_Boton"..k]:Show();
+									show = show+1; 
+								end
+								 
 							else
-								_G["Quest_Boton"..k]:Hide();
+								if(_G["Quest_Boton"..k])then 
+									_G["Quest_Boton"..k]:Hide();
+								else
+								--	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+								--	_G["Quest_Boton"..k]:Hide();
+								end
 							end 
 						else
 							if(v[4] == value[7] and v[6] == value[6])then   
-								_G["Quest_Boton"..k]:Show(); 
-								show = show+1; 
+							
+								if(_G["Quest_Boton"..k])then 
+									_G["Quest_Boton"..k]:Show();
+									show = show+1; 
+								else
+									QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+									_G["Quest_Boton"..k]:Show();
+									show = show+1; 
+								end
+							
+							
+							  
 							else
-								_G["Quest_Boton"..k]:Hide();
+								if(_G["Quest_Boton"..k])then 
+									_G["Quest_Boton"..k]:Hide();
+								else
+								--	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+								--	_G["Quest_Boton"..k]:Hide();
+								end
 							end 
 						end 
 						OrdenQuestBoton(k);
@@ -765,19 +899,23 @@ end
 function OrdenQuestBoton(num)  
 local QuestBoton = _G["Quest_Boton"..num];  
 	if(GMGenie.CatGuiaPerplus == 0)then 
-		if (QuestBoton:IsShown())then 
-			QuestBoton:SetPoint("TOPLEFT",0,-1);    
-			GMGenie.CatGuiaPerplus = 1;
-			GMGenie.UltmCache = num;
-			GMGenie.UltmCache1 = num;    
-		 end  
+		if(QuestBoton)then 
+			if (QuestBoton:IsShown())then 
+				QuestBoton:SetPoint("TOPLEFT",0,-1);    
+				GMGenie.CatGuiaPerplus = 1;
+				GMGenie.UltmCache = num;
+				GMGenie.UltmCache1 = num;    
+			end 
+		end 
 	else  
-		if (QuestBoton:IsShown())then  
-			QuestBoton:SetPoint("TOPLEFT",_G["Quest_Boton"..GMGenie.UltmCache],0,-15);    
-			GMGenie.CatGuiaPerplus = GMGenie.CatGuiaPerplus +1;
-			GMGenie.UltmCache = num;
-			GMGenie.UltmCache1 = num;   	 
-		 end  
+		if(QuestBoton)then 
+			if (QuestBoton:IsShown())then  
+				QuestBoton:SetPoint("TOPLEFT",_G["Quest_Boton"..GMGenie.UltmCache],0,-15);    
+				GMGenie.CatGuiaPerplus = GMGenie.CatGuiaPerplus +1;
+				GMGenie.UltmCache = num;
+				GMGenie.UltmCache1 = num;   	 
+			end  
+		end 
 	end   
 end
 
@@ -1731,7 +1869,4 @@ end
 SLASH_SPAWNS1 = "/builder";
 SLASH_SPAWNS2 = "/spawns";
 SlashCmdList["SPAWNS"] = GMGenie.Spawns.toggle;
-
-
-
 

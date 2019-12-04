@@ -40,7 +40,7 @@ end
 
 function GMGenie.onLoad()
 
- 	GMGenie.ModeExplorer = 0; 
+ --	GMGenie.ModeExplorer = 0; 
  
     GMGenie.loadSettings();
 

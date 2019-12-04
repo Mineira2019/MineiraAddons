@@ -327,17 +327,19 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 						for k, v in pairs(GMGenie.MisionesTabla) do
 							local button = _G["Quest_Boton"..k];
 							local button1 = v[2]; 
-							if string.find(arg1, button1.." - ") then   
-								button.Active:SetText("|cFFACACAC[Inactiv]|r") 
-								if string.find(arg1, "active") then   	
-								button.Active:SetText("|cFFFF8B00[Active]|r") 
-								elseif string.find(arg1, "complete") then	 		
-								button.Active:SetText("|cFFFFF92E[Compl]|r") 
-								elseif string.find(arg1, "incomplete") then	 		
-								button.Active:SetText("|cFF00B2FF[Icomp]|r") 
-								elseif string.find(arg1, "rewarded") then	 		
-								button.Active:SetText("|cFFFF4141[Reclam]|r") 
-								end  
+							if(button)then 
+								if string.find(arg1, button1.." - ") then   
+									button.Active:SetText("|cFFACACAC[Inactiv]|r") 
+									if string.find(arg1, "active") then   	
+									button.Active:SetText("|cFFFF8B00[Active]|r") 
+									elseif string.find(arg1, "complete") then	 		
+									button.Active:SetText("|cFFFFF92E[Compl]|r") 
+									elseif string.find(arg1, "incomplete") then	 		
+									button.Active:SetText("|cFF00B2FF[Icomp]|r") 
+									elseif string.find(arg1, "rewarded") then	 		
+									button.Active:SetText("|cFFFF4141[Reclam]|r") 
+									end  
+								end
 							end
 						end
 						ActionTaken = true; 

@@ -23,7 +23,6 @@ GMGenie.defaultSettings = {
     ["minimapPos"] = 45,
     ['hudClosed'] = false,
     ['ticketsDone'] = 0,
-    ['Teleport'] = 0, 
 }
 
 function GMGenie.loadSettings()
