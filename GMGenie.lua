@@ -8,6 +8,9 @@
 GMGenie = {};
 GMGenie_SavedVars = {};
 
+GMGenie.CateVal6 = 0;
+GMGenie.CateVal7 = nil;
+
 function GMGenie.showGMMessage(msg)
  --   DEFAULT_CHAT_FRAME:AddMessage("|cFFFF0000[GMGenie]|cffffffff: " .. msg);
 end

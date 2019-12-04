@@ -319,7 +319,8 @@ function ChatFrame_MessageEventHandler(self, event, ...)
             arg1 = "|cFFFFBF00[AntiCheat]:|r |Hanticheat:" .. characterName .. "|h[" .. characterName .. "]|h detected as possible cheater.";
         end  
 		if (GMGenie_Spy_Misiones_Main:IsShown() ) then  
-		local QuestOkLoad  = string.match(arg1, "|Hquest:"); 
+			if(GMGenie.CateVal6 == 0)then 
+			local QuestOkLoad  = string.match(arg1, "|Hquest:"); 
 			if string.match(arg1, " - |") then
 				if(QuestOkLoad)then
 					-- %d - |cffffffff|Hquest:%d:%d|h[%s]|h|r %s
@@ -327,18 +328,34 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 						for k, v in pairs(GMGenie.MisionesTabla) do
 							local button = _G["Quest_Boton"..k];
 							local button1 = v[2]; 
+							local tix;
 							if(button)then 
-								if string.find(arg1, button1.." - ") then   
-									button.Active:SetText("|cFFACACAC[Inactiv]|r") 
-									if string.find(arg1, "active") then   	
-									button.Active:SetText("|cFFFF8B00[Active]|r") 
-									elseif string.find(arg1, "complete") then	 		
-									button.Active:SetText("|cFFFFF92E[Compl]|r") 
-									elseif string.find(arg1, "incomplete") then	 		
-									button.Active:SetText("|cFF00B2FF[Icomp]|r") 
-									elseif string.find(arg1, "rewarded") then	 		
-									button.Active:SetText("|cFFFF4141[Reclam]|r") 
-									end  
+								if(button:IsShown())then 
+										
+									tix = button.Active:GetText(); -- "[Inactivo] "
+									if string.find(arg1, button1.." - ") then 
+									 	if(tix == "Buscando...")then 
+										-- button:SetText(QuestSubLocation(v[5],v[4],nil,v[6]));
+										 	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+									 	end  
+										if string.find(arg1, "active") then   	
+									 	--	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+										
+										button.Active:SetText("|cFFFF8B00[Active]|r") 
+										elseif string.find(arg1, "complete") then	
+									 	--	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+																				
+										button.Active:SetText("|cFFFFF92E[Compl]|r") 
+										elseif string.find(arg1, "incomplete") then	 		
+										button.Active:SetText("|cFF00B2FF[Icomp]|r") 
+										elseif string.find(arg1, "rewarded") then	 		
+										button.Active:SetText("|cFFFF4141[Reclam]|r") 
+										else
+										button.Active:SetText("|cFFACACAC[Inactiv]|r")  	
+										--	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+										
+										end  
+									end
 								end
 							end
 						end
@@ -347,6 +364,8 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 				 GMGenie.CategoriaChatReader = 0;
 				 Chronos.scheduleByName('ticketreupdate', 0.5, GMGenie.Tickets.update);
 			end
+		
+			end 
 		end 
         
 		if string.match(arg1, "Boss Muerto") then 
