@@ -7,8 +7,8 @@
 
 GMGenie.RespuestaRapidaOne = {};
 
-GMGenie.DELAY = 120;  
-
+GMGenie.DELAY = 130;  -- Menos aumenta la velocidad de carga inicial pero reduce la velocidad al mirar las misiones.
+GMGenie.ModeExplorer = 0;
 GMGenie.Tp_Slot = 1;  
 GMGenie.ColorBas = "|CFF00F6B9";   
 GMGenie.Quest_Slot = 1;  
@@ -85,10 +85,18 @@ function SubCatProfFilterDropDown_Initialize(self, level)
 									local show = 0;
 									for k, v in pairs(GMGenie.MisionesTabla) do  
 										if(v[4] == GMGenie.CategoriaQuestValores and v[6] == GMGenie.CategoriaQuestGlobal)then   
-											_G["Quest_Boton"..k]:Show(); 
-											show = show+1; 
+											if(_G["Quest_Boton"..k])then 
+												_G["Quest_Boton"..k]:Show();
+												show = show+1; 
+											else
+												QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+												_G["Quest_Boton"..k]:Show();
+												show = show+1; 
+											end 
 										else
-											_G["Quest_Boton"..k]:Hide();
+											if(_G["Quest_Boton"..k])then 
+												_G["Quest_Boton"..k]:Hide();
+											end
 										end 
 										OrdenQuestBoton(k);
 									end  
