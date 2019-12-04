@@ -29,7 +29,7 @@
 				</Texture>
 			</Layer>
 			<Layer level="BORDER">
-				<FontString name="$Active" inherits="GenieFontHighlightSmall" text="Buscando..." justifyH="LEFT" parentKey="Active">
+				<FontString name="$Active" inherits="GenieFontHighlightSmall" text="..." justifyH="LEFT" parentKey="Active">
 					<Anchors>
 						<Anchor point="TOPLEFT">
 							<Offset>

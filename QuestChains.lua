@@ -672,7 +672,7 @@ GMGenie.MisionesTabla = {
  {nil,												12680,"Neutro",								6,11,2,nil,28653,28653,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
  {nil,												12687,"Neutro",								6,12,2,nil,28653,28653,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento y aprenderas la montura de clase \"Destrero de la Muerte\""}, 
  {nil,												12733,"Neutro",								6,13,2,nil,29047,29047,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12711,"Neutro",								6,14,2,nil,202,nil,nil,nil,"La Misión se Reclama directamente, Solo debes encontrar el Buzón Cerca de los Cruzados ( Aparece en todas las Fases )"}, 
+ {nil,												12711,"Neutro",								6,14,2,nil,nil,nil,nil,nil,"La Misión se Reclama directamente, Solo debes encontrar el Buzón Cerca de los Cruzados ( Aparece en todas las Fases )"}, 
  {nil,												12679,"Neutro",								6,15,2,nil,28647,28647,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
  {nil,												12697,"Neutro",								6,16,2,nil,28377,28658,nil,nil,nil}, 
  {nil,												12700,"Neutro",								6,17,2,nil,28658,28377,nil,nil,nil}, 
@@ -683,7 +683,7 @@ GMGenie.MisionesTabla = {
  {nil,												12715,"Neutro",								6,22,2,nil,28907,28911,nil,nil,nil}, 
  {nil,												12716,"Neutro",								6,23,2,nil,28919,28919,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
  {nil,												12717,"Neutro",								6,24,2,nil,28919,28919,nil,nil,nil}, 
- {nil,												12718,"Neutro",								6,25,2,nil,202,nil,nil,nil,"Esta misión repetible la puedes tomar en en el caldero"}, 
+ {nil,												12718,"Neutro",								6,25,2,nil,nil,nil,nil,nil,"Esta misión repetible la puedes tomar en en el caldero"}, 
  {nil,												12719,"Neutro",								6,26,2,nil,28911,28911,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
  {nil,												12722,"Neutro",								6,27,2,nil,28910,28910,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
  {nil,												12720,"Neutro",								6,28,2,nil,28911,28911,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
@@ -1174,18 +1174,18 @@ GMGenie.MisionesTabla = {
 
 -- Cadena de la Alianza.
 
-{"La empuñadura maltrecha", 						14443,"Alianza",	1,1,4,50379,"Empuñadura maltrecha",36624,nil,nil,nil},
-{"Lo que saben los dragones", 						14444,"Alianza",	1,2,4,nil,36624,36669,nil,nil,nil},
-{"El plan de los Atracasol", 						14457,"Alianza",	1,3,4,nil,36669,36669,nil,nil,nil},
-{"Un disfraz apropiado", 							20438,"Alianza",	1,4,4,nil,36669,36669,nil,nil,nil},
-{"Reunión con el magister", 						20439,"Alianza",	1,5,4,nil,36669,36669,nil,nil,nil},
-{"Vuelve con Caladis Lanza Reluciente", 			24454,"Alianza",	1,6,4,nil,36669,36624,nil,nil,nil},
-{"Reforjar la espada", 								24461,"Alianza",	1,7,4,nil,36624,36624,nil,nil,nil},
-{"Templar la hoja", 								24476,"Alianza",	1,8,4,nil,36624,36624,nil,nil,nil},
-{"Las Cámaras de Reflexión", 						24480,"Alianza",	1,9,4,nil,36624,36624,nil,nil,"Si un Pj presenta problema con esta misión se tiene que revisar con un MJ"},
-{"Viaje a La Fuente del Sol", 						24522,"Alianza",	1,10,4,nil,36624,37527,nil,nil,nil},
-{"Thalorien Buscalba", 								24535,"Alianza",	1,11,4,nil,37527,37527,nil,nil,nil},
-{"La purificación de Quel'Delar",					24553,"Alianza",	1,12,4,nil,37527,36624,nil,nil,"El npc que los lleva a la fuente, se encuentra dentro la instancia en la entrada."},
+{"La empuñadura maltrecha", 						14443,"Alianza",							1,1,4,50379,"Empuñadura maltrecha",36624,nil,nil,nil},
+{"Lo que saben los dragones", 						14444,"Alianza",							1,2,4,nil,36624,36669,nil,nil,nil},
+{"El plan de los Atracasol", 						14457,"Alianza",							1,3,4,nil,36669,36669,nil,nil,nil},
+{"Un disfraz apropiado", 							20438,"Alianza",							1,4,4,nil,36669,36669,nil,nil,nil},
+{"Reunión con el magister", 						20439,"Alianza",							1,5,4,nil,36669,36669,nil,nil,nil},
+{"Vuelve con Caladis Lanza Reluciente", 			24454,"Alianza",							1,6,4,nil,36669,36624,nil,nil,nil},
+{"Reforjar la espada", 								24461,"Alianza",							1,7,4,nil,36624,36624,nil,nil,nil},
+{"Templar la hoja", 								24476,"Alianza",							1,8,4,nil,36624,36624,nil,nil,nil},
+{"Las Cámaras de Reflexión", 						24480,"Alianza",							1,9,4,nil,36624,36624,nil,nil,"Si un Pj presenta problema con esta misión se tiene que revisar con un MJ"},
+{"Viaje a La Fuente del Sol", 						24522,"Alianza",							1,10,4,nil,36624,37527,nil,nil,nil},
+{"Thalorien Buscalba", 								24535,"Alianza",							1,11,4,nil,37527,37527,nil,nil,nil},
+{"La purificación de Quel'Delar",					24553,"Alianza",							1,12,4,nil,37527,36624,nil,nil,"El npc que los lleva a la fuente, se encuentra dentro la instancia en la entrada."},
 
 -- Cadena de la Horda.
 

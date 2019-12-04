@@ -334,10 +334,10 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 										
 									tix = button.Active:GetText(); -- "[Inactivo] "
 									if string.find(arg1, button1.." - ") then 
-									 	if(tix == "Buscando...")then 
+									 --	if(tix == "Buscando...")then 
 										-- button:SetText(QuestSubLocation(v[5],v[4],nil,v[6]));
-										 	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
-									 	end  
+										--  	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+									-- 	end  
 										if string.find(arg1, "active") then   	
 									 	--	QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
 										

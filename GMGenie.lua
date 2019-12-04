@@ -129,3 +129,99 @@ function GMGenie.loadEditBox(window)
     getglobal(name .. '_Frame_Text'):SetWidth(getglobal(name .. '_Frame'):GetWidth());
     getglobal(name .. '_Frame_Text'):SetHeight(getglobal(name .. '_Frame'):GetHeight());
 end
+
+function GMGenie.CreateFrame(self)
+local Mision = self or 10907;
+
+local LogTitle,LogTitleEnglish,QuestInfoID,RequiredFactionId1,RequiredFactionId2,RequiredFactionValue1,RequiredFactionValue2,RewardItem1,RewardAmount1,RewardItem2,RewardAmount2,RewardItem3,RewardAmount3,RewardItem4,RewardAmount4,RewardChoiceItemID1,RewardChoiceItemQuantity1,RewardChoiceItemID2,RewardChoiceItemQuantity2,RewardChoiceItemID3,RewardChoiceItemQuantity3,RewardChoiceItemID4,RewardChoiceItemQuantity4,RewardChoiceItemID5,RewardChoiceItemQuantity5,RewardChoiceItemID6,RewardChoiceItemQuantity6,faction,RequiredNpcOrGo1,QuestSortID,RequiredNpcOrGo2,RequiredNpcOrGo3,RequiredNpcOrGo4,RequiredNpcOrGoCount1,RequiredNpcOrGoCount2,RequiredNpcOrGoCount3,RequiredNpcOrGoCount4,RequiredItemId1,RequiredItemId2,RequiredItemId3,RequiredItemId4,RequiredItemId5,RequiredItemId6,RequiredItemCount1,RequiredItemCount2,RequiredItemCount3,RequiredItemCount4,RequiredItemCount5,RequiredItemCount6 = GetQuestInfoDbc2(Mision, 1);
+ 	local Desc = "Poseo un gran conocimiento sobre alquimia. Sin embargo, mi conocimiento es general, sobre la naturaleza. Si quieres especializarte, tendrás que encontrar a otros que tengan un campo de estudio más especializado.|n|nSi quieres especializarte en transmutación, te recomiendo que busques la ayuda del etéreo llamado Zarevhi. Reside en La Flecha de la Tormenta, en la Tormenta Abisal.|n|nSu conocimiento sobre la transmutación es... en fin, ¡impresionante! Quizás puedas aprender mucho de él, pero ten cuidado, no se puede confiar en los etéreos."
+	QuestFrame:Show();
+ 	QuestFrameProgressPanel:Show();
+	QuestFramePortrait:SetTexture("Interface\\QuestFrame\\UI-QuestLog-BookIcon");
+	QuestFrameNpcNameText:SetText("Dealles de la misión");
+	QuestProgressTitleText:SetText(LogTitle); 
+	QuestProgressText:SetText(Desc);
+	QuestFrameGoodbyeButton:Disable();
+--	 if(RequiredItemId1 ~= 0 and RequiredItemId2 ~= 0 and RequiredItemId3 ~= 0 and RequiredItemId4 ~= 0 and RequiredItemId5 ~= 0 and RequiredItemId6 ~= 0)then 
+		local Max = 0;
+		if(RequiredItemId1 ~= 0)then Max = Max +1; end
+		if(RequiredItemId2 ~= 0)then Max = Max +1; end
+		if(RequiredItemId3 ~= 0)then Max = Max +1; end
+		if(RequiredItemId4 ~= 0)then Max = Max +1; end
+		if(RequiredItemId5 ~= 0)then Max = Max +1; end
+		if(RequiredItemId6 ~= 0)then Max = Max +1; end
+		
+		
+		GMGenie.QuestFrameProgressItems_Update(Max, RequiredItemId1, RequiredItemId2, RequiredItemId3, RequiredItemId4, RequiredItemId5, RequiredItemId6, RequiredItemCount1, RequiredItemCount2, RequiredItemCount3, RequiredItemCount4, RequiredItemCount5, RequiredItemCount6)
+--	 end
+	
+end
+
+
+function GMGenie.QuestFrameProgressItems_Update(self, num1, num2, num3, num4, num5, num6, c1,c2,c3,c4,c5,c6) 
+	local nem1 = num1; local nem2 = num2;
+	local nem3 = num3; local nem4 = num4;
+	local nem5 = num5; local nem6 = num6;
+	local numRequiredItems = self;
+	local questItemName = "QuestProgressItem";
+	if ( numRequiredItems > 0 or GetQuestMoneyToGet() > 0 ) then
+		QuestProgressRequiredItemsText:Show();
+		 
+			QuestProgressRequiredMoneyText:Hide();
+			QuestProgressRequiredMoneyFrame:Hide();
+
+			_G[questItemName..1]:SetPoint("TOPLEFT", "QuestProgressRequiredItemsText", "BOTTOMLEFT", -3, -5);
+  
+		for i=1, numRequiredItems, 1 do	
+			local requiredItem = _G[questItemName..i]; 
+			local name, texture, count;
+			requiredItem.type = "required";
+			if(i == 1 )then 
+				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(num1);
+				count = c1;
+			elseif(i == 2)then 
+				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem2);
+				count = c2;
+			elseif(i == 3)then 
+				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem3);
+				count = c3;
+			elseif(i == 4)then 
+				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem4);
+				count = c4;
+			elseif(i == 5)then 
+				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem5);
+				count = c5;
+			elseif(i == 6)then 
+				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem6);
+				count = c6;
+			end
+			texture = "Interface/Icons/"..texture;
+			-- icon = "Interface\\Icons\\"..texture;
+-- return name, class, subclass, displayid, Quality, InventoryType, AllowableClass, Icon, Clase, Subclase;
+			SetItemButtonCount(requiredItem, count);
+		 	SetItemButtonTexture(requiredItem, texture);
+			requiredItem:Show();
+			_G[questItemName..i.."Name"]:SetText(name);
+			
+		end
+	else
+		QuestProgressRequiredMoneyText:Hide();
+		QuestProgressRequiredMoneyFrame:Hide();
+		QuestProgressRequiredItemsText:Hide();
+	end
+	for i=numRequiredItems + 1, MAX_REQUIRED_ITEMS, 1 do
+		_G[questItemName..i]:Hide();
+	end
+	QuestProgressScrollFrameScrollBar:SetValue(0);
+end
+
+
+
+
+
+
+
+
+
+
+

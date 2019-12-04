@@ -221,19 +221,15 @@ function QuestGoFilterDropDown_Initialize(self, level)
 				info.func = function()   
 								if(key == 1)then 
 									if(GoNpc == nil and NameInt ~= "No existe")then 
-										SendChatMessage(GoInt) 
-										print(GoInt);
+										SendChatMessage(GoInt)  
 									else 
-										SendChatMessage(GoInt) 
-										print(GoInt);
+										SendChatMessage(GoInt)  
 									end 
 								elseif(key == 2)then 
 									if(GoNpc2 == nil and NameFin ~= "No existe")then 
-										SendChatMessage(GoEnd) 
-										print(GoEnd);
+										SendChatMessage(GoEnd)  
 									else 
-										SendChatMessage(GoEnd) 
-										print(GoEnd);
+										SendChatMessage(GoEnd)  
 									end  
 								elseif(key == 3)then
 									if(item)then
@@ -252,26 +248,34 @@ function QuestGoFilterDropDown_Initialize(self, level)
 					if(NameInt == "No existe")then 
 						if(GoNameNpc ~= "nil" and GoNameNpc ~= nil)then
 							info.text = value[1]..GoNameNpc; 
-							UIDropDownMenu_AddButton(info, level); 
+							if(GoNpc ~= nil)then 
+								UIDropDownMenu_AddButton(info, level); 
+							end
 						end
 					else 
 						info.text = value[1]..NameInt; 
-						UIDropDownMenu_AddButton(info, level); 
+							UIDropDownMenu_AddButton(info, level); 
 					end  
 				elseif(key == 2)then
 					if(NameFin == "No existe")then 
 						if(GoNameNpc2 ~= "nil" and GoNameNpc2 ~= nil)then
 							info.text = value[1]..GoNameNpc2; 
-							UIDropDownMenu_AddButton(info, level);  
+							if(GoNpc2 ~= nil)then 
+								UIDropDownMenu_AddButton(info, level); 
+							end  
 						end
 					else 
-						info.text = value[1]..NameFin; 
-						UIDropDownMenu_AddButton(info, level); 
+						if(GoNameNpc2 ~= nil)then 
+							info.text = value[1]..NameFin; 
+							UIDropDownMenu_AddButton(info, level); 
+						end
 					end  
 				elseif(key == 3)then
-					if(item)then 
-						info.text = "Crear "..name;
-						UIDropDownMenu_AddButton(info, level); 
+					if(item)then  
+						if(item ~= "-1")then  
+							info.text = "Crear "..name;
+							UIDropDownMenu_AddButton(info, level);  
+						end
 					end
 				end
 				
@@ -433,7 +437,7 @@ function QuestLoadTotalBotonsb()
 			ToggleDropDownMenu(1, nil, QuestGoFilterDropDown, self, 0, 0);
 		end);
 		GMGenie.DELAYINT = key;
-		_G["Quest_Boton"..key]:Hide();
+		--_G["Quest_Boton"..key]:Hide();
 		end
 	end
 	
@@ -670,106 +674,7 @@ local faction;
 		content:SetPoint("TOPLEFT",0,0); 
 		content:SetSize(128, 50);  
 		scrollframe:SetScrollChild(content); 
-		
-	--for key, value in pairs(GMGenie.MisionesTabla) do 
-	for key = 1, GMGenie.DELAY do  
-		
-	local valo1,valo2,valo3,valo4,valo5,valo6,valo7,valo8,valo9,valo10,valo11,valo12 = unpack (GMGenie.MisionesTabla[key]);
-					
-	local buteon = _G["Quest_Boton"..key] or CreateFrame("CheckButton", "Quest_Boton"..key, content, "GMGenie_Quest_Statusbutton") 
-		buteon:SetSize(233, 15);     
-		buteon:SetText(QuestSubLocation(valo5,valo4,nil,valo6));  
-		buteon:SetID(key);   	
-		
-		buteon:SetScript("OnEnter", function(self)   
-			GameTooltip:SetOwner(self, "ANCHOR_RIGHT");
-			local LogTitle = "";
-			local NameInt = "";
-			local NameFin = "";
-			local Diaria;
-			local QuestInfoID;
-			local Item1;
-			local ItemC1;
-			local Item2;
-			local ItemC2;
-			local Item3;
-			local ItemC3;
-			local Item4;
-			local ItemC4;
-			LogTitle,_,QuestInfoID,_,_,_,_,Item1,ItemC1,Item2,ItemC2,Item3,ItemC3,Item4,ItemC4,_,_,_,_,_,_,_,_,_,_,_,_,faction,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,Diaria = GetQuestInfoDbc2(valo2);
-			_, NameInt = GetNpcTempDbc(valo8);
-			_, NameFin = GetNpcTempDbc(valo9);
-			if(NameInt == "No existe")then NameInt = valo8; end
-			if(NameFin == "No existe" )then NameFin = valo9; end
-			local Empieza = "";
-			local Termina = "";
-			local objeto = "";
-			local Lado = "";
-			local Nota = "";
-			local NormODiar = "";
-			local NormODiar2 = "";
-			local Recomp = "Objeto Necesario";
-			local OBJ_J = valo7;
-			
-			if(Diaria == 0)then 
-				NormODiar = "|TInterface/GossipFrame/AvailableQuestIcon:14:14|t";
-				NormODiar2 = "|TInterface/GossipFrame/ActiveQuestIcon:14:14|t";
-			else 
-				NormODiar = "|TInterface/GossipFrame/DailyQuestIcon:14:14|t";
-				NormODiar2 = "|TInterface/GossipFrame/DailyActiveQuestIcon:14:14|t"; 
-			end
-			if(valo12 ~= nil)then  
-				Nota = MineraUpdateText(valo12) 
-			end
-			if(valo8 ~= nil and valo8 ~= "nil")then  
-				Empieza = "  |n"..NormODiar.." |cFFFFFFFFEmpieza:|r |cFFFFC900"..NameInt.."|r";
-			end
-			if(valo9 ~= nil and valo9 ~= "nil")then 
-				Termina = "  |n"..NormODiar2.." |cFFFFFFFFTermina:|r |cFFFFC900"..NameFin.."|r";
-			end
-			if(valo7 ~= nil)then 
-				if(OBJ_J == "-1")then 
-					OBJ_J = Item1;
-					Recomp = "Recompensa";
-				end	
-			local name, class, subclass, displayid, Quality, InventoryType, AllowableClass, Icon, Clase, Subclase;
-			name, class, subclass, displayid, Quality, InventoryType, AllowableClass, Icon, Clase, Subclase = GetItemInfoDbc2(OBJ_J)
-			name = "["..name.."]";
-			name = SetTextColorCalidad(name, Quality);
-
-				objeto = "|n|n"..Recomp..":|n|n|TInterface/Icons/"..Icon..":12:12|t "..name.."|n|n  |cFFFFFFFF#Objeto: "..OBJ_J.."|r";
-				
-			end
-			if(faction == "Alianza")then 
-				Lado = "|n|cFFFFFFFFLado: |r|TInterface/FriendsFrame/PlusManz-Alliance:14:14|t"..faction; 
-			elseif(faction == "Horda")then
-				Lado = "|n|cFFFFFFFFLado: |r|TInterface/FriendsFrame/PlusManz-Horde:14:14|t"..faction; 
-			elseif(faction == "Neutro")then
-				Lado = "|n|cFFFFFFFFLado: Ambos|r";
-			else
-				Lado = " "..faction; 
-			end
-			GameTooltip:SetText(LogTitle.."|n"..Lado.."|n"..Empieza..""..Termina..""..objeto..""..Nota.."|n|n|cFFFF0000 #Misión: "..valo2.."|r");
-			GameTooltip:Show();
-			buteon.Hilig:Show();   
-		end);
-		buteon:SetScript("OnLeave", function(self)   
-			GameTooltip:Hide();  
-			buteon.Hilig:Hide();  
-		end);
-		buteon:SetScript("OnClick", function(self)    
-			GMGenie.KeyQuestValores = self:GetID(); 
-			ToggleDropDownMenu(1, nil, QuestGoFilterDropDown, self, 0, 0);
-		end);
-		total = total +key;
-		if(key == 1)then 
-			buteon:SetPoint("TOPLEFT",0,-2); 
-		else  
-			buteon:SetPoint("TOPLEFT",_G["Quest_Boton"..key-1],0,-10); 
-		end  
-	--	GMGenie.DELAYINT = key;
-	end
-	
+	 
 	frame.content = content;  
 	scrollbar:SetMinMaxValues(1, total)  
 end

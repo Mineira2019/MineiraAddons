@@ -38,7 +38,7 @@ GMGenie.Tickets.idToNum = {};
 function GMGenie.Tickets.onLoad()
     Chronos.scheduleRepeating('ticketrefresh', 60, GMGenie.Tickets.refresh);
  --    Chronos.scheduleRepeating('QuestLoadTotal', 1, QuestLoadTotalBotonsb);
-       Chronos.scheduleRepeating('QuestLoadTotalb', 0.05, QuestLoadTotalBotonsa);
+       Chronos.scheduleRepeating('QuestLoadTotalb', 0.04, QuestLoadTotalBotonsa);
     GMGenie.Tickets.refresh();
     GMGenie.Tickets.done = GMGenie_SavedVars.ticketsDone;
 end
