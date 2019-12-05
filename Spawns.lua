@@ -247,17 +247,27 @@ function QuestGoFilterDropDown_Initialize(self, level)
 				info.isNotRadio = nil;
 				info.func = function()   
 								if(key == 1)then 
-									if(GoNpc == nil and NameInt ~= "No existe")then 
-										SendChatMessage(GoInt)  
-									else 
-										SendChatMessage(GoInt)  
-									end 
+								
+									if(NameInt == "No existe")then 
+										if(GoNpc ~= nil)then 
+											GoNpc = string.gsub(GoNpc, ":", " ");
+											SendChatMessage(".go xyz "..GoNpc);
+										end
+									else
+											SendChatMessage(GoInt)  
+									end
+								 
 								elseif(key == 2)then 
-									if(GoNpc2 == nil and NameFin ~= "No existe")then 
-										SendChatMessage(GoEnd)  
-									else 
-										SendChatMessage(GoEnd)  
-									end  
+									
+									if(NameFin == "No existe")then 
+										if(GoNpc2 ~= nil)then
+											GoNpc2 = string.gsub(GoNpc2, ":", " ");
+											SendChatMessage(".go xyz "..GoNpc2);
+										end
+									else
+											SendChatMessage(GoEnd)  
+									end 
+									
 								elseif(key == 3)then
 									if(item)then
 										local count = GetItemCount(item);

@@ -504,8 +504,8 @@ GMGenie.MisionesTabla = {
 {"La llamada del agua",								1536,"Horda",								2,4,108,nil,5899,5899,nil,nil,nil},
 {"La llamada del agua",								1534,"Horda",								2,5,108,nil,5899,5899,nil,nil,nil},
 {"La llamada del agua",								220,"Horda",								2,6,108,nil,5899,5901,nil,nil,nil},
-{"La llamada del agua",								63,"Horda",									2,7,108,nil,5901,"Blandón de Siemprefuente",nil,nil,nil}, -- 113791
-{"La llamada del agua",								100,"Horda",								2,8,108,nil,"Blandón de Siemprefuente",5895,nil,nil,nil},--113791
+{"La llamada del agua",								63,"Horda",									2,7,108,nil,5901,"Blandón de Siemprefuente",nil,"419.041:1843.15:11.989:0",nil}, -- 113791
+{"La llamada del agua",								100,"Horda",								2,8,108,nil,"Blandón de Siemprefuente",5895,"419.041:1843.15:11.989:0",nil,nil},--113791
 {"La llamada del agua",								96,"Horda",									2,9,108,nil,5895,5901,nil,nil,nil},
 
 -- CADENA PARA LOS TROL
@@ -516,8 +516,8 @@ GMGenie.MisionesTabla = {
 {"La llamada del agua",								1536,"Horda",								3,4,108,nil,5899,5899,nil,nil,nil},
 {"La llamada del agua",								1534,"Horda",								3,5,108,nil,5899,5899,nil,nil,nil},
 {"La llamada del agua",								220,"Horda",								3,6,108,nil,5899,5901,nil,nil,nil},
-{"La llamada del agua",								63,"Horda",									3,7,108,nil,5901,"Blandón de Siemprefuente",nil,113791,nil},
-{"La llamada del agua",								100,"Horda",								3,8,108,nil,"Blandón de Siemprefuente",5895,113791,5895,nil},
+{"La llamada del agua",								63,"Horda",									3,7,108,nil,5901,"Blandón de Siemprefuente",nil,"419.041:1843.15:11.989:0",nil},
+{"La llamada del agua",								100,"Horda",								3,8,108,nil,"Blandón de Siemprefuente",nil,"419.041:1843.15:11.989:0",nil,nil},
 {"La llamada del agua",								96,"Horda",									3,9,108,nil,5895,5901,nil,nil,nil},
 
 -- CADENA PARA LOS TAUREN 
@@ -528,8 +528,8 @@ GMGenie.MisionesTabla = {
 {"La llamada del agua",								1536,"Horda",								4,4,108,nil,5899,5899,nil,nil,nil},
 {"La llamada del agua",								1534,"Horda",								4,5,108,nil,5899,5899,nil,nil,nil},
 {"La llamada del agua",								220,"Horda",								4,6,108,nil,5899,5901,nil,nil,nil},
-{"La llamada del agua",								63,"Horda",									4,7,108,nil,5901,"Blandón de Siemprefuente",nil,nil,nil},
-{"La llamada del agua",								100,"Horda",								4,8,108,nil,nil,5895,"Manifestación de agua menor",nil,nil},
+{"La llamada del agua",								63,"Horda",									4,7,108,nil,5901,"Blandón de Siemprefuente",nil,"419.041:1843.15:11.989:0",nil},
+{"La llamada del agua",								100,"Horda",								4,8,108,nil,5895,nil,nil,nil,nil},
 {"La llamada del agua",								96,"Horda",									4,9,108,nil,5895,5901,nil,nil,nil},
 
 -- =========== TOTEM DE FUEGO
@@ -937,10 +937,10 @@ GMGenie.MisionesTabla = {
 {"Recuperar la cantera",							11612,"Neutro",								5,1,1,nil,25292,25292,nil,nil,nil},
 {"Impedir que escapen", 							11617,"Neutro",								5,2,1,nil,25292,25292,nil,nil,nil},
 {"Una visita al comisario",  						11623,"Neutro",								5,3,1,nil,25292,25292,nil,nil,nil},
-{"Homenaje a los ancestros",  						11605,"Neutro",								5,4,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3519.76:5421.07:40.9974:571","3519.76:5421.07:40.9974:571",nil},
-{"los espíritus perdidos",  						11607,"Neutro",								5,5,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3519.76:5421.07:40.9974:571","3519.76:5421.07:40.9974:571",nil},
-{"Recoger los pedazos",  							11609,"Neutro",								5,6,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3519.76:5421.07:40.9974:571","3519.76:5421.07:40.9974:571",nil},
-{"Llevar a los ancestros a casa",  					11610,"Neutro",								5,7,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3519.76:5421.07:40.9974:571","3519.76:5421.07:40.9974:571",nil},
+{"Homenaje a los ancestros",  						11605,"Neutro",								5,4,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3526.15:5418.27:40.8912:571","3526.15:5418.27:40.8912:571",nil},
+{"los espíritus perdidos",  						11607,"Neutro",								5,5,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3526.15:5418.27:40.8912:571","3526.15:5418.27:40.8912:571",nil},
+{"Recoger los pedazos",  							11609,"Neutro",								5,6,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3526.15:5418.27:40.8912:571","3526.15:5418.27:40.8912:571",nil},
+{"Llevar a los ancestros a casa",  					11610,"Neutro",								5,7,1,nil,"Ancestro Atkanok","Ancestro Atkanok","3526.15:5418.27:40.8912:571","3526.15:5418.27:40.8912:571",nil},
 {"Las palabras de un padre",  						11620,"Neutro",								5,8,1,nil,25435,25450,nil,nil,nil},
 {"El tridente de Naz'jan",  						11625,"Neutro",								5,9,1,nil,25450,25450,nil,nil,nil},
 {"El emisario",  									11626,"Neutro",								5,10,1,nil,25450,25435,nil,nil,nil},
