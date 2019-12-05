@@ -178,7 +178,7 @@
                 <Anchors>
                     <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Speed" relativePoint="BOTTOMLEFT">
                         <Offset>
-                            <AbsDimension x="0" y="20"/>
+                            <AbsDimension x="0" y="28"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
@@ -205,7 +205,7 @@
                 <Anchors>
                     <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Speed" relativePoint="BOTTOMLEFT">
                         <Offset>
-                            <AbsDimension x="0" y="2"/>
+                            <AbsDimension x="0" y="8"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
@@ -232,7 +232,7 @@
                 <Anchors>
                     <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Speed" relativePoint="BOTTOMLEFT">
                         <Offset>
-                            <AbsDimension x="0" y="-20"/>
+                            <AbsDimension x="0" y="-14"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
@@ -275,7 +275,7 @@
                     <AbsDimension x="70" y="28"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-57"/>
+                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-50"/>
                 </Anchors>
                 <Scripts>
 					<OnLoad>
@@ -299,11 +299,12 @@
                     <AbsDimension x="35" y="28"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-87"/>
+                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-76"/>
                 </Anchors>
                 <Scripts>
 					<OnLoad>
-						self.tooltip = "Velocidad Aumentada x10";
+						self.tooltip = "Velocidad Aumentada x10"; 
+						self:RegisterForClicks("LeftButtonUp", "RightButtonUp"); 
 					</OnLoad>
 					<OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_CURSOR_RIGHT", 15);
@@ -313,7 +314,7 @@
 						GameTooltip:Hide();
 					</OnLeave> 
                     <OnClick> 
-						SendChatMessage(".mod speed 10"); 
+						UpdateClickGenieSpeedB1(self, button);
                     </OnClick>
                 </Scripts>
             </Button>
@@ -322,11 +323,12 @@
                     <AbsDimension x="35" y="28"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="45" y="-87"/>
+                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="45" y="-76"/>
                 </Anchors>
                 <Scripts>
 					<OnLoad>
 						self.tooltip = "Velocidad Aumentada x20";
+						self:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 					</OnLoad>
 					<OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_CURSOR_RIGHT", 15);
@@ -336,7 +338,7 @@
 						GameTooltip:Hide();
 					</OnLeave> 
                     <OnClick> 
-						SendChatMessage(".mod speed 20"); 
+						UpdateClickGenieSpeedB2(self, button);
                     </OnClick>
                 </Scripts>
             </Button>
@@ -346,7 +348,7 @@
                     <AbsDimension x="70" y="28"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-115"/>
+                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-104"/>
                 </Anchors>
                 <Scripts>
 					<OnLoad>

@@ -29,11 +29,36 @@ GMGenie.MaxBot = 0;
 GMGenie.CateOkPlus = 0;
 GMGenie.QLastCache = 0;
 GMGenie.QLastCache1 = 0;
+
+GMGenie.ClickSpeed1 = 10;
+GMGenie.ClickSpeed2 = 20;
  
 function SubCatProfFilterDropDown_OnLoad(self)
 	UIDropDownMenu_Initialize(self, SubCatProfFilterDropDown_Initialize, "MENU");
 end
 
+function UpdateClickGenieSpeedB1(self, button) 
+-- self:Disable();
+-- self:SetAlpha(0.2);
+	if ( button == "LeftButton" ) then
+		SendChatMessage(".mod speed "..GMGenie.ClickSpeed1); 
+	else
+		if(GMGenie.ClickSpeed1 >= 50)then GMGenie.ClickSpeed1 = 10; else GMGenie.ClickSpeed1 = GMGenie.ClickSpeed1 +10; end
+		self.tooltip = "Velocidad Aumentada x"..GMGenie.ClickSpeed1;
+		GMGenie_Hud_XXX:SetText("x"..GMGenie.ClickSpeed1);
+	end 
+		GameTooltip:Hide();
+end
+function UpdateClickGenieSpeedB2(self, button) 
+	if ( button == "LeftButton" ) then
+		SendChatMessage(".mod speed "..GMGenie.ClickSpeed2); 
+	else
+		if(GMGenie.ClickSpeed2 >= 50)then GMGenie.ClickSpeed2 = 20; else GMGenie.ClickSpeed2 = GMGenie.ClickSpeed2 +10; end
+		self.tooltip = "Velocidad Aumentada x"..GMGenie.ClickSpeed2;
+		GMGenie_Hud_XXY:SetText("x"..GMGenie.ClickSpeed2);
+	end 
+		GameTooltip:Hide();
+end
 function ReAcomodadorFrames()
 	if(GMGenie.ModeExplorer == 0)then 
 		GMGenie_Hud_XXX:Hide();
@@ -41,12 +66,14 @@ function ReAcomodadorFrames()
 		GMGenie_Hud_XXY:Hide();
 		GMGenie_Hud_ZX:Hide(); 
 		GMGenie_Hud_Main:SetSize(100, 142);
+		GMGenie_Hud:SetSize(100, 142);
 	else
 		GMGenie_Hud_XXX:Show();
 		GMGenie_Hud_XX:Show();
 		GMGenie_Hud_XXY:Show();
 		GMGenie_Hud_ZX:Show(); 
-		GMGenie_Hud_Main:SetSize(100, 278);
+		GMGenie_Hud_Main:SetSize(100, 230);
+		GMGenie_Hud:SetSize(100, 230);
 	
 	end
 end
