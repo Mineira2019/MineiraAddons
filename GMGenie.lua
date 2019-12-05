@@ -140,7 +140,7 @@ local LogTitle,LogTitleEnglish,QuestInfoID,RequiredFactionId1,RequiredFactionId2
 	QuestFramePortrait:SetTexture("Interface\\QuestFrame\\UI-QuestLog-BookIcon");
 	QuestFrameNpcNameText:SetText("Dealles de la misión");
 	QuestProgressTitleText:SetText(LogTitle); 
-	QuestProgressText:SetText(Desc);
+	QuestProgressText:SetText(Desc..Desc);
 	QuestFrameGoodbyeButton:Disable();
 --	 if(RequiredItemId1 ~= 0 and RequiredItemId2 ~= 0 and RequiredItemId3 ~= 0 and RequiredItemId4 ~= 0 and RequiredItemId5 ~= 0 and RequiredItemId6 ~= 0)then 
 		local Max = 0;

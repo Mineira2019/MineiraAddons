@@ -249,6 +249,7 @@
 					</OnLeave>
                     <OnClick> 
                         GMGenie.Misiones.toggle();
+						Frameron:SetPoint("LEFT", "GMGenie_Spy_Misiones_Main", "RIGHT");
                     </OnClick>
                 </Scripts>
             </Button>

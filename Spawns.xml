@@ -54,11 +54,11 @@
 						<AbsDimension x="295" y="267"/>
 					</Size>
 					<Anchors>
-						<Anchor point="LEFT" relativeTo="GMGenie_Spy_Misiones_Main" />
+						<Anchor point="LEFT"/>
 					</Anchors>
 					<Scripts>
 						<OnShow> 
-					--		self:SetPoint("LEFT", "GMGenie_Spy_Misiones_Main", "RIGHT");
+					--		Frameron:SetPoint("LEFT", "GMGenie_Spy_Misiones_Main", "RIGHT");
 						</OnShow>
 						<OnLoad> 
 							self:ClearAllPoints();
