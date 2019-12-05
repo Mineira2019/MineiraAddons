@@ -58,7 +58,8 @@
 					</Anchors>
 					<Scripts>
 						<OnShow> 
-					--		Frameron:SetPoint("LEFT", "GMGenie_Spy_Misiones_Main", "RIGHT");
+							self:ClearAllPoints();
+					 		self:SetPoint("LEFT", "GMGenie_Spy_Misiones_Main", "RIGHT");
 						</OnShow>
 						<OnLoad> 
 							self:ClearAllPoints();

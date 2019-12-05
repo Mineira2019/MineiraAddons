@@ -178,7 +178,7 @@
                 <Anchors>
                     <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Speed" relativePoint="BOTTOMLEFT">
                         <Offset>
-                            <AbsDimension x="0" y="28"/>
+                            <AbsDimension x="0" y="31"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
@@ -205,7 +205,7 @@
                 <Anchors>
                     <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Speed" relativePoint="BOTTOMLEFT">
                         <Offset>
-                            <AbsDimension x="0" y="8"/>
+                            <AbsDimension x="0" y="13"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
@@ -232,13 +232,13 @@
                 <Anchors>
                     <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Speed" relativePoint="BOTTOMLEFT">
                         <Offset>
-                            <AbsDimension x="0" y="-14"/>
+                            <AbsDimension x="0" y="-5"/>
                         </Offset>
                     </Anchor>
                 </Anchors>
                 <Scripts>
 					<OnLoad>
-						self.tooltip = "Revisa las Cadenas de misiones de el jugador";
+						self.tooltip = "Revisar Cadena de Misiones del Pj";
 					</OnLoad>
 					<OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_CURSOR_RIGHT", 15);
@@ -248,8 +248,7 @@
 						GameTooltip:Hide();
 					</OnLeave>
                     <OnClick> 
-                        GMGenie.Misiones.toggle();
-						Frameron:SetPoint("LEFT", "GMGenie_Spy_Misiones_Main", "RIGHT");
+                        GMGenie.Misiones.toggle(); 
                     </OnClick>
                 </Scripts>
             </Button>
@@ -275,7 +274,7 @@
                     <AbsDimension x="70" y="28"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-50"/>
+                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-40"/>
                 </Anchors>
                 <Scripts>
 					<OnLoad>
@@ -299,7 +298,7 @@
                     <AbsDimension x="35" y="28"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-76"/>
+                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-66"/>
                 </Anchors>
                 <Scripts>
 					<OnLoad>
@@ -323,7 +322,7 @@
                     <AbsDimension x="35" y="28"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="45" y="-76"/>
+                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="45" y="-66"/>
                 </Anchors>
                 <Scripts>
 					<OnLoad>
@@ -348,7 +347,7 @@
                     <AbsDimension x="70" y="28"/>
                 </Size>
                 <Anchors>
-                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-104"/>
+                    <Anchor point="TOPLEFT" relativeTo="GMGenie_Hud_Tickets" relativePoint="BOTTOMLEFT" x="10" y="-92"/>
                 </Anchors>
                 <Scripts>
 					<OnLoad>

@@ -65,15 +65,15 @@ function ReAcomodadorFrames()
 		GMGenie_Hud_XX:Hide();
 		GMGenie_Hud_XXY:Hide();
 		GMGenie_Hud_ZX:Hide(); 
-		GMGenie_Hud_Main:SetSize(100, 142);
-		GMGenie_Hud:SetSize(100, 142);
+		GMGenie_Hud_Main:SetSize(100, 126);
+		GMGenie_Hud:SetSize(100, 126);
 	else
 		GMGenie_Hud_XXX:Show();
 		GMGenie_Hud_XX:Show();
 		GMGenie_Hud_XXY:Show();
 		GMGenie_Hud_ZX:Show(); 
-		GMGenie_Hud_Main:SetSize(100, 230);
-		GMGenie_Hud:SetSize(100, 230);
+		GMGenie_Hud_Main:SetSize(100, 213);
+		GMGenie_Hud:SetSize(100, 213);
 	
 	end
 end
