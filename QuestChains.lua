@@ -733,7 +733,7 @@ GMGenie.MisionesTabla = {
  {"Desafío de honor",								12939,"Neutro",								1,10,1,nil,30002,30002,nil,nil,nil}, 
  {"Decreto de La Cámara de las Sombras",			12943,"Neutro",								1,11,1,nil,30002,30002,nil,nil,nil},
  
--- CADENA DE MISIONES PARA ESPADA DE ÉBANO 
+-- CADENA DE MISIONES DE LOS HIJOS DE HODIR
 
  {"¡Se llevaron a nuestros hombres!",				12843,"Neutro",								2,1,1,nil,29473,29473,nil,nil,nil},
  {"Ningún goblin se queda atrás",					12846,"Neutro",								2,2,1,nil,29473,29975,nil,nil,nil},
@@ -762,8 +762,8 @@ GMGenie.MisionesTabla = {
 
 -- Necesito un texto por aca - "A partir de esta misión, es necesario conseguir el item Metal cubierto de escoria, para continuar la cadena."  												
 
- {"El fuego del refinador",							12922,"Neutro",								2,25,1,41556,"Metal cubierto de escoria","Yunque de Fjorn",nil,"7217.07:-3645.75:819.406:571",nil},
- {"Una chispa de esperanza",						12956,"Neutro",								2,26,1,nil,"Yunque de Fjorn",29445,"7217.07:-3645.75:819.406:571",97128,nil},
+ {"El fuego del refinador",							12922,"Neutro",								2,25,1,41556,"Metal cubierto de escoria","Yunque de Fjorn",nil,"7217.07:-3645.75:819.406:571","A partir de esta misión, es necesario conseguir el item Metal cubierto de escoria, para continuar la cadena."},
+ {"Una chispa de esperanza",						12956,"Neutro",								2,26,1,nil,"Yunque de Fjorn",29445,"7217.07:-3645.75:819.406:571",nil,nil},
 
 -- Necesito un texto por aca - "Al tomar la misión de forjando una alianza, ya estara en la fase correcta para ver al NPC que vende los parches. Es necesario tener activa o completa la misión, si el PJ abandona la misión, se movera a otra fase y no podra ver el NPC."
 			   --  "Esta misión la entrega Thorim en el templo de las tormentas."	
@@ -795,7 +795,7 @@ GMGenie.MisionesTabla = {
 
 -- Necesito un texto por aca - "A partir  de esta misión, se necesita el ítem (Grilletes de Goregek) para continuar la cadena, de no tener el item el NPC  Anciano harkek en Corazón frenético repone el item."
 
- {"Atormentar a los badanudillos",					12530,"Neutro",								3,4,38619,28214,28082,nil,nil,nil}, 
+ {"Atormentar a los badanudillos",					12530,"Neutro",								3,4,1,38619,28214,28082,nil,nil,nil}, 
  {"El aprendiz de cazador de avispas",				12533,"Neutro",								3,5,1,nil,28082,28082,nil,nil,nil}, 
  {"La reina Zafiro",								12534,"Neutro",								3,6,1,nil,28138,28082,nil,nil,nil}, 
  {"¡Se dieron a la fuga!",							12532,"Neutro",								3,7,1,nil,28138,28138,nil,nil,nil}, 
@@ -833,12 +833,12 @@ GMGenie.MisionesTabla = {
 -- Necesito un texto por aca - "Al tomar la misión la carga de un héroe la cueva que se encuentra a la derecha del Pilar Sangrevida y al fondo encontraremos a Artruis, en este caso mataremos a Artruis el Sin Corazón; pero cuando tenga poca vida descongelará a  Zepik el Cazador de górlocs y a Jaloot; a quien matemos nos quedará la reputación en Odiado, Entregaremos la misión en la filacteria de Artruis."
 --			       "Después dependiendo de quien matemos nos quedará una reputación en odiado y la otra en honorable"
 
- {"La carga de un héroe",							12581,"Neutro",								3,25,1,nil,"Moodle","Filacteria de Artruis",nil,202971,5}, 
+ {"La carga de un héroe",							12581,"Neutro",								3,25,1,nil,"Moodle","Filacteria de Artruis",nil,"5626.286621:3778.836670:-95.248405:571",5}, 
 
 -- Necesito un texto por aca - "Estas misiones son para seleccionar alternar la facción, se pueden repetir siempre que el usuario prefiera"
 
- {"El retorno del pielseca amistoso",				12695,"Neutro",								3,26,nil,nil,nil,nil,nil,nil}, 
- {"El retorno del cazador de exánimes",				12692,"Neutro",								3,27,nil,nil,nil,nil,nil,nil}, 
+ {"El retorno del pielseca amistoso",				12695,"Neutro",								3,26,1,nil,28667,28027,nil,nil,"Esta mision es para alternar la facción, se pueden repetir siempre que el usuario prefiera"}, 
+ {"El retorno del cazador de exánimes",				12692,"Neutro",								3,27,1,nil,28668,28138,nil,nil,"Esta mision es para alternar la facción, se pueden repetir siempre que el usuario prefiera"}, 
 
 
 -- ===========================================================================================================================
@@ -891,7 +891,7 @@ GMGenie.MisionesTabla = {
 -- Necesito un texto por acá - "Para tomar la siguiente misión es necesario obtener un item que sueltan los Mob  Sangre Negra de Draenor, dentro del Objeto cubierto de fango, el item es (Planes de fuga de los Sangreoscura)"
 
 {"La gran revuelta Sangreoscura",					11081,"Neutro",								6,26,1,32726,"Planes de fuga de los Sangreoscura",23149,nil,nil,nil},
-{"En busca de la verdad",							11082,"Neutro",								6,27,1,nil,"Maestra de las minas","Maestra de las minas",23149,23149,nil},
+{"En busca de la verdad",							11082,"Neutro",								6,27,1,nil,23149,23149,nil,nil,nil},
 
 -- Necesito un texto por acá - "Para continuar desde este punto necesitamos ser Honorables."
 
@@ -1082,11 +1082,11 @@ GMGenie.MisionesTabla = {
 
 -- Necesito un texto por acá - "La primer misión es opcional y se toma en dalaran, pueden realizar desde la segunda misión."
 
-{"¡Se acerca el día del Juicio Final!",				13227,"Horda",								9,1,1,nil,31261,28179,nil,nil,nil}, 
-{"¡Se acerca el día del Juicio Final!", 			13226,"Alianza",							9,2,1,nil,31259,28179,nil,nil,nil},
+{"¡Se acerca el día del Juicio Final!",				13227,"Horda",								9,1,1,nil,31261,28179,nil,nil,"Esta misión es opcional y se toma en dalaran, pueden realizar desde la siguiente misión."}, 
+{"¡Se acerca el día del Juicio Final!", 			13226,"Alianza",							9,2,1,nil,31259,28179,nil,nil,"Esta misión es opcional y se toma en dalaran, pueden realizar desde la siguiente misión."},
  
 {"Honor por encima de todo", 						13036,"Neutro",								9,3,1,nil,28179,30223,nil,nil,nil},
-{"Tácticas de la plaga", 							13008,"Neutro",								9,4,1,nil,13008,30223,nil,nil,nil},
+{"Tácticas de la plaga", 							13008,"Neutro",								9,4,1,nil,30223,30223,nil,nil,nil},
 {"Defender la Vanguardia", 							13039,"Neutro",								9,5,1,nil,30224,30224,nil,nil,nil},
 {"Curar lo incurable", 								13040,"Neutro",								9,6,1,nil,30226,30226,nil,nil,nil},
 {"Si hay supervivientes...",						13044,"Neutro",								9,7,1,nil,30223,30227,nil,nil,nil},
@@ -1100,7 +1100,7 @@ GMGenie.MisionesTabla = {
 
 -- Necesito un texto por acá - "La misión de el aire permanece quieto, se tiene que matar al elite Sumo sacerdote Yath´amon, sin la ayuda del elite para que cuente de forma normal."
 
-{"El aire permanece quieto",						13125,"Neutro",								9,15,1,nil,30596,30596,nil,nil,nil},
+{"El aire permanece quieto",						13125,"Neutro",								9,15,1,nil,30596,30596,nil,nil,"se tiene que matar al elite Sumo sacerdote Yath'amon, sin la ayuda del elite para que cuente de forma normal."},
 {"La piedra que comenzó una revolución",			13130,"Neutro",								9,16,1,nil,30686,30686,nil,nil,nil},
 {"Podría matarnos a todos", 						13135,"Neutro",								9,17,1,nil,30714,30714,nil,nil,nil},
 {"Dentro del helado corazón de rasganorte", 		13139,"Neutro",								9,18,1,nil,30683,30677,nil,nil,nil},
@@ -1239,7 +1239,7 @@ GMGenie.MisionesTabla = {
 
 -- CADENA PARA LOS ELFOS DE SANGRE
 
-{"Regresa junto a Talionia",						10788,"Horda",								5,13,102,nil,5675,5875,5675,5875,"El Npc esta en entrañas"},
+{"Regresa junto a Talionia",						10788,"Horda",								5,13,102,nil,5675,5875,nil,nil,"El Npc esta en entrañas"},
 {"La piedra",										9529,"Horda",								5,14,102,nil,16647,"Piedra del vacío",nil,"7923.38:-6728.08:43.4225:530",nil},
 {"El vínculo",										9619,"Horda",								5,15,102,23732,"Piedra del vacío",16647,"7923.38:-6728.08:43.4225:530",nil,"Usa la  Piedra de vacío para invocar a un abisario (ID 5676) en la Aldea de Bruma Dorada, derrótalo, y regresa junto a Talionia en la Ciudad de Lunargenta."},
 

@@ -331,7 +331,7 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 									local tix;
 									if(button)then 
 										if(button:IsShown())then  
-											tix = button.Active:GetText(); -- "[Inactivo] "
+										--	tix = button.Active:GetText(); -- "[Inactivo] "
 											if string.find(arg1, button1.." - ") then 
 												if string.find(arg1, "active") then   	
 												button.Active:SetText("|cFFFF8B00[Active]|r") 
@@ -420,21 +420,17 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 			
 		 	namex = splits(nameb, ":"); 
 			 
-			for k, v in pairs(namex) do  
-		--		 print(v);
+			for k, v in pairs(namex) do   
 				if(k == 2)then  
 				 	Mensaje = "Vencid"..Genero.." por el grupo de |CFF0AEA00"..v.."|r"; 
 				end  
 			end  
-			
-	--		Mensaje = "Vencid"..Genero.." por el grupo de "..nameb; 
 			 
 			if(Boss ~= "Desconocido")then 
 		--		print(" "); 
 				print(sup.."|cffff0000"..Boss.."|r"); 
 				print("      "..Mensaje); 
-		--		print(" ");  
-		--		print(" ");  
+		--		print(" ");   
 				ActionTaken = true;   
 			end
 			

@@ -284,8 +284,10 @@ function QuestGoFilterDropDown_Initialize(self, level)
 							end
 						end
 					else  
+						if(GoNameNpc ~= nil)then 
 							info.text = value[1]..NameInt; 
 							UIDropDownMenu_AddButton(info, level); 
+						end  
 					end  
 				elseif(key == 2)then
 					if(NameFin == "No existe")then 
@@ -296,8 +298,10 @@ function QuestGoFilterDropDown_Initialize(self, level)
 							end  
 						end
 					else  
-						info.text = value[1]..NameFin; 
-						UIDropDownMenu_AddButton(info, level);  
+						if(GoNameNpc2 ~= nil)then 
+							info.text = value[1]..NameFin; 
+							UIDropDownMenu_AddButton(info, level);  
+						end 
 					end  
 				elseif(key == 3)then
 					if(item)then  
@@ -352,11 +356,7 @@ function QuestCategoriasDropDown_Initialize(self, level)
 end
 
 GMGenie.Misiones = {};
-
-function QuestSlotFilterDropDown_OnLoad(self)
-	UIDropDownMenu_Initialize(self, QuestSlotFilterDropDown_Initialize, "MENU");
-end
-
+ 
 function QuestLoadTotalBotonsa()   
   if(GMGenie.DELAYINT >= #GMGenie.MisionesTabla) then  
 	GMGenie_Spy_Misiones_Main_Title_Text:SetText("Cadena de Misiones");
@@ -839,10 +839,7 @@ local total = 0;
 		
 				GMGenie.KeySubCaTValore = value[3];  
 				GMGenie.CategoriaQuestValores = value[4]; 
-				
-			--	if(GMGenie.FiltroClave ~= "")then     
-					GMGenie.CategoriaQuestGlobal = value[3]; 
-			--	end
+				GMGenie.CategoriaQuestGlobal = value[3];  
 				
 				if(value[5] ~= true)then 
 					Frameron:Show();
@@ -1234,71 +1231,11 @@ local LogTitle,LogTitleEnglish,QuestInfoID,RequiredFactionId1,RequiredFactionId2
 end
  
 function QuestSubQuest_Funcion(self,num1, num)
- 
-local name = "Nadita"
-local id,cat,pos,faction;
-		for key, value in pairs(GMGenie.MisionesTabla) do 
-			name = value[1]; id = value[2];
-			faction = value[3]; cat = value[4];
-			pos = value[5];
-			if(num1 == pos and cat == num )then 
-					GameTooltip:SetOwner(self, "ANCHOR_CURSOR_RIGHT");
-					GameTooltip:SetText("Id Mision: "..id.."|nLado: "..faction); 
-					GameTooltip:Show(); 
-				break;
-			end
-		end  	
+  	
 end
 
 function QuestSlotFilterDropDown_Initialize(self, level) 
-	local info = UIDropDownMenu_CreateInfo();
- 	info.keepShownOnClick = true; 
-	local numMax = QuestSlotMax();  
-	
-		GMGenie.CategoriaQuestGlobal = 0;
-		GMGenie.CatQuestGlobalTable = {};
-	if level == 1 then 
-		for i=1,numMax do   
-			info.checked = nil;
-			info.isNotRadio = nil;
-			info.func =  nil;
-			info.hasArrow = true;
-			info.notCheckable = true; 
-			info.text = Quest_Slot_Search(i,1);  
-			info.value = i;  
-			GMGenie.CategoriaQuestValores = i;
-			UIDropDownMenu_AddButton(info, level); 
-		end
-	else   
-		
-		for yy=1,GMGenie.CategoriaQuestValores do  
-			if (UIDROPDOWNMENU_MENU_VALUE == yy) then
-				local numSubMax = QuestSlotSubMax(yy);
-				GMGenie.CategoriaQuestGlobal = yy;
-				Quest_Slot_Search(yy, 2); 
-				for i=1, numSubMax do 	
-				local id = QuestSubLocation(i,yy, 1);
-				local tox = QuestSubLocation(i,yy);
-				table.insert(GMGenie.CatQuestGlobalTable, #GMGenie.CatQuestGlobalTable+1, id.." - ");
-				local tixix = "[Inactivo] "; 
-				if(_G["GMGenie.QuestActString"..i])then 
-					  tixix = _G["GMGenie.QuestActString"..i];
-				end
-					info.hasArrow = false;
-					info.isNotRadio = true;
-					info.notCheckable = true;	   
-					info.text = tixix..tox;
-					info.func =	function() 
-									info.text = tixix..tox;
-									QuestSubQuest_Funcion(self,i,yy);
-									Quest_Slot_Search(yy, 2);								 	
-								end 
-					UIDropDownMenu_AddButton(info, level); 
-				end
-			end
-		end
-		
-	end
+	 
 end
 function TpSlotFilterDropDown_Initialize(self, level)
 	local info = UIDropDownMenu_CreateInfo();
