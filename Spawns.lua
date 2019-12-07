@@ -21,6 +21,7 @@ GMGenie.KeySubCaTValore = 1;
 GMGenie.CatQuestGlobalTable = {};
 GMGenie.CatQuestGlobalString = {};
 GMGenie.FiltroClave = "";
+GMGenie.FiltroQuestClave = "";
 GMGenie.CatGuiaPerplus = 0;
 GMGenie.UltmCache = 0;
 GMGenie.UltmCache1 = 0;
@@ -355,6 +356,7 @@ function QuestCategoriasDropDown_Initialize(self, level)
 		end 
 end
 
+GMGenie.ScrollQuest = {};
 GMGenie.Misiones = {};
  
 function QuestLoadTotalBotonsa()   
@@ -478,6 +480,15 @@ function QuestLoadTotalBotonsb()
 end
 function GMGenie.Misiones.toggle()
     local frame = GMGenie_Spy_Misiones_Main;
+    if frame:IsVisible() then
+        frame:Hide();
+    else
+        frame:Show();
+    end
+end
+
+function GMGenie.ScrollQuest.toggle()
+    local frame = GMGenie_Scroll_Quest_Fast;
     if frame:IsVisible() then
         frame:Hide();
     else
@@ -730,26 +741,122 @@ end
 
 function SearchQuestFastGenieLoad()
 
-local scrollframe = GMGenie_Hud;
+end
+ 
+function MyModScrollBar_Update()
+local TextitA;
+local TextitB; 
+local Nombre1 = 0;
+local Nombre2 = 0;
+local Nombre3 = 0;
+local Nombre4 = 0;
+local Nombre5 = 0;
+local Nombre6 = 0;
+local NameRegex; 
+local faction; 
+local Bname; 
 
-local editBox = CreateFrame("EditBox", "GmGenieSearchQuestFast", scrollframe, "SearchBoxMineTemplate");
-editBox:SetSize(90, 20); editBox:SetFontObject(GameFontHighlightSmall)  
-editBox:SetPoint("TOPLEFT",7,26); editBox:SetAutoFocus(false);  
-	 editBox.Instructions:SetText("#Misión");
+ 	for i=1, 5 do
+		_G["GmGenieQuestEntry"..i].Active:SetText("") 
+		_G["GmGenieQuestEntry"..i].Textito:SetPoint("LEFT", _G["GmGenieQuestEntry"..i], -5, 0);
+ 		_G["GmGenieQuestEntry"..i]:Hide(); 
+ 	end
+	
+	if(GMGenie.FiltroQuestClave ~= "")then 
+		for k, v in pairs(QUEST_ESP_DETALLES_DBC) do 
+		TextitA = SuperLowerString(v[2]);
+		TextitB = SuperLowerString(GMGenie.FiltroQuestClave); 
+				if(Nombre6 == 0)then 
+			if string.match(TextitA, TextitB) then  
+					if(Nombre1 == 0)then 
+						NameRegex,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,faction  = GetQuestInfoDbc2(v[1], 2);
+	  
+						if(faction == "Alianza")then  Bname = "|TInterface/FriendsFrame/PlusManz-Alliance:14:14|t|cFFFFC900";  
+						elseif (faction == "Horda")then Bname = "|TInterface/FriendsFrame/PlusManz-Horde:14:14|t|cFFFFC900"; 
+						else Bname = "|cFFFFC900"; end
+						Nombre1 = 1; 
+						GmGenieQuestEntry1:SetText(Bname..NameRegex);
+						GmGenieQuestEntry1:SetID(v[1]);
+						GmGenieQuestEntry1:Show();  
+					elseif(Nombre2 == 0)then 
+						NameRegex,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,faction  = GetQuestInfoDbc2(v[1], 2);
+	  
+						if(faction == "Alianza")then  Bname = "|TInterface/FriendsFrame/PlusManz-Alliance:14:14|t|cFFFFC900";  
+						elseif (faction == "Horda")then Bname = "|TInterface/FriendsFrame/PlusManz-Horde:14:14|t|cFFFFC900"; 
+						else Bname = "|cFFFFC900"; end
+						Nombre2 = 1;
+						GmGenieQuestEntry2:SetText(Bname..NameRegex);
+						GmGenieQuestEntry2:SetID(v[1]);
+						GmGenieQuestEntry2:Show();  
+					elseif(Nombre3 == 0)then 
+						NameRegex,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,faction  = GetQuestInfoDbc2(v[1], 2);
+	  
+						if(faction == "Alianza")then  Bname = "|TInterface/FriendsFrame/PlusManz-Alliance:14:14|t|cFFFFC900";  
+						elseif (faction == "Horda")then Bname = "|TInterface/FriendsFrame/PlusManz-Horde:14:14|t|cFFFFC900"; 
+						else Bname = "|cFFFFC900"; end
+						Nombre3 = 1;
+						GmGenieQuestEntry3:SetText(Bname..NameRegex);
+						GmGenieQuestEntry3:SetID(v[1]);
+						GmGenieQuestEntry3:Show();  
+					elseif(Nombre4 == 0)then 
+						NameRegex,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,faction  = GetQuestInfoDbc2(v[1], 2);
+	  
+						if(faction == "Alianza")then  Bname = "|TInterface/FriendsFrame/PlusManz-Alliance:14:14|t|cFFFFC900";  
+						elseif (faction == "Horda")then Bname = "|TInterface/FriendsFrame/PlusManz-Horde:14:14|t|cFFFFC900"; 
+						else Bname = "|cFFFFC900"; end
+						Nombre4 = 1;
+						GmGenieQuestEntry4:SetText(Bname..NameRegex);
+						GmGenieQuestEntry4:SetID(v[1]);
+						GmGenieQuestEntry4:Show();  
+					elseif(Nombre5 == 0)then 
+						NameRegex,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,_,faction  = GetQuestInfoDbc2(v[1], 2);
+	  
+						if(faction == "Alianza")then  Bname = "|TInterface/FriendsFrame/PlusManz-Alliance:14:14|t|cFFFFC900";  
+						elseif (faction == "Horda")then Bname = "|TInterface/FriendsFrame/PlusManz-Horde:14:14|t|cFFFFC900"; 
+						else Bname = "|cFFFFC900"; end
+						Nombre5 = 1;
+						Nombre6 = 1;
+						GmGenieQuestEntry5:SetText(Bname..NameRegex);
+						GmGenieQuestEntry5:SetID(v[1]);
+						GmGenieQuestEntry5:Show();  
+					else
+						break 	
+					end
+				
+				end
+				else 
+				break
+			end 
+		end  
+	end
+ end
+
+
+
+function QuestLoadTotalCateg()  
+
+local scrollframeqq = GMGenie_Scroll_Quest_Fast.Frames;
+
+local editBox = CreateFrame("EditBox", "GmGenieSearchQuestFast", scrollframeqq, "SearchBoxMineTemplate");
+editBox:SetSize(176, 20); editBox:SetFontObject(GameFontHighlightSmall)  
+editBox:SetPoint("TOPLEFT",GMGenie_Scroll_Quest_Fast,10,-20); editBox:SetAutoFocus(false);  
 editBox:SetScript("OnTextChanged", function(self)
 	local text = self:GetText();     
 	if(text ~= "")then 
 	 -- GMGenie.CreateFrameQuestSpecialSearch(text); 
-		GMGenie.CreateFrameQuestSpecial(tonumber(text));
+	--	GMGenie.CreateFrameQuestSpecial(tonumber(text));
+		GMGenie.FiltroQuestClave = text;
+		MyModScrollBar_Update();
 	else 
-		editBox.Instructions:SetText("#Misión");
+		GMGenie.FiltroQuestClave = "";
 		GMGenie.CreateFrameQuestSpecial(0);
+		MyModScrollBar_Update();
 	end
 	
 end); 
 
-end
-function QuestLoadTotalCateg()  
+
+
 local frame = GMGenie_Spy_Misiones_Main.Frames;   
 GMGenie_Spy_Misiones_Main.Mine:SetBackdrop( { 
   bgFile = "", 

@@ -324,7 +324,7 @@ function GMGenie.Tickets.loadTicket(ticketId, num)
                 -- update current ticket
                 GMGenie.Tickets.currentTicket = { ["num"] = num, ["ticketId"] = ticketId, ["name"] = GMGenie.Tickets.list[GMGenie.Tickets.idToNum[ticketId]]["name"], ["comment"] = "", ["message"] = "Loading..." };
                 -- set title and loading text
-                GMGenie_Tickets_View_Title_Text:SetText(GMGenie.Tickets.currentTicket["name"] .. "'s Ticket");
+                GMGenie_Tickets_View_Title_Text:SetText("Ticket de "..GMGenie.Tickets.currentTicket["name"]);
                 GMGenie.Tickets.showMessage();
                 -- hide reading frame UNUSED ATM
                 --GMGenie_Tickets_View_Ticket_Reading:Hide();
@@ -332,7 +332,7 @@ function GMGenie.Tickets.loadTicket(ticketId, num)
                 SendChatMessage(".ticket viewid " .. ticketId, "GUILD");
                 -- open spy
                 if GMGenie_SavedVars.useSpy then
-                    GMGenie.Spy.spy(GMGenie.Tickets.currentTicket["name"]);
+                    GMGenie.Spy.spy("informacion de "..GMGenie.Tickets.currentTicket["name"]);
                 end
                 -- mark as read
                 GMGenie.Tickets.markAsRead(ticketId);

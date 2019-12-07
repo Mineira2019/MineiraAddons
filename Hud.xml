@@ -10,7 +10,7 @@
             <Attribute name="type" type="string" value="macro"/>
             <Attribute name="macrotext1" type="string" value=""/>
         </Attributes>
-        <ButtonText name="$parentText">
+        <ButtonText name="$parentText" parentKey="Textito">
             <Anchors>
                 <Anchor point="LEFT">
                     <Offset>
@@ -244,6 +244,7 @@
                 <Scripts>
 					<OnLoad>
 						self.tooltip = "Revisar Cadena de Misiones del Pj";
+						self:RegisterForClicks("LeftButtonUp","RightButtonUp");
 					</OnLoad>
 					<OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_CURSOR_RIGHT", 15);
@@ -253,7 +254,11 @@
 						GameTooltip:Hide();
 					</OnLeave>
                     <OnClick> 
-                        GMGenie.Misiones.toggle(); 
+						if ( button == "LeftButton" ) then  
+							GMGenie.Misiones.toggle(); 
+						else 
+							GMGenie.ScrollQuest.toggle()
+						end  
                     </OnClick>
                 </Scripts>
             </Button>
