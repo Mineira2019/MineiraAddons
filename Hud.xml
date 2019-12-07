@@ -40,6 +40,11 @@
 				</FontString>
 			</Layer>
 		</Layers>
+			<Scripts>
+				<OnLoad> 
+					self:RegisterForClicks("LeftButtonUp", "RightButtonUp"); 
+				</OnLoad>
+			</Scripts>
         <NormalFont style="GenieFontNormalSmall"/>
         <HighlightFont style="GenieFontHighlightSmall"/>
         <DisabledFont style="GenieFontDisableSmall"/> 

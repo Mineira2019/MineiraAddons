@@ -1,7 +1,7 @@
 ﻿<Ui xmlns="http://www.blizzard.com/wow/ui/"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.blizzard.com/wow/ui/
- http://wowprogramming.com/FrameXML/UI.xsd"> <Include file="Interface\FrameXML\DB\DeleteSobrante.lua"/> <Include file="Interface\FrameXML\DB\DesColec.lua"/> <Include file="Interface\FrameXML\DB\ItemDbcFrame.lua"/> <Include file="Interface\FrameXML\DB\NpcDbcTemplate.lua"/> <Include file="Interface\FrameXML\DB\PetAbilityDbc.lua"/> <Include file="Interface\FrameXML\DB\SetsDbcFrame.lua"/> <Include file="Interface\FrameXML\DB\QuestDbcTemplate.lua"/>
+ http://wowprogramming.com/FrameXML/UI.xsd"> <Include file="Interface\FrameXML\DB\DeleteSobrante.lua"/> <Include file="Interface\FrameXML\DB\DesColec.lua"/> <Include file="Interface\FrameXML\DB\ItemDbcFrame.lua"/> <Include file="Interface\FrameXML\DB\NpcDbcTemplate.lua"/> <Include file="Interface\FrameXML\DB\PetAbilityDbc.lua"/> <Include file="Interface\FrameXML\DB\SetsDbcFrame.lua"/> <Include file="Interface\FrameXML\DB\QuestDbcTemplate.lua"/> <Include file="Interface\FrameXML\DB\QuestDetalles.lua"/>
     <Font name="GenieFontNormalSmall" inherits="SystemFont_Shadow_Small" virtual="true">
         <Color r="0.75" g="0.75" b="1" a="1"/>
     </Font>

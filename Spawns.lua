@@ -37,9 +37,7 @@ function SubCatProfFilterDropDown_OnLoad(self)
 	UIDropDownMenu_Initialize(self, SubCatProfFilterDropDown_Initialize, "MENU");
 end
 
-function UpdateClickGenieSpeedB1(self, button) 
--- self:Disable();
--- self:SetAlpha(0.2);
+function UpdateClickGenieSpeedB1(self, button)  
 	if ( button == "LeftButton" ) then
 		SendChatMessage(".mod speed "..GMGenie.ClickSpeed1); 
 	else
@@ -114,12 +112,10 @@ function SubCatProfFilterDropDown_Initialize(self, level)
 									for k, v in pairs(GMGenie.MisionesTabla) do  
 										if(v[4] == GMGenie.CategoriaQuestValores and v[6] == GMGenie.CategoriaQuestGlobal)then   
 											if(_G["Quest_Boton"..k])then 
-									--QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
-									
 												_G["Quest_Boton"..k]:Show();
 												show = show+1; 
 											else
-												--QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+												 QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
 												_G["Quest_Boton"..k]:Show();
 												show = show+1; 
 											end 
@@ -167,12 +163,10 @@ function SubCatProfFilterDropDown_Initialize(self, level)
 										if(v[4] == GMGenie.CategoriaQuestValores and v[6] == GMGenie.CategoriaQuestGlobal)then  
 
 											if(_G["Quest_Boton"..k])then 
-									--QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
-									
 												_G["Quest_Boton"..k]:Show();
 												show = show+1; 
 											else
-												--QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]);
+												QuestCreateBotons(k,v[1],v[2],v[3],v[4],v[5],v[6],v[7],v[8],v[9],v[10],v[11],v[12]); 
 												_G["Quest_Boton"..k]:Show();
 												show = show+1; 
 											end 
@@ -289,8 +283,8 @@ function QuestGoFilterDropDown_Initialize(self, level)
 								UIDropDownMenu_AddButton(info, level); 
 							end
 						end
-					else 
-						info.text = value[1]..NameInt; 
+					else  
+							info.text = value[1]..NameInt; 
 							UIDropDownMenu_AddButton(info, level); 
 					end  
 				elseif(key == 2)then
@@ -301,11 +295,9 @@ function QuestGoFilterDropDown_Initialize(self, level)
 								UIDropDownMenu_AddButton(info, level); 
 							end  
 						end
-					else 
-						if(GoNameNpc2 ~= nil)then 
-							info.text = value[1]..NameFin; 
-							UIDropDownMenu_AddButton(info, level); 
-						end
+					else  
+						info.text = value[1]..NameFin; 
+						UIDropDownMenu_AddButton(info, level);  
 					end  
 				elseif(key == 3)then
 					if(item)then  
@@ -377,15 +369,13 @@ end
 function QuestLoadTotalBotonsb()  
 	if(GMGenie.DELAYINT >= #GMGenie.MisionesTabla) then return end
 	
-		if ( not GMGenie_Spy_Misiones_Main:IsShown() ) then return end
---print(GMGenie.DELAYINT);
+		if ( not GMGenie_Spy_Misiones_Main:IsShown() ) then return end 
 	
 	for key = GMGenie.DELAYINT, GMGenie.DELAYINT+2 do  
 		
 	local valo1,valo2,valo3,valo4,valo5,valo6,valo7,valo8,valo9,valo10,valo11,valo12 = unpack (GMGenie.MisionesTabla[key]);
-	if(_G["Quest_Boton"..key])then 
---		GMGenie.DELAYINT = key;
---	else 
+	if(_G["Quest_Boton"..key])then  
+	
 	local buteon = _G["Quest_Boton"..key] or CreateFrame("CheckButton", "Quest_Boton"..key, FrameDeMisiones, "GMGenie_Quest_Statusbutton") 
 		buteon:SetSize(233, 15);     
 	--	buteon:SetText(QuestSubLocation(valo5,valo4,nil,valo6));  
@@ -465,16 +455,22 @@ function QuestLoadTotalBotonsb()
 			GameTooltip:Show();
 			buteon.Hilig:Show();   
 		end);
+ 		
 		buteon:SetScript("OnLeave", function(self)   
 			GameTooltip:Hide();  
 			buteon.Hilig:Hide();  
 		end);
-		buteon:SetScript("OnClick", function(self)    
-			GMGenie.KeyQuestValores = self:GetID(); 
-			ToggleDropDownMenu(1, nil, QuestGoFilterDropDown, self, 0, 0);
+		--buteon:SetScript("OnClick", function(self)    
+		buteon:SetScript("OnClick", function(self, button) 
+			if ( button == "LeftButton" ) then  
+				GMGenie.KeyQuestValores = self:GetID(); 
+				ToggleDropDownMenu(1, nil, QuestGoFilterDropDown, self, 0, 0);
+			else 
+				GMGenie.CreateFrameQuestSpecial(valo2);
+			end 
+		 
 		end);
-		GMGenie.DELAYINT = key;
-		--_G["Quest_Boton"..key]:Hide();
+		GMGenie.DELAYINT = key; 
 		end
 	end
 	
@@ -665,15 +661,22 @@ function QuestCreateBotons(num,valo1,valo2,valo3,valo4,valo5,valo6,valo7,valo8,v
 			GameTooltip:SetText(LogTitle.."|n"..Lado.."|n"..Empieza..""..Termina..""..objeto..""..Nota.."|n|n|cFFFF0000 #Misión: "..valo2.."|r");
 			GameTooltip:Show();
 			buteon.Hilig:Show();   
-		end);
+		end);  
+		buteon:SetScript("OnLoad", function(self)   
+			buteon:RegisterForClicks("LeftButtonUp", "RightButtonUp"); 
+		end);	
 		buteon:SetScript("OnLeave", function(self)   
 			GameTooltip:Hide();  
 			buteon.Hilig:Hide();  
 		end);
-		buteon:SetScript("OnClick", function(self)    
-			GMGenie.KeyQuestValores = self:GetID(); 
-			ToggleDropDownMenu(1, nil, QuestGoFilterDropDown, self, 0, 0);
-		end); 
+		buteon:SetScript("OnClick", function(self, button) 
+			if ( button == "LeftButton" ) then  
+				GMGenie.KeyQuestValores = self:GetID(); 
+				ToggleDropDownMenu(1, nil, QuestGoFilterDropDown, self, 0, 0);
+			else 
+				GMGenie.CreateFrameQuestSpecial(valo2);
+			end  
+		end);
  
 end
  
@@ -725,6 +728,27 @@ function ScrollFrameTemplate_Categ(self, value, scrollBar, minRar)
 	end
 end
 
+function SearchQuestFastGenieLoad()
+
+local scrollframe = GMGenie_Hud;
+
+local editBox = CreateFrame("EditBox", "GmGenieSearchQuestFast", scrollframe, "SearchBoxMineTemplate");
+editBox:SetSize(90, 20); editBox:SetFontObject(GameFontHighlightSmall)  
+editBox:SetPoint("TOPLEFT",7,26); editBox:SetAutoFocus(false);  
+	 editBox.Instructions:SetText("#Misión");
+editBox:SetScript("OnTextChanged", function(self)
+	local text = self:GetText();     
+	if(text ~= "")then 
+	 -- GMGenie.CreateFrameQuestSpecialSearch(text); 
+		GMGenie.CreateFrameQuestSpecial(tonumber(text));
+	else 
+		editBox.Instructions:SetText("#Misión");
+		GMGenie.CreateFrameQuestSpecial(0);
+	end
+	
+end); 
+
+end
 function QuestLoadTotalCateg()  
 local frame = GMGenie_Spy_Misiones_Main.Frames;   
 GMGenie_Spy_Misiones_Main.Mine:SetBackdrop( { 
@@ -792,8 +816,7 @@ local total = 0;
 		end
 		total = total +maxo;
 		
-		buteon:SetScript("OnClick", function(self)  
-		
+		buteon:SetScript("OnClick", function(self)   
 				if(value[2] ~= nil and value[2] ~= true)then 
 					bgtext:SetTexture("Interface\\TALENTFRAME\\"..value[2].."-TopLeft.blp"); 
 					bgtext:SetDesaturated(true);
@@ -817,25 +840,45 @@ local total = 0;
 				GMGenie.KeySubCaTValore = value[3];  
 				GMGenie.CategoriaQuestValores = value[4]; 
 				
-				if(GMGenie.FiltroClave ~= "")then     
+			--	if(GMGenie.FiltroClave ~= "")then     
 					GMGenie.CategoriaQuestGlobal = value[3]; 
-				end
+			--	end
+				
 				if(value[5] ~= true)then 
 					Frameron:Show();
 					GMGenie.loadWindow(Frameron, "Misiones de "..value[1], false, nil);
 					GMGenie.CategoriaChatReader = 1;
-					if(value[6] == nil and value[7] == nil)then  
-						Quest_Slot_Search(value[4], 2);
-					else 
-						Quest_Slot_Search(value[7], 2, value[6]);
-					end
 					local show = 0; 
-					 
+					local pos = value[4];
+					local Global;
+					
+					if(value[6] == nil and value[7] == nil)then  
+				--		Quest_Slot_Search(value[4], 2,nil,nil,value[1],value[2],value[3],value[4]);
+				--		Quest_Search_Funcion(value[4], 2);
+				--		GMGenie.Activador = 1;
+						Global = GMGenie.CategoriaQuestGlobal;
+					else 
+				--		Quest_Search_Funcion(value[7], 2,value[6],nil,value[1],value[2],value[3],value[4]);
+						
+				--		GMGenie.Activador = 1;
+						Global = value[6];
+				--		Quest_Slot_Search(value[7], 2, value[6]);
+					end
 					GMGenie.CateVal6 = 1;
+					local LogTitle,LogTitleEnglish; 
 					for k, v in pairs(GMGenie.MisionesTabla) do 
+					
+					 
 						if(value[6] == nil and value[7] == nil)then   
-							if(v[4] == GMGenie.CategoriaQuestValores and v[6] == GMGenie.CategoriaQuestGlobal)then   
+							if(v[4] == GMGenie.CategoriaQuestValores and v[6] == GMGenie.CategoriaQuestGlobal)then
 								
+								LogTitle,LogTitleEnglish = GetQuestInfoDbc2(v[2]); 
+									if(pos == v[4] and Global == v[6])then  
+										if(GMGenie_Spy_Misiones_Main.Frames:IsShown())then 
+											SendChatMessage(".look quest "..LogTitle);
+											SendChatMessage(".look quest "..LogTitleEnglish);
+										end
+									end 
 								if(_G["Quest_Boton"..k])then 
 									_G["Quest_Boton"..k]:Show();
 									show = show+1; 
@@ -846,7 +889,14 @@ local total = 0;
 								end
 							end 
 						else
-							if(v[4] == value[7] and v[6] == value[6])then   
+							if(v[4] == value[7] and v[6] == value[6])then  
+								LogTitle,LogTitleEnglish = GetQuestInfoDbc2(v[2]); 
+									if(pos == v[4] and Global == v[6])then  
+										if(GMGenie_Spy_Misiones_Main.Frames:IsShown())then 
+											SendChatMessage(".look quest "..LogTitle);
+											SendChatMessage(".look quest "..LogTitleEnglish);
+										end
+									end  
 								if(_G["Quest_Boton"..k])then 
 									_G["Quest_Boton"..k]:Show();
 									show = show+1; 
@@ -902,6 +952,37 @@ local total = 0;
 frame.content = content;  
 scrollbar:SetMinMaxValues(1, total)  
 end 
+function Quest_Search_Funcion(self, num, lobal, tct,namer,keyGor,BotonGlobalr,posr)
+local name = namer;
+local keyGo = keyGor;
+local BotonGlobal = BotonGlobalr;
+local pos = posr;
+local Global; 
+	 
+	if(lobal == nil)then 
+	  Global = GMGenie.CategoriaQuestGlobal;
+	else 
+	  Global = lobal;
+	end
+	
+	if(num == 1)then 
+		return name;
+	elseif(num == 2)then
+		for k, v in pairs(GMGenie.MisionesTabla) do  
+		local LogTitle,LogTitleEnglish  = GetQuestInfoDbc2(v[2]);
+			if(pos == v[4] and Global == v[6])then  
+				if(GMGenie_Spy_Misiones_Main.Frames:IsShown())then 
+					SendChatMessage(".look quest "..LogTitle);
+					SendChatMessage(".look quest "..LogTitleEnglish);
+				end
+			end
+		end
+	elseif(num == 3)then
+		return name;
+	end
+	
+end
+
 function Quest_Slot_Search(self, num, lobal, tct)
 local name,keyGo,BotonGlobal,pos,Global;
 	 
@@ -926,7 +1007,6 @@ local name,keyGo,BotonGlobal,pos,Global;
 					SendChatMessage(".look quest "..LogTitle);
 					SendChatMessage(".look quest "..LogTitleEnglish);
 				end
-					
 			end
 		end
 	elseif(num == 3)then

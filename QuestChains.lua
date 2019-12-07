@@ -39,13 +39,13 @@ GMGenie.CategoriaTabla = {
  {"Guerrero","WarriorFury",															2,1,true,nil,nil,nil,nil,nil,nil,"ClassIcon_Warrior"},
  {"Paladin","PALADINHOLY",															2,2,true,nil,nil,nil,nil,nil,nil,"ClassIcon_Paladin"},
  {"Cazador","HunterMarksmanship",													2,3,true,nil,nil,nil,nil,nil,nil,"ClassIcon_Hunter"},
--- {"Pícaro","RogueSubtlety",															2,4,false,nil,nil,nil,nil,nil,nil,"ClassIcon_Rogue"},
--- {"Sacerdote","PriestDiscipline",													2,5,false,nil,nil,nil,nil,nil,nil,"ClassIcon_Priest"},
+ {"Pícaro","RogueSubtlety",															2,4,false,nil,nil,nil,nil,nil,nil,"ClassIcon_Rogue"},
+ {"Sacerdote","PriestDiscipline",													2,5,false,nil,nil,nil,nil,nil,nil,"ClassIcon_Priest"},
  {"Caballero de la Muerte","DeathKnightBlood",										2,6,false,nil,nil,nil,nil,nil,nil,"ClassIcon_DeathKnight"},
  {"Chamán","ShamanEnhancement",														2,7,true,nil,nil,nil,nil,nil,nil,"ClassIcon_Shaman"},
--- {"Mago","MageArcane",																2,8,false,nil,nil,nil,nil,nil,nil,"ClassIcon_Mage"},
+ {"Mago","MageArcane",																2,8,false,nil,nil,nil,nil,nil,nil,"ClassIcon_Mage"},
  {"Brujo","WarlockSummoning",														2,9,true,nil,nil,nil,nil,nil,nil,"ClassIcon_Warlock"},
--- {"Druida","DruidRestoration",														2,10,false,nil,nil,nil,nil,nil,nil,"ClassIcon_Druid"},
+ {"Druida","DruidRestoration",														2,10,false,nil,nil,nil,nil,nil,nil,"ClassIcon_Druid"},
  
  {"Alquimia",nil,																	3,1,true,nil,nil,nil,nil,nil,nil,"trade_alchemy"},
  {"Encantamiento",nil,																3,2,false,nil,nil,nil,nil,nil,nil,"trade_engraving"},
@@ -549,16 +549,16 @@ GMGenie.MisionesTabla = {
 {"La llamada del fuego",							1522,"Horda",								2,1,109,nil,3173,5907,nil,nil,nil},
 {"La llamada del fuego",							1524,"Horda",								2,2,109,nil,5907,5900,nil,nil,nil},
 {"La llamada del fuego",							1525,"Horda",								2,3,109,nil,5900,5900,nil,nil,nil},
-{"La llamada del fuego",							1526,"Horda",								2,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
-{"La llamada del fuego",							1527,"Horda",								2,5,109,nil,"Blandón de la Llama Latente",nil,nil,nil,nil},
+{"La llamada del fuego",							1526,"Horda",								2,4,109,nil,5900,"Blandón de la Llama Latente",nil,"419.041:1843.15:11.989:0",nil},
+{"La llamada del fuego",							1527,"Horda",								2,5,109,nil,"Blandón de la Llama Latente",nil,"419.041:1843.15:11.989:0",nil,nil},
 
 -- CADENA PARA LOS TROL
 
 {"La llamada del fuego",							1522,"Horda",								3,1,109,nil,3173,5907,nil,nil,nil},
 {"La llamada del fuego",							1524,"Horda",								3,2,109,nil,5907,5900,nil,nil,nil},
 {"La llamada del fuego",							1525,"Horda",								3,3,109,nil,5900,5900,nil,nil,nil},
-{"La llamada del fuego",							1526,"Horda",								3,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
-{"La llamada del fuego",							1527,"Horda",								3,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
+{"La llamada del fuego",							1526,"Horda",								3,4,109,nil,5900,"Blandón de la Llama Latente",nil,"419.041:1843.15:11.989:0",nil},
+{"La llamada del fuego",							1527,"Horda",								3,5,109,nil,"Blandón de la Llama Latente",5907,"419.041:1843.15:11.989:0",nil,nil},
 
 
 -- CADENA PARA LOS TAUREN
@@ -566,8 +566,8 @@ GMGenie.MisionesTabla = {
 {"La llamada del fuego",							1523,"Horda",								4,1,109,nil,3066,5907,nil,nil,nil},
 {"La llamada del fuego",							1524,"Horda",								4,2,109,nil,5907,5900,nil,nil,nil},
 {"La llamada del fuego",							1525,"Horda",								4,3,109,nil,5900,5900,nil,nil,nil},
-{"La llamada del fuego",							1526,"Horda",								4,4,109,nil,5900,"Blandón de la Llama Latente",nil,nil,nil},
-{"La llamada del fuego",							1527,"Horda",								4,5,109,nil,"Blandón de la Llama Latente",5907,nil,nil,nil},
+{"La llamada del fuego",							1526,"Horda",								4,4,109,nil,5900,"Blandón de la Llama Latente",nil,"419.041:1843.15:11.989:0",nil},
+{"La llamada del fuego",							1527,"Horda",								4,5,109,nil,"Blandón de la Llama Latente",5907,"419.041:1843.15:11.989:0",nil,nil},
 
 -- ==================================================================================================================================================
 
@@ -672,7 +672,7 @@ GMGenie.MisionesTabla = {
  {nil,												12680,"Neutro",								6,11,2,nil,28653,28653,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
  {nil,												12687,"Neutro",								6,12,2,nil,28653,28653,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento y aprenderas la montura de clase \"Destrero de la Muerte\""}, 
  {nil,												12733,"Neutro",								6,13,2,nil,29047,29047,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
- {nil,												12711,"Neutro",								6,14,2,nil,nil,nil,nil,nil,"La Misión se Reclama directamente, Solo debes encontrar el Buzón Cerca de los Cruzados ( Aparece en todas las Fases )"}, 
+ {nil,												12711,"Neutro",								6,14,2,nil,"Correo abandonado","Correo abandonado","2113.91:-5795.67:101.4:609",nil,"La Misión se Reclama directamente, Solo debes encontrar el Buzón Cerca de los Cruzados ( Aparece en todas las Fases )"}, 
  {nil,												12679,"Neutro",								6,15,2,nil,28647,28647,nil,nil,"Al Completar esta misión recibirás como recompensa 1 punto de talento"}, 
  {nil,												12697,"Neutro",								6,16,2,nil,28377,28658,nil,nil,nil}, 
  {nil,												12700,"Neutro",								6,17,2,nil,28658,28377,nil,nil,nil}, 
@@ -683,7 +683,7 @@ GMGenie.MisionesTabla = {
  {nil,												12715,"Neutro",								6,22,2,nil,28907,28911,nil,nil,nil}, 
  {nil,												12716,"Neutro",								6,23,2,nil,28919,28919,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
  {nil,												12717,"Neutro",								6,24,2,nil,28919,28919,nil,nil,nil}, 
- {nil,												12718,"Neutro",								6,25,2,nil,nil,nil,nil,nil,"Esta misión repetible la puedes tomar en en el caldero"}, 
+ {nil,												12718,"Neutro",								6,25,2,nil,"Caldera de peste","Caldera de peste","1993.15:-5826.18:100.506:609","1993.15:-5826.18:100.506:609","Esta misión repetible la puedes tomar en en el caldero"}, 
  {nil,												12719,"Neutro",								6,26,2,nil,28911,28911,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
  {nil,												12722,"Neutro",								6,27,2,nil,28910,28910,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
  {nil,												12720,"Neutro",								6,28,2,nil,28911,28911,nil,nil,"Al Completar esta misión recibirás como recompensa 2 punto de talento"}, 
@@ -756,14 +756,14 @@ GMGenie.MisionesTabla = {
  {"Al foso",										12997,"Neutro",								2,19,1,nil,29839,29839,nil,nil,nil},
  {"Prepárate para la gloria",						13061,"Neutro",								2,20,1,nil,29839,29975,nil,nil,nil},
  {"El regalo de despedida de Lok'lira",				13062,"Neutro",								2,21,1,nil,29975,29796,nil,nil,nil},
- {"El drakkensryd",									12886,"Neutro",								2,22,1,nil,29796,"Thorim",104990,97128,nil},
- {"Rivalidad fraternal",							13064,"Neutro",								2,23,1,nil,"Thorim","Thorim",97128,97128,nil},
- {"Enmiendas",										12915,"Neutro",								2,24,1,nil,"Thorim","Thorim",97128,97128,nil},
+ {"El drakkensryd",									12886,"Neutro",								2,22,1,nil,29796,29445,nil,nil,nil},
+ {"Rivalidad fraternal",							13064,"Neutro",								2,23,1,nil,29445,29445,nil,nil,nil},
+ {"Enmiendas",										12915,"Neutro",								2,24,1,nil,29445,29445,nil,nil,nil},
 
 -- Necesito un texto por aca - "A partir de esta misión, es necesario conseguir el item Metal cubierto de escoria, para continuar la cadena."  												
 
- {"El fuego del refinador",							12922,"Neutro",								2,25,41556,"Metal cubierto de escoria","Yunque de Fjorn",nil,nil,nil},
- {"Una chispa de esperanza",						12956,"Neutro",								2,26,1,nil,"Yunque de Fjorn","Thorim",nil,97128,nil},
+ {"El fuego del refinador",							12922,"Neutro",								2,25,1,41556,"Metal cubierto de escoria","Yunque de Fjorn",nil,"7217.07:-3645.75:819.406:571",nil},
+ {"Una chispa de esperanza",						12956,"Neutro",								2,26,1,nil,"Yunque de Fjorn",29445,"7217.07:-3645.75:819.406:571",97128,nil},
 
 -- Necesito un texto por aca - "Al tomar la misión de forjando una alianza, ya estara en la fase correcta para ver al NPC que vende los parches. Es necesario tener activa o completa la misión, si el PJ abandona la misión, se movera a otra fase y no podra ver el NPC."
 			   --  "Esta misión la entrega Thorim en el templo de las tormentas."	
@@ -808,16 +808,16 @@ GMGenie.MisionesTabla = {
  {"Un viaje complicado",							12536,"Neutro",								3,10,1,38512,28082,"Zepik el Cazador de górlocs",nil,nil,2}, 
  {"El rayo golpea dos veces sin duda",				12537,"Neutro",								3,11,1,38512,"Zepik el Cazador de górlocs","Zepik el Cazador de górlocs",nil,nil,2}, 
  {"La bruma no está escuchando",					12538,"Neutro",								3,12,1,38512,"Zepik el Cazador de górlocs","Zepik el Cazador de górlocs",nil,nil,2},
- {"A pata",											12539,"Neutro",								3,13,1,38512,"Zepik el Cazador de górlocs",28082,nil,112691,1}, 
+ {"A pata",											12539,"Neutro",								3,13,1,38512,"Zepik el Cazador de górlocs",28082,nil,nil,1}, 
 
 -- Necesito un texto por acá - "Tienes que matar a un crocolisto cercano y tendrás que encontrar a un Oráculo Hablalluvia herido, estará en la orilla del río justo al norte de la colina." 
 
- {"Siguiendo órdenes",								12540,"Neutro",								3,14,1,nil,28082,"Oráculo Hablalluvia herido",112691,101031,nil},
+ {"Siguiendo órdenes",								12540,"Neutro",								3,14,1,nil,28082,28217,nil,nil,nil},
 
 -- Necesito un texto por aca - "A partir de acá, se realiza la parte de misiones en óraculos."
 
- {"Malentendidos afortunados",						12570,"Neutro",								3,15,1,nil,"Oráculo Hablalluvia herido",28027,101031,107208,nil},
- {"Haz que se vaya la serpiente mala",				12571,"Neutro",								3,16,1,nil,28027,28027,107208,107208,nil}, 
+ {"Malentendidos afortunados",						12570,"Neutro",								3,15,1,nil,28217,28027,nil,nil,nil},
+ {"Haz que se vaya la serpiente mala",				12571,"Neutro",								3,16,1,nil,28027,28027,nil,nil,nil}, 
 
 -- Necesito un texto por aca - "Para la siguiente misión necesitas invocar a Lafoo que se invoca con el item que se entrega en la anterior misión (Bolsa de bichos de lafoo)"
 
@@ -963,9 +963,9 @@ GMGenie.MisionesTabla = {
 {"No dejes que nada se eche a perder", 				11958,"Neutro",								5,24,1,nil,26194,26194,nil,nil,nil},
 {"Visión espiritual",  								12028,"Neutro",								5,25,1,nil,26595,26595,nil,nil,nil},
 {"El ancestro mana'loa", 							12030,"Neutro",								5,26,1,nil,26595,"Ancestro Mana'loa",nil,"3145.73:1572.03:164.361:571",nil},
-{"Libertad para los que padecen",  					12031,"Neutro",								5,27,1,nil,"Ancestro Mana'loa","Ancestro Mana'loa",198419,188419,nil},
-{"Conversando con las profundidades", 				12032,"Neutro",								5,28,1,nil,"Ancestro Mana'loa","Toalu'u el Místico",188419,26595,nil},
-{"Signos de importantes disturbios acuáticos", 		12011,"Neutro",								5,29,1,nil,"Trampa para cangrejos destrozada",26245,188364,nil,nil},
+{"Libertad para los que padecen",  					12031,"Neutro",								5,27,1,nil,"Ancestro Mana'loa","Ancestro Mana'loa","3145.73:1572.03:164.361:571","3145.73:1572.03:164.361:571",nil},
+{"Conversando con las profundidades", 				12032,"Neutro",								5,28,1,nil,"Ancestro Mana'loa",26595,"3145.73:1572.03:164.361:571",nil,nil},
+{"Signos de importantes disturbios acuáticos", 		12011,"Neutro",								5,29,1,nil,"Trampa para cangrejos destrozada",26245,"2583.79:950.882:-60.8579:571",nil,nil},
 {"El cebo",  										12016,"Neutro",								5,30,1,nil,26245,26245,nil,nil,nil},
 {"Carne en el anzuelo",  							12017,"Neutro",								5,31,1,nil,26245,26245,nil,nil,nil},
 {"Trampas de cangrejos de Tua'kea", 				12009,"Neutro",								5,32,1,nil,26245,26245,nil,nil,nil},
@@ -1123,7 +1123,7 @@ GMGenie.MisionesTabla = {
 {"Aún queda esperanza", 							13080,"Neutro",								9,32,1,nil,30562,30677,nil,nil,nil},
 {"La voluntad de los naaru", 						13081,"Neutro",								9,33,1,nil,30677,18481,nil,nil,nil},
 {"El favor de A'dal", 								13082,"Neutro",								9,34,1,nil,18481,30562,nil,nil,nil},
-{"Luz en las tinieblas", 							13083,"Neutro",								9,35,1,nil,30677,"Posesiones de Bridenbrad",nil,192833,nil},
+{"Luz en las tinieblas", 							13083,"Neutro",								9,35,1,nil,30677,"Posesiones de Bridenbrad",nil,"8138.02:440.703:574.602:571",nil},
 
 
 -- Necesito un texto por acá - "Al terminar la cadena se queda en la fase 1 correcta para no tener problemas."
@@ -1145,7 +1145,7 @@ GMGenie.MisionesTabla = {
 {"¡bomba va!",										11010,"Neutro",								10,13,1,nil,23120,23120,nil,nil,nil},
 {"¡bombardéalos de nuevo!",							11023,"Neutro",								10,14,1,nil,23120,23120,nil,nil,"Aca ya se activa la diaria final para el logro y reputación."},
 {"La obligación de un padre",						11061,"Neutro",								10,15,1,nil,23316,23316,nil,nil,"Al terminar las dos misiones siguientes, se puede realizar las diarias de ogrila para subir a exaltado."},
-{"Un látigo vil para Gahk",							11079,"Neutro",								10,16,1,nil,"Gahk","Gahk",23300,23300,nil},
+{"Un látigo vil para Gahk",							11079,"Neutro",								10,16,1,nil,23300,23300,nil,nil,nil},
 
 -- =================================================================================================================================================================
 
@@ -1189,23 +1189,23 @@ GMGenie.MisionesTabla = {
 
 -- Cadena de la Horda.
 
-{"La empuñadura maltrecha", 						24554,"Horda",	1,13,4,50380,"Empuñadura maltrecha","Myralion Resplandor ",nil,36642,nil},
-{"Lo que saben los dragones", 						24555,"Horda",	1,14,4,nil,"Myralion Resplandor","Magister Hathorel",36642,36670,nil},
-{"El plan de El Pacto de Plata", 					24557,"Horda",	1,15,4,nil,"Magister Hathorel","Magister Hathorel",36670,36670,nil},
-{"Un disfraz apropiado", 							24556,"Horda",	1,16,4,nil,"Magister Hathorel","Magister Hathorel",36670,36670,nil},
-{"Audiencia con el arcanista", 						24451,"Horda",	1,17,4,nil,"Magister Hathorel","Magister Hathorel",36670,36670,nil},
-{"Vuelve con Myralion Resplandor", 					24558,"Horda",	1,18,4,nil,"Magister Hathorel","Myralion Resplandor",36670,36642,nil},
-{"Reforjar la espada", 								24559,"Horda",	1,19,4,nil,"Myralion Resplandor","Myralion Resplandor",36642,36642,nil},
-{"Templar la hoja", 								24560,"Horda",	1,20,4,nil,"Myralion Resplandor","Myralion Resplandor",36642,36642,nil},
-{"Las Cámaras de Reflexión", 						24561,"Horda",	1,21,4,nil,"Myralion Resplandor","Myralion Resplandor",36642,36642,nil},
-{"Viaje a La Fuente del Sol", 						24562,"Horda",	1,22,4,nil,"Myralion Resplandor",37527,36642,37527,nil},
-{"Thalorien Buscalba", 								24563,"Horda",	1,23,4,nil,37527,37527,37527,37527,nil},
-{"La purificación de Quel'Delar",					24564,"Horda",	1,24,4,nil,37527,"Myralion Resplandor",37527,36642,"El npc se encuentra dentro de la instancia, en la entrada."},
+{"La empuñadura maltrecha", 						24554,"Horda",								1,13,4,50380,"Empuñadura maltrecha",36642,nil,nil,nil},
+{"Lo que saben los dragones", 						24555,"Horda",								1,14,4,nil,36642,36670,nil,nil,nil},
+{"El plan de El Pacto de Plata", 					24557,"Horda",								1,15,4,nil,36670,36670,nil,nil,nil},
+{"Un disfraz apropiado", 							24556,"Horda",								1,16,4,nil,36670,36670,nil,nil,nil},
+{"Audiencia con el arcanista", 						24451,"Horda",								1,17,4,nil,36670,36670,nil,nil,nil},
+{"Vuelve con Myralion Resplandor", 					24558,"Horda",								1,18,4,nil,36670,36642,nil,nil,nil},
+{"Reforjar la espada", 								24559,"Horda",								1,19,4,nil,36642,36642,nil,nil,nil},
+{"Templar la hoja", 								24560,"Horda",								1,20,4,nil,36642,36642,nil,nil,nil},
+{"Las Cámaras de Reflexión", 						24561,"Horda",								1,21,4,nil,36642,36642,nil,nil,nil},
+{"Viaje a La Fuente del Sol", 						24562,"Horda",								1,22,4,nil,36642,37527,nil,nil,nil},
+{"Thalorien Buscalba", 								24563,"Horda",								1,23,4,nil,37527,37527,nil,nil,nil},
+{"La purificación de Quel'Delar",					24564,"Horda",								1,24,4,nil,37527,36642,nil,nil,"El npc se encuentra dentro de la instancia, en la entrada."},
 
-{"Una victoria para El Pacto de Plata", 			24796,"Alianza",	1,25,4,nil,36624,"Vereesa Brisaveloz ",36624,30115,"Misión opcional para caster o heler Espadas"},
-{"Una victoria para El Pacto de Plata", 			24795,"Alianza",	1,26,4,nil,36624,"Justicar Mariel Corazón Veraz",36624,33817,"Misión opcional para caster o heler Mazas"},
-{"Una victoria para los Atracasol", 				24799,"Horda",	1,27,4,nil,"Myralion Resplandor","Justicar Mariel Corazón Veraz",36642,33817,"Misión opcional para caster o heler Mazas"},
-{"Una victoria para los Atracasol", 				24801,"Horda",	1,28,4,nil,"Myralion Resplandor","Archimago Aethas Atracasol",36642,30116,"Misión opcional para caster o heler Espadas"},
+{"Una victoria para El Pacto de Plata", 			24796,"Alianza",							1,25,4,nil,36624,30115,nil,nil,"Misión opcional para caster o heler Espadas"},
+{"Una victoria para El Pacto de Plata", 			24795,"Alianza",							1,26,4,nil,36624,33817,nil,nil,"Misión opcional para caster o heler Mazas"},
+{"Una victoria para los Atracasol", 				24799,"Horda",								1,27,4,nil,36642,33817,nil,nil,"Misión opcional para caster o heler Mazas"},
+{"Una victoria para los Atracasol", 				24801,"Horda",								1,28,4,nil,36642,30116,nil,nil,"Misión opcional para caster o heler Espadas"},
 
 -- ===================================================================================================================================================================================
 
@@ -1215,35 +1215,56 @@ GMGenie.MisionesTabla = {
 
 -- CADENA PARA LOS HUMANOS
 
-{"La invocación de Gakin",			1685,"Alianza",		1,1,102,nil,"Remen Marcot","Gakin el Presotenebra",6121,6122,nil},
-{"Surena Caledon",					1688,"Alianza",		1,2,102,nil,"Gakin el Presotenebra ","Gakin el Presotenebra",6122,6122,nil},
-{"El vínculo",						1689,"Alianza",		1,3,102,nil,"Gakin el Presotenebra ","Gakin el Presotenebra",6122,6122,nil},
+{"La invocación de Gakin",							1685,"Alianza",								1,1,102,nil,6121,6122,nil,nil,nil},
+{"Surena Caledon",									1688,"Alianza",								1,2,102,nil,6122,6122,nil,nil,nil},
+{"El vínculo",										1689,"Alianza",								1,3,102,nil,6122,6122,nil,nil,nil},
 
 -- CADENA PARA LOS GNOMOS
 
-{"El Cordero Degollado",			1715,"Alianza",		2,1,102,nil,"Yago Llavenegra","Gakin el Presotenebra",6120,6122,nil},
-{"Surena Caledon",					1688,"Alianza",		2,2,102,nil,"Gakin el Presotenebra","Gakin el Presotenebra",6122,6122,nil},
-{"El vínculo",						1689,"Alianza",		2,3,102,nil,"Gakin el Presotenebra","Gakin el Presotenebra",6122,6122,nil},
+{"El Cordero Degollado",							1715,"Alianza",								2,1,102,nil,6120,6122,nil,nil,nil},
+{"Surena Caledon",									1688,"Alianza",								2,2,102,nil,6122,6122,nil,nil,nil},
+{"El vínculo",										1689,"Alianza",								2,3,102,nil,6122,6122,nil,nil,nil},
 
 -- CADENA PARA LOS ORCOS
 
-{"Las invocaciónes de Gan'rul",		1506,"Horda",		3,1,102,nil,"Ophek","Gan'rul Ojosangre",3294,5875,nil},
-{"Criatura Abisal",					1501,"Horda",		3,2,102,nil,"Gan'rul Ojosangre","Gan'rul Ojosangre",5875,5875,nil},
-{"El vínculo",						1504,"Horda",		3,3,102,nil,"Gan'rul Ojosangre","Gan'rul Ojosangre",5875,5875,nil},
+{"Las invocaciónes de Gan'rul",						1506,"Horda",								3,1,102,nil,3294,5875,nil,nil,nil},
+{"Criatura Abisal",									1501,"Horda",								3,2,102,nil,5875,5875,nil,nil,nil},
+{"El vínculo",										1504,"Horda",								3,3,102,nil,5875,5875,nil,nil,nil},
 
 -- CADENA PARA LOS NO MUERTOS
 
-{"Las invocaciones de Halgar",		1487,"Horda",		4,1,102,nil,"Ageron Kargal","Carendin Halgar",5724,5675,nil},
-{"Criatura Abisal",					1473,"Horda",		4,2,102,nil,"Carendin Halgar","Carendin Halgar",5675,5675,nil},
-{"El vínculo",						1471,"Horda",		4,3,102,nil,"Carendin Halgar","Carendin Halgar",5675,5675,nil},
+{"Las invocaciones de Halgar",						1487,"Horda",								4,1,102,nil,5724,5675,nil,nil,nil},
+{"Criatura Abisal",									1473,"Horda",								4,2,102,nil,5675,5675,nil,nil,nil},
+{"El vínculo",										1471,"Horda",								4,3,102,nil,5675,5675,nil,nil,nil},
 
 -- CADENA PARA LOS ELFOS DE SANGRE
 
-{"Regresa junto a Talionia",		10788,"Horda",		5,13,102,nil,"Carendin Halgar","Gan'rul Ojosangre",5675,5875,"El Npc esta en entrañas"},
-{"La piedra",						9529,"Horda",		5,14,102,nil,"Talionia","Piedra del vacío",16647,181698,nil},
-{"El vínculo",						9619,"Horda",		5,15,102,23732,"Piedra del vacío","Talionia",181698,16647,"Usa la  Piedra de vacío para invocar a un abisario (ID 5676) en la Aldea de Bruma Dorada, derrótalo, y regresa junto a Talionia en la Ciudad de Lunargenta."},
+{"Regresa junto a Talionia",						10788,"Horda",								5,13,102,nil,5675,5875,5675,5875,"El Npc esta en entrañas"},
+{"La piedra",										9529,"Horda",								5,14,102,nil,16647,"Piedra del vacío",nil,"7923.38:-6728.08:43.4225:530",nil},
+{"El vínculo",										9619,"Horda",								5,15,102,23732,"Piedra del vacío",16647,"7923.38:-6728.08:43.4225:530",nil,"Usa la  Piedra de vacío para invocar a un abisario (ID 5676) en la Aldea de Bruma Dorada, derrótalo, y regresa junto a Talionia en la Ciudad de Lunargenta."},
 
 -- ======================================================================================================================================================
 
 
 };
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

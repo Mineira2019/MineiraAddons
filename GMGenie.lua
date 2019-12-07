@@ -8,6 +8,7 @@
 GMGenie = {};
 GMGenie_SavedVars = {};
 
+GMGenie.Activador = 0;
 GMGenie.CateVal6 = 0;
 GMGenie.CateVal7 = nil;
 
@@ -130,8 +131,24 @@ function GMGenie.loadEditBox(window)
     getglobal(name .. '_Frame_Text'):SetHeight(getglobal(name .. '_Frame'):GetHeight());
 end
 
-function GMGenie.CreateFrame(self)
+function GMGenie.CreateFrameQuestSpecialSearch(self)
+local strin = self;
+strin = SuperLowerString(strin); 
+	for key, value in pairs(QUEST_ESP_DETALLES_DBC) do     
+		if string.match(SuperLowerString(self), SuperLowerString(value[2])) then
+			GMGenie.CreateFrameQuestSpecial(value[1])  
+		end
+	end 
+end
+
+function GMGenie.CreateFrameQuestSpecial(self)
 local Mision = self or 10907;
+	if(Mision == 0)then 
+		if(QuestFrame:IsShown() )then 
+			QuestFrame:Hide();
+		end
+		return 
+	end
 
 local LogTitle,LogTitleEnglish,QuestInfoID,RequiredFactionId1,RequiredFactionId2,RequiredFactionValue1,RequiredFactionValue2,RewardItem1,RewardAmount1,RewardItem2,RewardAmount2,RewardItem3,RewardAmount3,RewardItem4,RewardAmount4,RewardChoiceItemID1,RewardChoiceItemQuantity1,RewardChoiceItemID2,RewardChoiceItemQuantity2,RewardChoiceItemID3,RewardChoiceItemQuantity3,RewardChoiceItemID4,RewardChoiceItemQuantity4,RewardChoiceItemID5,RewardChoiceItemQuantity5,RewardChoiceItemID6,RewardChoiceItemQuantity6,faction,RequiredNpcOrGo1,QuestSortID,RequiredNpcOrGo2,RequiredNpcOrGo3,RequiredNpcOrGo4,RequiredNpcOrGoCount1,RequiredNpcOrGoCount2,RequiredNpcOrGoCount3,RequiredNpcOrGoCount4,RequiredItemId1,RequiredItemId2,RequiredItemId3,RequiredItemId4,RequiredItemId5,RequiredItemId6,RequiredItemCount1,RequiredItemCount2,RequiredItemCount3,RequiredItemCount4,RequiredItemCount5,RequiredItemCount6 = GetQuestInfoDbc2(Mision, 1);
  	local Desc = "Poseo un gran conocimiento sobre alquimia. Sin embargo, mi conocimiento es general, sobre la naturaleza. Si quieres especializarte, tendrás que encontrar a otros que tengan un campo de estudio más especializado.|n|nSi quieres especializarte en transmutación, te recomiendo que busques la ayuda del etéreo llamado Zarevhi. Reside en La Flecha de la Tormenta, en la Tormenta Abisal.|n|nSu conocimiento sobre la transmutación es... en fin, ¡impresionante! Quizás puedas aprender mucho de él, pero ten cuidado, no se puede confiar en los etéreos."
@@ -139,22 +156,30 @@ local LogTitle,LogTitleEnglish,QuestInfoID,RequiredFactionId1,RequiredFactionId2
  	QuestFrameProgressPanel:Show();
 	QuestFramePortrait:SetTexture("Interface\\QuestFrame\\UI-QuestLog-BookIcon");
 	QuestFrameNpcNameText:SetText("Dealles de la misión");
-	QuestProgressTitleText:SetText(LogTitle); 
-	QuestProgressText:SetText(Desc..Desc);
+	QuestProgressTitleText:SetText(LogTitle);  
 	QuestFrameGoodbyeButton:Disable();
---	 if(RequiredItemId1 ~= 0 and RequiredItemId2 ~= 0 and RequiredItemId3 ~= 0 and RequiredItemId4 ~= 0 and RequiredItemId5 ~= 0 and RequiredItemId6 ~= 0)then 
-		local Max = 0;
+	QuestProgressText:SetText(" ");
+	if(QUEST_ESP_DETALLES_DBC)then 
+		for key, value in pairs(QUEST_ESP_DETALLES_DBC) do  
+		local Texti1, Texti2;
+			 if(value[1] == Mision)then   
+				if(value[3] == nil)then Texti1 = " "; else Texti1 = value[3]; end
+				if(value[4] == nil)then Texti2 = " "; else Texti2 = value[4]; end
+				QuestProgressText:SetText(Texti1.."|n|n|CFF00205B"..Texti2.."|r");
+				break 
+			end
+		end 
+	end
+ 		local Max = 0;
 		if(RequiredItemId1 ~= 0)then Max = Max +1; end
 		if(RequiredItemId2 ~= 0)then Max = Max +1; end
 		if(RequiredItemId3 ~= 0)then Max = Max +1; end
 		if(RequiredItemId4 ~= 0)then Max = Max +1; end
 		if(RequiredItemId5 ~= 0)then Max = Max +1; end
-		if(RequiredItemId6 ~= 0)then Max = Max +1; end
-		
+		if(RequiredItemId6 ~= 0)then Max = Max +1; end 
 		
 		GMGenie.QuestFrameProgressItems_Update(Max, RequiredItemId1, RequiredItemId2, RequiredItemId3, RequiredItemId4, RequiredItemId5, RequiredItemId6, RequiredItemCount1, RequiredItemCount2, RequiredItemCount3, RequiredItemCount4, RequiredItemCount5, RequiredItemCount6)
---	 end
-	
+ 
 end
 
 
@@ -164,6 +189,11 @@ function GMGenie.QuestFrameProgressItems_Update(self, num1, num2, num3, num4, nu
 	local nem5 = num5; local nem6 = num6;
 	local numRequiredItems = self;
 	local questItemName = "QuestProgressItem";
+	
+ 	for x=1, 6 do
+ 		_G[questItemName..x]:Hide();
+ 	end
+	
 	if ( numRequiredItems > 0 or GetQuestMoneyToGet() > 0 ) then
 		QuestProgressRequiredItemsText:Show();
 		 
@@ -172,49 +202,121 @@ function GMGenie.QuestFrameProgressItems_Update(self, num1, num2, num3, num4, nu
 
 			_G[questItemName..1]:SetPoint("TOPLEFT", "QuestProgressRequiredItemsText", "BOTTOMLEFT", -3, -5);
   
-		for i=1, numRequiredItems, 1 do	
-			local requiredItem = _G[questItemName..i]; 
+	  for i=1, 6 do
 			local name, texture, count;
-			requiredItem.type = "required";
-			if(i == 1 )then 
-				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(num1);
-				count = c1;
-			elseif(i == 2)then 
-				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem2);
-				count = c2;
-			elseif(i == 3)then 
-				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem3);
-				count = c3;
-			elseif(i == 4)then 
-				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem4);
-				count = c4;
-			elseif(i == 5)then 
-				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem5);
-				count = c5;
-			elseif(i == 6)then 
-				name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem6);
-				count = c6;
-			end
-			texture = "Interface/Icons/"..texture;
-			-- icon = "Interface\\Icons\\"..texture;
--- return name, class, subclass, displayid, Quality, InventoryType, AllowableClass, Icon, Clase, Subclase;
-			SetItemButtonCount(requiredItem, count);
-		 	SetItemButtonTexture(requiredItem, texture);
-			requiredItem:Show();
-			_G[questItemName..i.."Name"]:SetText(name);
-			
-		end
-	else
+			local ItemID; 
+			local requiredItem;
+			if(i == 1)then  
+				if(nem1 ~= 0)then   
+					requiredItem = _G[questItemName..i]; requiredItem.type = "required";
+					name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem1);
+					texture = "Interface/Icons/"..texture; 
+					SetItemButtonCount(requiredItem, c1);
+					SetItemButtonTexture(requiredItem, texture);
+					requiredItem:Show(); 
+					requiredItem:SetScript("OnEnter", function(self) 
+						if(nem1)then 
+							GameTooltip:SetOwner(self, "TOP"); 
+							GameTooltip:SetHyperlink("item:" .. nem1 .. ":0:0:0:0:0:0:0")
+							GameTooltip:Show(); 
+						end
+					end); 
+					_G[questItemName..i.."Name"]:SetText(name);  
+				end
+			elseif(i == 2)then
+				if(nem2 ~= 0)then   
+					requiredItem = _G[questItemName..i]; requiredItem.type = "required";
+					name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem2);
+					texture = "Interface/Icons/"..texture; 
+					SetItemButtonCount(requiredItem, c2);
+					SetItemButtonTexture(requiredItem, texture);
+					requiredItem:Show(); 
+					requiredItem:SetScript("OnEnter", function(self) 
+						if(nem2)then 
+							GameTooltip:SetOwner(self, "TOP"); 
+							GameTooltip:SetHyperlink("item:" .. nem2 .. ":0:0:0:0:0:0:0")
+							GameTooltip:Show(); 
+						end
+					end); 
+					_G[questItemName..i.."Name"]:SetText(name);  
+				end
+			elseif(i == 3)then
+				if(nem3 ~= 0)then   
+					requiredItem = _G[questItemName..i]; requiredItem.type = "required";
+					name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem3);
+					texture = "Interface/Icons/"..texture; 
+					SetItemButtonCount(requiredItem, c3);
+					SetItemButtonTexture(requiredItem, texture);
+					requiredItem:Show(); 
+					requiredItem:SetScript("OnEnter", function(self) 
+						if(nem3)then 
+							GameTooltip:SetOwner(self, "TOP"); 
+							GameTooltip:SetHyperlink("item:" .. nem3 .. ":0:0:0:0:0:0:0")
+							GameTooltip:Show(); 
+						end
+					end); 
+					_G[questItemName..i.."Name"]:SetText(name);  
+				end
+			elseif(i == 4)then
+				if(nem4 ~= 0)then   
+					requiredItem = _G[questItemName..i]; requiredItem.type = "required";
+					name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem4);
+					texture = "Interface/Icons/"..texture; 
+					SetItemButtonCount(requiredItem, c4);
+					SetItemButtonTexture(requiredItem, texture);
+					requiredItem:Show(); 
+					requiredItem:SetScript("OnEnter", function(self) 
+						if(nem4)then 
+							GameTooltip:SetOwner(self, "TOP"); 
+							GameTooltip:SetHyperlink("item:" .. nem4 .. ":0:0:0:0:0:0:0")
+							GameTooltip:Show(); 
+						end
+					end); 
+					_G[questItemName..i.."Name"]:SetText(name);  
+				end
+			elseif(i == 5)then
+				if(nem5 ~= 0)then   
+					requiredItem = _G[questItemName..i]; requiredItem.type = "required";
+					name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem5);
+					texture = "Interface/Icons/"..texture; 
+					SetItemButtonCount(requiredItem, c5);
+					SetItemButtonTexture(requiredItem, texture);
+					requiredItem:Show(); 
+					requiredItem:SetScript("OnEnter", function(self) 
+						if(nem1)then 
+							GameTooltip:SetOwner(self, "TOP"); 
+							GameTooltip:SetHyperlink("item:" .. nem5 .. ":0:0:0:0:0:0:0")
+							GameTooltip:Show(); 
+						end
+					end); 
+					_G[questItemName..i.."Name"]:SetText(name);  
+				end
+			elseif(i == 6)then
+				if(nem6 ~= 0)then   
+					requiredItem = _G[questItemName..i]; requiredItem.type = "required";
+					name, _, _, _, _, _, _, texture = GetItemInfoDbc2(nem6);
+					texture = "Interface/Icons/"..texture; 
+					SetItemButtonCount(requiredItem, c6);
+					SetItemButtonTexture(requiredItem, texture);
+					requiredItem:Show(); 
+					requiredItem:SetScript("OnEnter", function(self) 
+						if(nem1)then 
+							GameTooltip:SetOwner(self, "TOP"); 
+							GameTooltip:SetHyperlink("item:" .. nem6 .. ":0:0:0:0:0:0:0")
+							GameTooltip:Show(); 
+						end
+					end); 
+					_G[questItemName..i.."Name"]:SetText(name);  
+				end
+			end   			
+	  end
+   else
 		QuestProgressRequiredMoneyText:Hide();
 		QuestProgressRequiredMoneyFrame:Hide();
 		QuestProgressRequiredItemsText:Hide();
 	end
-	for i=numRequiredItems + 1, MAX_REQUIRED_ITEMS, 1 do
-		_G[questItemName..i]:Hide();
-	end
 	QuestProgressScrollFrameScrollBar:SetValue(0);
 end
-
 
 
 
