@@ -330,8 +330,7 @@ function ChatFrame_MessageEventHandler(self, event, ...)
 									local button1 = v[2]; 
 									local tix;
 									if(button)then 
-										if(button:IsShown())then  
-										--	tix = button.Active:GetText(); -- "[Inactivo] "
+										if(button:IsShown())then   
 											if string.find(arg1, button1.." - ") then 
 												if string.find(arg1, "active") then   	
 												button.Active:SetText("|cFFFF8B00[Active]|r") 

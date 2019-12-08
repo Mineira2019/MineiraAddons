@@ -66,6 +66,19 @@
                 </Anchor>
             </Anchors>
         </ButtonText>
+		<Layers> 
+			<Layer level="BORDER">
+				<FontString name="$Active" inherits="GenieFontHighlightSmall" text=" " justifyH="RIGHT" parentKey="Active">
+					<Anchors>
+						<Anchor point="TOPRIGHT">
+							<Offset>
+								<AbsDimension x="-4" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
         <NormalFont style="GenieFontNormalSmall"/>
         <HighlightFont style="GenieFontHighlightSmall"/>
         <DisabledFont style="GenieFontDisableSmall"/>
