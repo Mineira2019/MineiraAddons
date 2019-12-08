@@ -49,45 +49,65 @@ end
 function GMGenie.Hud.gmStatus(status)
     GMGenie.Hud.gm = status;
     if status then
-        GMGenie_Hud_GM:SetText("|cffffffffModo Gm: |cff45DC03 ON|r|r");
+        GMGenie_Hud_GM:SetText("|cffffffffModo Gm:|r");
+        GMGenie_Hud_GM.Active:SetText("|cff45DC03ON |r");
+        GMGenie_Hud_GM.Active:Show();
     else
-        GMGenie_Hud_GM:SetText("|cffbfbfffModo Gm: |cffF82103 OFF|r|r");
+        GMGenie_Hud_GM:SetText("|cffbfbfffModo Gm:|r");
+        GMGenie_Hud_GM.Active:SetText("|cffF82103OFF|r");
+        GMGenie_Hud_GM.Active:Show();
     end
 end
 
 function GMGenie.Hud.chatStatus(status)
     GMGenie.Hud.chat = status;
     if status then
-        GMGenie_Hud_Chat:SetText("|cffffffffLogo Gm: |cff45DC03 ON|r|r");
+        GMGenie_Hud_Chat:SetText("|cffffffffLogo Gm:|r");
+        GMGenie_Hud_Chat.Active:SetText("|cff45DC03ON |r");
+        GMGenie_Hud_Chat.Active:Show();
     else
-        GMGenie_Hud_Chat:SetText("|cffbfbfffLogo Gm: |cffF82103 OFF|r|r");
+        GMGenie_Hud_Chat:SetText("|cffbfbfffLogo Gm:|r");
+        GMGenie_Hud_Chat.Active:SetText("|cffF82103OFF|r");
+        GMGenie_Hud_Chat.Active:Show();
     end
 end
 
 function GMGenie.Hud.visibilityStatus(status)
     GMGenie.Hud.visibility = status;
     if status then
-        GMGenie_Hud_Visibility:SetText("|cffffffffVisible: |cff45DC03 ON|r|r");
+        GMGenie_Hud_Visibility:SetText("|cffffffffVisible:|r");
+        GMGenie_Hud_Visibility.Active:SetText("|cff45DC03ON |r");
+        GMGenie_Hud_Visibility.Active:Show();
     else
-        GMGenie_Hud_Visibility:SetText("|cffbfbfffVisible: |cffF82103 OFF|r|r");
+        GMGenie_Hud_Visibility:SetText("|cffbfbfffVisible:|r");
+        GMGenie_Hud_Visibility.Active:SetText("|cffF82103OFF|r");
+        GMGenie_Hud_Visibility.Active:Show();
     end
 end
 
 function GMGenie.Hud.whisperStatus(status)
     GMGenie.Hud.whisper = status;
     if status then
-        GMGenie_Hud_Whisper:SetText("|cffffffffSusurro: |cff45DC03 ON|r|r");
+        GMGenie_Hud_Whisper:SetText("|cffffffffSusurro:|r");
+        GMGenie_Hud_Whisper.Active:SetText("|cff45DC03ON |r");
+        GMGenie_Hud_Whisper.Active:Show();
     else
-        GMGenie_Hud_Whisper:SetText("|cffbfbfffSusurro: |cffF82103 OFF|r|r");
+        GMGenie_Hud_Whisper:SetText("|cffbfbfffSusurro:|r");
+        GMGenie_Hud_Whisper.Active:SetText("|cffF82103OFF|r");
+        GMGenie_Hud_Whisper.Active:Show();
     end
 end
 
 function GMGenie.Hud.flyStatus(status)
     GMGenie.Hud.fly = status;
     if status then
-        GMGenie_Hud_Fly:SetText("|cffffffffModo vuelo ON|r");
+        GMGenie_Hud_Fly:SetText("|cffffffffModo vuelo:|r");
+        GMGenie_Hud_Fly.Active:SetText("|cff45DC03ON |r");
+        GMGenie_Hud_Fly.Active:Show();
     else
-        GMGenie_Hud_Fly:SetText("|cffbfbfffModo vuelo OFF|r");
+        GMGenie_Hud_Fly:SetText("|cffbfbfffModo vuelo:|r");
+        GMGenie_Hud_Fly.Active:SetText("|cffF82103OFF|r");
+        GMGenie_Hud_Fly.Active:Show();
     end
 end
 

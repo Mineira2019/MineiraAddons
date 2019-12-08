@@ -57,6 +57,19 @@
             <Attribute name="type" type="string" value="macro"/>
             <Attribute name="macrotext1" type="string" value=""/>
         </Attributes>
+		<Layers>
+			<Layer level="BORDER">
+				<FontString inherits="GenieFontHighlightSmall" text="OFF" justifyH="RIGHT" parentKey="Active" hidden="true">
+					<Anchors>
+						<Anchor point="TOPRIGHT">
+							<Offset>
+								<AbsDimension x="-8" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
         <ButtonText name="$parentText">
             <Anchors>
                 <Anchor point="LEFT">
@@ -78,7 +91,7 @@
         </Size>
         <Anchors>
             <Anchor point="TOPRIGHT" relativeTo="MinimapCluster" relativePoint="BOTTOMRIGHT"/>
-        </Anchors>
+        </Anchors> 
         <Scripts>
             <OnLoad>
                 GMGenie.loadWindow(self, 'Genie  ', true, function() GMGenie.Hud.checkStatus(); end);
